@@ -220,7 +220,7 @@ export default function Page() {
                                     {work.category}
                                 </p>
                                 <h3 className="text-xl font-light mb-2" data-oid="zshwpd0">
-                                    {work.title}
+                                    portraits
                                 </h3>
                                 <p className="text-sm text-gray-600" data-oid="ig0p4rg">
                                     {work.description}
