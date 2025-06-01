@@ -1,7 +1,6 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
 
 export default function Page() {
     const [isLoaded, setIsLoaded] = useState(false);
@@ -10,6 +9,10 @@ export default function Page() {
     const [isPaused, setIsPaused] = useState(false);
 
     const portraits = [
+        {
+            src: 'https://res.cloudinary.com/dexibw60d/image/upload/c_fit/v1748793219/aks-vogue2_emlhkt.jpg',
+            alt: 'Portrait photograph 1',
+        },
         {
             src: 'https://res.cloudinary.com/dexibw60d/image/upload/c_fit/v1748793219/aks-vogue2_emlhkt.jpg',
             alt: 'Portrait photograph 1',
