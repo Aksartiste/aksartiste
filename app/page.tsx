@@ -8,6 +8,7 @@ export default function Page() {
     const [activeSection, setActiveSection] = useState('photography');
     const [currentPortrait, setCurrentPortrait] = useState(0);
     const [isPaused, setIsPaused] = useState(false);
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     const portraits = [
         {
@@ -138,7 +139,11 @@ export default function Page() {
                                 Contact
                             </a>
                         </div>
-                        <button className="md:hidden" data-oid="1eha9fh">
+                        <button
+                            className="md:hidden"
+                            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                            data-oid="1eha9fh"
+                        >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
@@ -158,20 +163,72 @@ export default function Page() {
                         </button>
                     </div>
                 </div>
+
+                {/* Mobile Menu */}
+                <AnimatePresence data-oid="3:v1gfk">
+                    {mobileMenuOpen && (
+                        <motion.div
+                            className="md:hidden absolute top-16 sm:top-20 left-0 right-0 bg-white border-b border-gray-200 shadow-lg"
+                            initial={{ opacity: 0, y: -10 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: -10 }}
+                            transition={{ duration: 0.2 }}
+                            data-oid="tnrc2v:"
+                        >
+                            <div
+                                className="flex flex-col py-4 px-6 sm:px-8 lg:px-12 space-y-4 text-sm uppercase tracking-widest"
+                                data-oid="uk.jsj3"
+                            >
+                                <a
+                                    href="#work"
+                                    className="py-2 hover:text-black/70 transition-colors"
+                                    onClick={() => setMobileMenuOpen(false)}
+                                    data-oid="h0--_yd"
+                                >
+                                    Work
+                                </a>
+                                <a
+                                    href="#about"
+                                    className="py-2 hover:text-black/70 transition-colors"
+                                    onClick={() => setMobileMenuOpen(false)}
+                                    data-oid="7uix1m1"
+                                >
+                                    About
+                                </a>
+                                <a
+                                    href="#journal"
+                                    className="py-2 hover:text-black/70 transition-colors"
+                                    onClick={() => setMobileMenuOpen(false)}
+                                    data-oid="ey78808"
+                                >
+                                    Journal
+                                </a>
+                                <a
+                                    href="#contact"
+                                    className="py-2 hover:text-black/70 transition-colors"
+                                    onClick={() => setMobileMenuOpen(false)}
+                                    data-oid="qx_zj_u"
+                                >
+                                    Contact
+                                </a>
+                            </div>
+                        </motion.div>
+                    )}
+                </AnimatePresence>
             </nav>
 
             {/* Hero Section */}
             <section
-                className="pt-32 pb-20 px-6 sm:px-8 lg:px-12 max-w-7xl mx-auto"
+                className="pt-32 pb-16 sm:pb-20 px-4 sm:px-8 lg:px-12 max-w-7xl mx-auto"
                 data-oid="-zjiva5"
             >
                 <div
-                    className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
+                    className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center"
                     data-oid="ujt2y9x"
                 >
                     <div className="order-2 lg:order-1" data-oid="yd48jwt">
                         <h1
-                            className="text-4xl sm:text-5xl md:text-6xl font-light leading-tight mb-8"
+                            className="text-3xl sm:text-5xl md:text-6xl font-light leading-tight mb-6 sm:mb-8"
                             data-oid="2nc-9l4"
                         >
                             A living archive of{' '}
@@ -184,7 +241,7 @@ export default function Page() {
                             </span>
                         </h1>
                         <p
-                            className="text-lg text-gray-600 mb-10 max-w-xl leading-relaxed"
+                            className="text-base sm:text-lg text-gray-600 mb-8 sm:mb-10 max-w-xl leading-relaxed"
                             data-oid="sp3ft4w"
                         >
                             Where photography, writing, design, and strategy converge to tell
@@ -209,6 +266,7 @@ export default function Page() {
                                 src={portraits[currentPortrait].src}
                                 alt={portraits[currentPortrait].alt}
                                 className="w-full h-full object-contain hover:cursor-zoom-in transition-opacity duration-500"
+                                loading="eager"
                                 data-oid="76-51hg"
                             />
 
@@ -223,19 +281,19 @@ export default function Page() {
             {/* Featured Work Section */}
             <section
                 id="work"
-                className="py-20 px-6 sm:px-8 lg:px-12 max-w-7xl mx-auto"
+                className="py-16 sm:py-20 px-4 sm:px-8 lg:px-12 max-w-7xl mx-auto"
                 data-oid="7uwnno:"
             >
-                <div className="mb-16" data-oid="bxpb-wu">
-                    <h2 className="text-3xl font-light mb-8" data-oid="wq7brby">
+                <div className="mb-12 sm:mb-16" data-oid="bxpb-wu">
+                    <h2 className="text-2xl sm:text-3xl font-light mb-6 sm:mb-8" data-oid="wq7brby">
                         Featured Work
                     </h2>
-                    <div className="flex border-b border-gray-200" data-oid="66z48e5">
+                    <div className="flex flex-wrap border-b border-gray-200" data-oid="66z48e5">
                         {sections.map((section) => (
                             <button
                                 key={section.id}
                                 onClick={() => setActiveSection(section.id)}
-                                className={`py-3 px-5 text-sm uppercase tracking-wider mr-4 ${activeSection === section.id ? 'border-b border-black' : 'text-gray-500 hover:text-black transition-colors'}`}
+                                className={`py-3 px-3 sm:px-5 text-xs sm:text-sm uppercase tracking-wider mr-2 sm:mr-4 ${activeSection === section.id ? 'border-b border-black' : 'text-gray-500 hover:text-black transition-colors'}`}
                                 data-oid=":w15s7s"
                             >
                                 {section.label}
@@ -245,7 +303,7 @@ export default function Page() {
                 </div>
 
                 <div
-                    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+                    className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8"
                     data-oid="mote:uo"
                 >
                     {featuredWorks.map((work) => (
@@ -292,11 +350,11 @@ export default function Page() {
             {/* About Section */}
             <section
                 id="about"
-                className="py-20 px-6 sm:px-8 lg:px-12 max-w-7xl mx-auto"
+                className="py-16 sm:py-20 px-4 sm:px-8 lg:px-12 max-w-7xl mx-auto"
                 data-oid="e-_yc30"
             >
                 <div
-                    className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center"
+                    className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-16 items-center"
                     data-oid="cxg3qi_"
                 >
                     <div className="aspect-[4/5] bg-gray-100 overflow-hidden" data-oid="ezcnegr">
@@ -308,18 +366,21 @@ export default function Page() {
                         />
                     </div>
                     <div data-oid="4:rng23">
-                        <h2 className="text-3xl font-light mb-8" data-oid=".of3s1p">
+                        <h2
+                            className="text-2xl sm:text-3xl font-light mb-6 sm:mb-8"
+                            data-oid=".of3s1p"
+                        >
                             About
                         </h2>
                         <p
-                            className="text-lg text-gray-600 mb-6 leading-relaxed"
+                            className="text-base sm:text-lg text-gray-600 mb-4 sm:mb-6 leading-relaxed"
                             data-oid="fp_554-"
                         >
                             This space is an extension of my mind and heart — a living archive of my
                             photographs, words, designs, and the stories I help shape for others.
                         </p>
                         <p
-                            className="text-lg text-gray-600 mb-6 leading-relaxed"
+                            className="text-base sm:text-lg text-gray-600 mb-4 sm:mb-6 leading-relaxed"
                             data-oid="pkr-:n-"
                         >
                             It's not just a portfolio; it's a quiet, thoughtful corner of the
@@ -328,7 +389,7 @@ export default function Page() {
                             shoots to the behind-the-scenes chaos of content creation.
                         </p>
                         <p
-                            className="text-lg text-gray-600 mb-10 leading-relaxed"
+                            className="text-base sm:text-lg text-gray-600 mb-8 sm:mb-10 leading-relaxed"
                             data-oid="1rtmd0m"
                         >
                             My passion is helping people feel seen and confident — whether through
@@ -348,14 +409,14 @@ export default function Page() {
             {/* Journal Section */}
             <section
                 id="journal"
-                className="py-20 px-6 sm:px-8 lg:px-12 max-w-7xl mx-auto"
+                className="py-16 sm:py-20 px-4 sm:px-8 lg:px-12 max-w-7xl mx-auto"
                 data-oid="u2d34k0"
             >
-                <h2 className="text-3xl font-light mb-12" data-oid="mhp5xra">
+                <h2 className="text-2xl sm:text-3xl font-light mb-8 sm:mb-12" data-oid="mhp5xra">
                     Journal
                 </h2>
                 <div
-                    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+                    className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8"
                     data-oid=":pq3pk2"
                 >
                     {[1, 2, 3].map((item) => (
@@ -402,14 +463,17 @@ export default function Page() {
             {/* Contact Section */}
             <section
                 id="contact"
-                className="py-20 px-6 sm:px-8 lg:px-12 max-w-7xl mx-auto"
+                className="py-16 sm:py-20 px-4 sm:px-8 lg:px-12 max-w-7xl mx-auto"
                 data-oid="5uptl:l"
             >
                 <div className="max-w-2xl mx-auto text-center" data-oid="7vbd:hz">
-                    <h2 className="text-3xl font-light mb-6" data-oid="lpkhg0m">
+                    <h2 className="text-2xl sm:text-3xl font-light mb-4 sm:mb-6" data-oid="lpkhg0m">
                         Let's Connect
                     </h2>
-                    <p className="text-lg text-gray-600 mb-10" data-oid="slg41pb">
+                    <p
+                        className="text-base sm:text-lg text-gray-600 mb-8 sm:mb-10"
+                        data-oid="slg41pb"
+                    >
                         Interested in working together or just want to say hello? I'd love to hear
                         from you.
                     </p>
@@ -423,12 +487,15 @@ export default function Page() {
             </section>
 
             {/* Newsletter */}
-            <section className="py-20 px-6 sm:px-8 lg:px-12 bg-gray-50" data-oid="w0_c0j:">
+            <section className="py-16 sm:py-20 px-4 sm:px-8 lg:px-12 bg-gray-50" data-oid="w0_c0j:">
                 <div className="max-w-xl mx-auto text-center" data-oid="6ng3qfj">
-                    <h3 className="text-2xl font-light mb-6" data-oid="5::zu74">
+                    <h3 className="text-xl sm:text-2xl font-light mb-4 sm:mb-6" data-oid="5::zu74">
                         Join the Journey
                     </h3>
-                    <p className="text-gray-600 mb-8" data-oid="c38qhv-">
+                    <p
+                        className="text-sm sm:text-base text-gray-600 mb-6 sm:mb-8"
+                        data-oid="c38qhv-"
+                    >
                         Subscribe to receive updates on new work, journal entries, and occasional
                         musings.
                     </p>
@@ -452,7 +519,7 @@ export default function Page() {
 
             {/* Footer */}
             <footer
-                className="py-12 px-6 sm:px-8 lg:px-12 border-t border-gray-200"
+                className="py-10 sm:py-12 px-4 sm:px-8 lg:px-12 border-t border-gray-200"
                 data-oid="19ftls4"
             >
                 <div className="max-w-7xl mx-auto" data-oid="mz.0-kt">
