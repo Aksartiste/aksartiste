@@ -208,7 +208,7 @@ export default function Page() {
                                 key={currentPortrait}
                                 src={portraits[currentPortrait].src}
                                 alt={portraits[currentPortrait].alt}
-                                className="h-full object-contain hover:cursor-zoom-in transition-opacity duration-500 w-[564px]"
+                                className="w-full h-full object-contain hover:cursor-zoom-in transition-opacity duration-500"
                                 data-oid="76-51hg"
                             />
 
