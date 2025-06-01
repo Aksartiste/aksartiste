@@ -195,7 +195,7 @@ export default function Page() {
                     </div>
                     <div className="order-1 lg:order-2" data-oid="kkn2c9c">
                         <div
-                            className="aspect-[4/5] bg-gray-100 overflow-hidden relative"
+                            className="aspect-[4/5] bg-gray-100 overflow-hidden relative cursor-pointer"
                             data-oid="-ad5040"
                             onMouseEnter={() => setIsPaused(true)}
                             onMouseLeave={() => setIsPaused(false)}
@@ -205,7 +205,7 @@ export default function Page() {
                                     key={currentPortrait}
                                     src={portraits[currentPortrait].src}
                                     alt={portraits[currentPortrait].alt}
-                                    className="w-full h-full object-contain"
+                                    className="w-full h-full object-contain hover:cursor-zoom-in"
                                     initial={{ opacity: 0 }}
                                     animate={{ opacity: 1 }}
                                     exit={{ opacity: 0 }}
