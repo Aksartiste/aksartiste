@@ -1,10 +1,39 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 export default function Page() {
     const [isLoaded, setIsLoaded] = useState(false);
     const [activeSection, setActiveSection] = useState('photography');
+    const [currentPortrait, setCurrentPortrait] = useState(0);
+
+    const portraits = [
+        {
+            src: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
+            alt: 'Portrait photograph 1',
+        },
+        {
+            src: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
+            alt: 'Portrait photograph 2',
+        },
+        {
+            src: 'https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
+            alt: 'Portrait photograph 3',
+        },
+        {
+            src: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
+            alt: 'Portrait photograph 4',
+        },
+    ];
+
+    const nextPortrait = () => {
+        setCurrentPortrait((prev) => (prev + 1) % portraits.length);
+    };
+
+    const prevPortrait = () => {
+        setCurrentPortrait((prev) => (prev - 1 + portraits.length) % portraits.length);
+    };
 
     useEffect(() => {
         setIsLoaded(true);
@@ -157,15 +186,91 @@ export default function Page() {
                     </div>
                     <div className="order-1 lg:order-2" data-oid="6r39aot">
                         <div
-                            className="aspect-[4/5] bg-gray-100 overflow-hidden"
+                            className="aspect-[4/5] bg-gray-100 overflow-hidden relative"
                             data-oid="7lh8oj3"
                         >
-                            <img
-                                src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
-                                alt="Portrait photograph"
-                                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-                                data-oid="b5a-ny6"
-                            />
+                            <AnimatePresence mode="wait" data-oid="jp:j-1i">
+                                <motion.img
+                                    key={currentPortrait}
+                                    src={portraits[currentPortrait].src}
+                                    alt={portraits[currentPortrait].alt}
+                                    className="w-full h-full object-cover"
+                                    data-oid="b5a-ny6"
+                                    initial={{ opacity: 0 }}
+                                    animate={{ opacity: 1 }}
+                                    exit={{ opacity: 0 }}
+                                    transition={{ duration: 0.5 }}
+                                />
+                            </AnimatePresence>
+
+                            {/* Navigation controls */}
+                            <div
+                                className="absolute inset-0 flex items-center justify-between px-4 opacity-0 hover:opacity-100 transition-opacity duration-300"
+                                data-oid="xbcn9i1"
+                            >
+                                <button
+                                    onClick={prevPortrait}
+                                    className="bg-white/80 rounded-full p-2 shadow-md hover:bg-white transition-colors"
+                                    aria-label="Previous portrait"
+                                    data-oid="y_yt7r6"
+                                >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        strokeWidth={1.5}
+                                        stroke="currentColor"
+                                        className="w-5 h-5"
+                                        data-oid="83.se9t"
+                                    >
+                                        <path
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                            d="M15.75 19.5L8.25 12l7.5-7.5"
+                                            data-oid="ecmyjlv"
+                                        />
+                                    </svg>
+                                </button>
+                                <button
+                                    onClick={nextPortrait}
+                                    className="bg-white/80 rounded-full p-2 shadow-md hover:bg-white transition-colors"
+                                    aria-label="Next portrait"
+                                    data-oid="y4l3j06"
+                                >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        strokeWidth={1.5}
+                                        stroke="currentColor"
+                                        className="w-5 h-5"
+                                        data-oid="5k6fgxj"
+                                    >
+                                        <path
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                            d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                                            data-oid="oz1-_ig"
+                                        />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            {/* Indicators */}
+                            <div
+                                className="absolute bottom-4 left-0 right-0 flex justify-center space-x-2"
+                                data-oid="jw34qia"
+                            >
+                                {portraits.map((_, index) => (
+                                    <button
+                                        key={index}
+                                        onClick={() => setCurrentPortrait(index)}
+                                        className={`w-2 h-2 rounded-full ${currentPortrait === index ? 'bg-white' : 'bg-white/50'}`}
+                                        aria-label={`Go to portrait ${index + 1}`}
+                                        data-oid="5j4.8jk"
+                                    />
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </div>
