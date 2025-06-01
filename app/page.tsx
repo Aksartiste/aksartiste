@@ -7,6 +7,7 @@ export default function Page() {
     const [isLoaded, setIsLoaded] = useState(false);
     const [activeSection, setActiveSection] = useState('photography');
     const [currentPortrait, setCurrentPortrait] = useState(0);
+    const [isPaused, setIsPaused] = useState(false);
 
     const portraits = [
         {
@@ -33,12 +34,15 @@ export default function Page() {
 
     // Auto-rotate portraits
     useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrentPortrait((prev) => (prev + 1) % portraits.length);
-        }, 3000); // Change portrait every 3 seconds
+        // Only set up the interval if not paused
+        if (!isPaused) {
+            const interval = setInterval(() => {
+                setCurrentPortrait((prev) => (prev + 1) % portraits.length);
+            }, 3000); // Change portrait every 3 seconds
 
-        return () => clearInterval(interval); // Cleanup on unmount
-    }, [portraits.length]);
+            return () => clearInterval(interval); // Cleanup on unmount
+        }
+    }, [portraits.length, isPaused]);
 
     useEffect(() => {
         setIsLoaded(true);
@@ -193,6 +197,8 @@ export default function Page() {
                         <div
                             className="aspect-[4/5] bg-gray-100 overflow-hidden relative"
                             data-oid="-ad5040"
+                            onMouseEnter={() => setIsPaused(true)}
+                            onMouseLeave={() => setIsPaused(false)}
                         >
                             <AnimatePresence mode="wait" data-oid=":6449yr">
                                 <motion.img
