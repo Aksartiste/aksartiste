@@ -27,13 +27,14 @@ export default function Page() {
         },
     ];
 
-    const nextPortrait = () => {
-        setCurrentPortrait((prev) => (prev + 1) % portraits.length);
-    };
+    // Auto-rotate portraits
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentPortrait((prev) => (prev + 1) % portraits.length);
+        }, 3000); // Change portrait every 3 seconds
 
-    const prevPortrait = () => {
-        setCurrentPortrait((prev) => (prev - 1 + portraits.length) % portraits.length);
-    };
+        return () => clearInterval(interval); // Cleanup on unmount
+    }, [portraits.length]);
 
     useEffect(() => {
         setIsLoaded(true);
@@ -203,74 +204,9 @@ export default function Page() {
                                 />
                             </AnimatePresence>
 
-                            {/* Navigation controls */}
-                            <div
-                                className="absolute inset-0 flex items-center justify-between px-4 opacity-0 hover:opacity-100 transition-opacity duration-300"
-                                data-oid="xbcn9i1"
-                            >
-                                <button
-                                    onClick={prevPortrait}
-                                    className="bg-white/80 rounded-full p-2 shadow-md hover:bg-white transition-colors"
-                                    aria-label="Previous portrait"
-                                    data-oid="y_yt7r6"
-                                >
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                        strokeWidth={1.5}
-                                        stroke="currentColor"
-                                        className="w-5 h-5"
-                                        data-oid="83.se9t"
-                                    >
-                                        <path
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            d="M15.75 19.5L8.25 12l7.5-7.5"
-                                            data-oid="ecmyjlv"
-                                        />
-                                    </svg>
-                                </button>
-                                <button
-                                    onClick={nextPortrait}
-                                    className="bg-white/80 rounded-full p-2 shadow-md hover:bg-white transition-colors"
-                                    aria-label="Next portrait"
-                                    data-oid="y4l3j06"
-                                >
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                        strokeWidth={1.5}
-                                        stroke="currentColor"
-                                        className="w-5 h-5"
-                                        data-oid="5k6fgxj"
-                                    >
-                                        <path
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                                            data-oid="oz1-_ig"
-                                        />
-                                    </svg>
-                                </button>
-                            </div>
+                            {/* Navigation controls removed */}
 
-                            {/* Indicators */}
-                            <div
-                                className="absolute bottom-4 left-0 right-0 flex justify-center space-x-2"
-                                data-oid="jw34qia"
-                            >
-                                {portraits.map((_, index) => (
-                                    <button
-                                        key={index}
-                                        onClick={() => setCurrentPortrait(index)}
-                                        className={`w-2 h-2 rounded-full ${currentPortrait === index ? 'bg-white' : 'bg-white/50'}`}
-                                        aria-label={`Go to portrait ${index + 1}`}
-                                        data-oid="5j4.8jk"
-                                    />
-                                ))}
-                            </div>
+                            {/* Indicators removed */}
                         </div>
                     </div>
                 </div>
