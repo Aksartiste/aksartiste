@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 export default function Page() {
     const [isLoaded, setIsLoaded] = useState(false);
@@ -203,19 +204,13 @@ export default function Page() {
                             onMouseEnter={() => setIsPaused(true)}
                             onMouseLeave={() => setIsPaused(false)}
                         >
-                            <AnimatePresence mode="wait" data-oid=":6449yr">
-                                <motion.img
-                                    key={currentPortrait}
-                                    src={portraits[currentPortrait].src}
-                                    alt={portraits[currentPortrait].alt}
-                                    className="w-full h-full object-contain hover:cursor-zoom-in"
-                                    initial={{ opacity: 0 }}
-                                    animate={{ opacity: 1 }}
-                                    exit={{ opacity: 0 }}
-                                    transition={{ duration: 0.5 }}
-                                    data-oid="76-51hg"
-                                />
-                            </AnimatePresence>
+                            <img
+                                key={currentPortrait}
+                                src={portraits[currentPortrait].src}
+                                alt={portraits[currentPortrait].alt}
+                                className="h-full object-contain hover:cursor-zoom-in transition-opacity duration-500 w-[564px]"
+                                data-oid="76-51hg"
+                            />
 
                             {/* Navigation controls removed */}
 
