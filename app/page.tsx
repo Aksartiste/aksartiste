@@ -35,6 +35,23 @@ export default function Page() {
             src: 'https://res.cloudinary.com/dexibw60d/image/upload/v1748796319/88BC5FB3-2470-4644-BFE8-89071E4A65E3_kovmho.jpg',
             alt: 'Portrait photograph 5',
         },
+        // Added 4 new photos
+        {
+            src: 'https://res.cloudinary.com/dexibw60d/image/upload/v1749035067/DSC01716_u4oxcs.jpg',
+            alt: 'Portrait photograph 6',
+        },
+        {
+            src: 'https://res.cloudinary.com/dexibw60d/image/upload/v1749035550/Meher_fgpetp.jpg',
+            alt: 'Portrait photograph 7',
+        },
+        {
+            src: 'https://res.cloudinary.com/dexibw60d/image/upload/v1748792834/73_zhllvh.jpg',
+            alt: 'Portrait photograph 8',
+        },
+        {
+            src: 'https://res.cloudinary.com/dexibw60d/image/upload/v1749035550/Abmol_iwxrya.jpg',
+            alt: 'Portrait photograph 9',
+        },
     ];
 
     // Auto-rotate portraits
