@@ -88,9 +88,9 @@ export default function AboutPage() {
                     data-oid="krqhka3"
                 >
                     <img
-                        src="https://res.cloudinary.com/dexibw60d/image/upload/v1749043892/Screenshot_2025-06-04_at_7.00.25_PM_rw8lnr.png"
+                        src="https://res.cloudinary.com/dexibw60d/image/upload/v1749044526/IMG_3207_mmjnif.jpg"
                         alt="Akshay portrait"
-                        className="object-contain mx-auto w-[734px] h-[451px]"
+                        className="object-contain mx-auto w-[748px] h-[425px]"
                         loading="eager"
                         data-oid="r.8n_l9"
                     />
