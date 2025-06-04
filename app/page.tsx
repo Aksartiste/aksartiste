@@ -454,9 +454,11 @@ export default function Page() {
                                     src={
                                         item === 1
                                             ? 'https://res.cloudinary.com/dexibw60d/image/upload/v1749034991/output_clzh4q.png'
-                                            : item === 4
-                                              ? 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80'
-                                              : `https://images.unsplash.com/photo-167${1000000 + item}?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80`
+                                            : item === 2
+                                              ? 'https://res.cloudinary.com/dexibw60d/image/upload/v1749038207/output-3_gpz3oa.png'
+                                              : item === 4
+                                                ? 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80'
+                                                : `https://images.unsplash.com/photo-167${1000000 + item}?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80`
                                     }
                                     alt={
                                         item === 1
