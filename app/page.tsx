@@ -578,6 +578,77 @@ export default function Page() {
                 </div>
             </section>
 
+            {/* Featured In Section */}
+            <section className="py-16 sm:py-20 border-t border-gray-100" data-oid="haw-otb">
+                <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12" data-oid="oupj9bg">
+                    <h2
+                        className="text-2xl sm:text-3xl font-light mb-12 text-center"
+                        data-oid="zgz3171"
+                    >
+                        Featured In
+                    </h2>
+
+                    <div className="relative overflow-hidden" data-oid="6o2si4:">
+                        {/* Marquee container */}
+                        <div className="flex animate-marquee whitespace-nowrap" data-oid="gn8n8bn">
+                            {/* First set of logos */}
+                            {[
+                                'WERABLE',
+                                'GOOGLE INDIA',
+                                'VOGUE',
+                                'SOLANA',
+                                'PEOPLE OF INDIA',
+                                'LUKE COUTINHO',
+                                'MOB JOURNAL',
+                                'MALVIE',
+                                '6X FASHION',
+                                'APPROVED',
+                            ].map((brand, index) => (
+                                <div
+                                    key={index}
+                                    className="mx-8 sm:mx-12 flex items-center"
+                                    data-oid="dwyzkaa"
+                                >
+                                    <span
+                                        className="text-xl sm:text-2xl font-light text-gray-500 tracking-wider whitespace-nowrap"
+                                        data-oid="t31lv4a"
+                                    >
+                                        {brand}
+                                    </span>
+                                </div>
+                            ))}
+
+                            {/* Duplicate set for seamless looping */}
+                            {[
+                                'WERABLE',
+                                'GOOGLE INDIA',
+                                'VOGUE',
+                                'SOLANA',
+                                'PEOPLE OF INDIA',
+                                'LUKE COUTINHO',
+                                'MOB JOURNAL',
+                                'MALVIE',
+                                '6X FASHION',
+                                'APPROVED',
+                            ].map((brand, index) => (
+                                <div
+                                    key={`dup-${index}`}
+                                    className="mx-8 sm:mx-12 flex items-center"
+                                    data-oid="52ki_v5"
+                                >
+                                    <span
+                                        className="text-xl sm:text-2xl font-light text-gray-500 tracking-wider whitespace-nowrap"
+                                        data-oid="ldajvwk"
+                                    >
+                                        {brand}
+                                    </span>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             {/* Contact Section */}
             <section
                 id="contact"
