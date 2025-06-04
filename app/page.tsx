@@ -32,7 +32,7 @@ export default function Page() {
             alt: 'Portrait photograph 4',
         },
         {
-            src: 'https://res.cloudinary.com/dexibw60d/image/upload/v1748792833/AKS08612_wszrtk.jpg',
+            src: 'https://res.cloudinary.com/dexibw60d/image/upload/v1748796319/88BC5FB3-2470-4644-BFE8-89071E4A65E3_kovmho.jpg',
             alt: 'Portrait photograph 5',
         },
     ];
@@ -43,7 +43,7 @@ export default function Page() {
         if (!isPaused) {
             const interval = setInterval(() => {
                 setCurrentPortrait((prev) => (prev + 1) % portraits.length);
-            }, 3000); // Change portrait every 3 seconds
+            }, 2500); // Change portrait every 3 seconds
 
             return () => clearInterval(interval); // Cleanup on unmount
         }
@@ -140,8 +140,9 @@ export default function Page() {
                             </a>
                         </div>
                         <button
-                            className="md:hidden"
+                            className="md:hidden p-2 -mr-2" /* Added padding for better touch target */
                             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                            aria-label="Toggle menu"
                             data-oid="1eha9fh"
                         >
                             <svg
@@ -176,12 +177,12 @@ export default function Page() {
                             data-oid="tnrc2v:"
                         >
                             <div
-                                className="flex flex-col py-4 px-6 sm:px-8 lg:px-12 space-y-4 text-sm uppercase tracking-widest"
+                                className="flex flex-col py-4 px-6 sm:px-8 lg:px-12 space-y-6 text-sm uppercase tracking-widest" /* Increased spacing between items */
                                 data-oid="uk.jsj3"
                             >
                                 <a
                                     href="#work"
-                                    className="py-2 hover:text-black/70 transition-colors"
+                                    className="py-3 block hover:text-black/70 transition-colors" /* Increased padding and made block for larger touch target */
                                     onClick={() => setMobileMenuOpen(false)}
                                     data-oid="h0--_yd"
                                 >
@@ -189,7 +190,7 @@ export default function Page() {
                                 </a>
                                 <a
                                     href="#about"
-                                    className="py-2 hover:text-black/70 transition-colors"
+                                    className="py-3 block hover:text-black/70 transition-colors" /* Increased padding and made block for larger touch target */
                                     onClick={() => setMobileMenuOpen(false)}
                                     data-oid="7uix1m1"
                                 >
@@ -197,7 +198,7 @@ export default function Page() {
                                 </a>
                                 <a
                                     href="#journal"
-                                    className="py-2 hover:text-black/70 transition-colors"
+                                    className="py-3 block hover:text-black/70 transition-colors" /* Increased padding and made block for larger touch target */
                                     onClick={() => setMobileMenuOpen(false)}
                                     data-oid="ey78808"
                                 >
@@ -205,7 +206,7 @@ export default function Page() {
                                 </a>
                                 <a
                                     href="#contact"
-                                    className="py-2 hover:text-black/70 transition-colors"
+                                    className="py-3 block hover:text-black/70 transition-colors" /* Increased padding and made block for larger touch target */
                                     onClick={() => setMobileMenuOpen(false)}
                                     data-oid="qx_zj_u"
                                 >
@@ -219,7 +220,7 @@ export default function Page() {
 
             {/* Hero Section */}
             <section
-                className="pt-32 pb-16 sm:pb-20 px-4 sm:px-8 lg:px-12 max-w-7xl mx-auto"
+                className="pt-28 sm:pt-32 pb-16 sm:pb-20 px-4 sm:px-8 lg:px-12 max-w-7xl mx-auto" /* Adjusted top padding for small screens */
                 data-oid="-zjiva5"
             >
                 <div
@@ -248,7 +249,7 @@ export default function Page() {
                             stories that resonate and connect on a deeper level.
                         </p>
                         <button
-                            className="px-8 py-3 border border-black text-sm uppercase tracking-wider hover:bg-black hover:text-white transition-colors duration-300"
+                            className="w-full sm:w-auto px-8 py-3 border border-black text-sm uppercase tracking-wider hover:bg-black hover:text-white transition-colors duration-300" /* Made full width on mobile */
                             data-oid="3.xmvh3"
                         >
                             Explore Work
@@ -267,6 +268,7 @@ export default function Page() {
                                 alt={portraits[currentPortrait].alt}
                                 className="w-full h-full object-contain hover:cursor-zoom-in transition-opacity duration-500"
                                 loading="eager"
+                                sizes="(max-width: 1024px) 100vw, 50vw" /* Added sizes attribute for responsive images */
                                 data-oid="76-51hg"
                             />
 
@@ -293,7 +295,7 @@ export default function Page() {
                             <button
                                 key={section.id}
                                 onClick={() => setActiveSection(section.id)}
-                                className={`py-3 px-3 sm:px-5 text-xs sm:text-sm uppercase tracking-wider mr-2 sm:mr-4 ${activeSection === section.id ? 'border-b border-black' : 'text-gray-500 hover:text-black transition-colors'}`}
+                                className={`py-3 px-2 sm:px-5 text-xs sm:text-sm uppercase tracking-wider mr-1 sm:mr-4 mb-1 ${activeSection === section.id ? 'border-b border-black' : 'text-gray-500 hover:text-black transition-colors'}`} /* Adjusted spacing for very small screens */
                                 data-oid=":w15s7s"
                             >
                                 {section.label}
@@ -339,7 +341,7 @@ export default function Page() {
 
                 <div className="mt-16 text-center" data-oid="p-.d-7h">
                     <button
-                        className="px-8 py-3 border border-black text-sm uppercase tracking-wider hover:bg-black hover:text-white transition-colors duration-300"
+                        className="w-full sm:w-auto px-8 py-3 border border-black text-sm uppercase tracking-wider hover:bg-black hover:text-white transition-colors duration-300" /* Made full width on mobile */
                         data-oid="z6sdmbx"
                     >
                         View All Work
@@ -397,7 +399,7 @@ export default function Page() {
                             creatively guide.
                         </p>
                         <button
-                            className="px-8 py-3 border border-black text-sm uppercase tracking-wider hover:bg-black hover:text-white transition-colors duration-300"
+                            className="w-full sm:w-auto px-8 py-3 border border-black text-sm uppercase tracking-wider hover:bg-black hover:text-white transition-colors duration-300" /* Made full width on mobile */
                             data-oid="xcjmmmc"
                         >
                             Read More
@@ -452,7 +454,7 @@ export default function Page() {
                 </div>
                 <div className="mt-16 text-center" data-oid="djd0tcd">
                     <button
-                        className="px-8 py-3 border border-black text-sm uppercase tracking-wider hover:bg-black hover:text-white transition-colors duration-300"
+                        className="w-full sm:w-auto px-8 py-3 border border-black text-sm uppercase tracking-wider hover:bg-black hover:text-white transition-colors duration-300" /* Made full width on mobile */
                         data-oid="0xyp752"
                     >
                         View All Posts
@@ -478,7 +480,7 @@ export default function Page() {
                         from you.
                     </p>
                     <button
-                        className="px-12 py-4 border border-black text-sm uppercase tracking-wider hover:bg-black hover:text-white transition-colors duration-300"
+                        className="w-full sm:w-auto px-12 py-4 border border-black text-sm uppercase tracking-wider hover:bg-black hover:text-white transition-colors duration-300" /* Made full width on mobile */
                         data-oid="pujd_20"
                     >
                         Get in Touch
@@ -508,7 +510,7 @@ export default function Page() {
                         />
 
                         <button
-                            className="px-6 py-3 bg-black text-white text-sm uppercase tracking-wider hover:bg-black/80 transition-colors"
+                            className="w-full sm:w-auto px-6 py-3 bg-black text-white text-sm uppercase tracking-wider hover:bg-black/80 transition-colors"
                             data-oid="81p6ofi"
                         >
                             Subscribe
@@ -537,7 +539,7 @@ export default function Page() {
                             </a>
                         </div>
                         <div
-                            className="flex space-x-8 text-sm uppercase tracking-widest mb-8 md:mb-0"
+                            className="flex flex-wrap justify-center space-x-4 sm:space-x-8 text-sm uppercase tracking-widest mb-8 md:mb-0"
                             data-oid="gl1qyyp"
                         >
                             <a
@@ -569,7 +571,9 @@ export default function Page() {
                                 Contact
                             </a>
                         </div>
-                        <div className="flex space-x-6" data-oid="ztusjn6">
+                        <div className="flex space-x-8 sm:space-x-6" data-oid="ztusjn6">
+                            {' '}
+                            /* Increased spacing for touch targets */
                             <a
                                 href="#"
                                 className="text-gray-500 hover:text-black transition-colors"
@@ -579,7 +583,7 @@ export default function Page() {
                                     Instagram
                                 </span>
                                 <svg
-                                    className="h-5 w-5"
+                                    className="h-6 w-6 sm:h-5 sm:w-5" /* Larger icons on mobile */
                                     fill="currentColor"
                                     viewBox="0 0 24 24"
                                     aria-hidden="true"
@@ -602,7 +606,7 @@ export default function Page() {
                                     Twitter
                                 </span>
                                 <svg
-                                    className="h-5 w-5"
+                                    className="h-6 w-6 sm:h-5 sm:w-5" /* Larger icons on mobile */
                                     fill="currentColor"
                                     viewBox="0 0 24 24"
                                     aria-hidden="true"
@@ -623,7 +627,7 @@ export default function Page() {
                                     Pinterest
                                 </span>
                                 <svg
-                                    className="h-5 w-5"
+                                    className="h-6 w-6 sm:h-5 sm:w-5" /* Larger icons on mobile */
                                     fill="currentColor"
                                     viewBox="0 0 24 24"
                                     aria-hidden="true"
