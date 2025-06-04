@@ -136,27 +136,13 @@ export default function Page() {
             description: 'Preserving special moments and celebrations',
             image: 'https://res.cloudinary.com/dexibw60d/image/upload/v1749035550/Meher_fgpetp.jpg',
         },
-        // Design works
+        // Design works - Only keeping one item
         {
-            id: 2,
+            id: 7,
             title: 'Visual Identity',
             category: 'Design',
             description: 'Creating cohesive and impactful brand experiences',
             image: 'https://images.unsplash.com/photo-1517842645767-c639042777db?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
-        },
-        {
-            id: 5,
-            title: 'Web Design',
-            category: 'Design',
-            description: 'Responsive and intuitive web experiences',
-            image: 'https://res.cloudinary.com/dexibw60d/image/upload/v1749053305/7_ykmvwr.jpg',
-        },
-        {
-            id: 6,
-            title: 'Print Design',
-            category: 'Design',
-            description: 'Print materials that make an impact',
-            image: 'https://res.cloudinary.com/dexibw60d/image/upload/v1749053305/7_ykmvwr.jpg',
         },
     ];
 
