@@ -496,6 +496,20 @@ const galleryData = {
                 width: 1200,
                 height: 1600,
             },
+            {
+                id: 4,
+                src: 'https://res.cloudinary.com/dexibw60d/image/upload/v1749072016/logos/logos-25.png',
+                alt: 'Event 4',
+                width: 1200,
+                height: 1600,
+            },
+            {
+                id: 5,
+                src: 'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-24.png',
+                alt: 'Event 5',
+                width: 1200,
+                height: 1600,
+            },
         ],
     },
     // Add similar data for other subcategories
