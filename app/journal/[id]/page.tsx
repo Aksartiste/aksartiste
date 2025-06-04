@@ -11,32 +11,37 @@ const journalEntries = [
         date: 'May 15, 2023',
         image: 'https://res.cloudinary.com/dexibw60d/image/upload/v1749034991/output_clzh4q.png',
         excerpt:
-            'Reflections on childhood wisdom and the perspective that comes with looking back.',
+            'A childhood memory of injury, disappointment, and the simple act of love that meant everything.',
         content: `
       <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
-        I captured this image during a family trip to the mountains last winter. My nephew, just five years old, pressed his face against the window of our cabin, mesmerized by his own reflection against the backdrop of the valley below. Something about his expression in that moment took me back to my own childhood and the simple wisdom that seemed to flow so naturally then.
+        When I was maybe 7 years old, I broke my right hand in school after falling down on ground with a heavy school bag. I came back home crying & kept my hand in same position to avoid extra pain from movement. Granny at home looked at me & said to someone that I don't know but an hour ago i felt something wrong happened & now this is what we're seeing!
       </p>
       
       <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
-        "Granny always knew," my mother used to say whenever we'd come to a realization that my grandmother had tried to impart years earlier. It was a family saying that acknowledged how the wisdom we often struggle to acquire as adults was somehow intuitive to her, a woman with little formal education but a profound understanding of human nature.
+        Nothing much. My hand wasn't broken hard enough, As my I'm disabled my hands have conditions under that they didn't put plaster but used crepe bandage.
       </p>
       
       <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
-        Looking at my nephew that day, I wondered what innate wisdom he already possessed that I've spent decades trying to rediscover. There's something about childhood that holds a purity of perspective, an ability to see things as they truly are before layers of complexity and overthinking obscure the view.
+        The only thing that I was excited about that whole week was of the birthday of my best friend who happens to live in front of my home! He had other best friends though. I talked to my granny if that I have to be okay before going to his birthday party. They laughed & said you need to take care.
       </p>
       
-      <h3 class="text-xl font-light mb-4 mt-8">The Reflection Paradox</h3>
+      <h3 class="text-xl font-light mb-4 mt-8">The Birthday Party</h3>
       
       <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
-        There's a beautiful paradox in reflection—both the literal kind, as seen in this photograph, and the metaphorical act of looking back on our lives. In both cases, what we see is simultaneously ourselves and not ourselves. The image in the glass is reversed, slightly distorted, influenced by the light and what lies beyond. Our memories and reflections on the past work the same way, shaped by who we've become and what we now know.
+        Well, I went to the party with the bandage on, it was still paining while moving my hand. Other guests were lost in themselves, none of them used to like me because I wasn't as cool as them. They atleast didn't bully me so I was kind of okay with being around them.
       </p>
       
       <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
-        My grandmother used to tell me that the best way to understand yourself is to look at your reflection in moving water, not a still mirror. "The ripples show you all the different people you are," she'd say. I didn't understand then, but watching my nephew that day—seeing himself both in the glass and against the vast landscape beyond—I finally grasped what she meant.
+        Remember that time when we used to fill a big balloon with chocolates in it & hang it above/around the cake & the birthday boy! School shoes were apparently only shoes that we wore in parties & functions. I was there, they blew that big balloon & shower of chocolates & glitter happened. Everybody started the loot. I stood there because of my broken hand, smiled because everybody was having fun. A chocolate fell right in front of my eyes & as I tried bending down to pick it up, someone came & took it. I didn't get any chocolate in that party, but had food & came back home!
+      </p>
+      
+      <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
+        I told granny that this happened & we were walking around a park, we went to the shop & bought myself an eclairs (🍬) Honestly I didn't think I'd get it, or I deserved it or even if we have enough money for this thing to happen.
       </p>
       
       <p class="mb-10 text-base sm:text-lg text-gray-600 leading-relaxed">
-        Perhaps the wisdom we seek isn't found in accumulating new knowledge but in remembering what we once knew intuitively. In the quiet moments of reflection, looking both outward and inward simultaneously, we might just rediscover what granny always knew.
+        But it happened. And it was maybe the first time I felt love, kindness & acceptance.
+        I still remember everything in photographic image, I have tears just by remembering. I don't know why I wrote it, I don't know if I'll post it, all I know is I'm crying right now & it feels so good like it happened yesterday.
       </p>
     `,
     },
