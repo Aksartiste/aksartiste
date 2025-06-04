@@ -47,62 +47,98 @@ const journalEntries = [
     },
     {
         id: '2',
-        title: 'The Art of Authentic Storytelling',
-        date: 'May 15, 2023',
+        title: 'Capturing Light and Shadow',
+        date: 'June 5, 2023',
         image: 'https://res.cloudinary.com/dexibw60d/image/upload/v1749037809/artcover_ddojin.jpg',
         excerpt:
-            'Exploring how vulnerability creates connection in both visual and written narratives.',
+            'Exploring the interplay of light and shadow in portrait photography and how it shapes emotion.',
         content: `
       <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
-        In a world saturated with content, authentic storytelling stands as a beacon of genuine connection. When I first began my journey as a photographer and writer, I was often caught in the trap of perfection—meticulously staging shots and carefully crafting words that I thought would appeal to the widest audience.
+        Light and shadow are the fundamental elements of photography, creating depth, dimension, and mood in every image. As a portrait photographer, I've come to see these elements as my primary tools for storytelling—more important than any camera or lens.
       </p>
       
       <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
-        It wasn't until I embraced vulnerability in my work that I began to see a profound shift in how people responded. There's something magnetic about raw, honest expression that cuts through the noise of our digital landscape. Whether through the unguarded gaze of a portrait subject or the candid admission in a personal essay, authenticity creates an immediate bridge between creator and audience.
+        When I first began shooting portraits, I was obsessed with even, flattering light that minimized shadows. I wanted my subjects to look their "best" according to conventional standards—smooth skin, bright eyes, no harsh shadows. But over time, I realized that this approach often resulted in images that felt flat and lifeless, devoid of the character and emotion that make a portrait compelling.
+      </p>
+      
+      <h3 class="text-xl font-light mb-4 mt-8">Embracing the Shadows</h3>
+      
+      <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
+        It was during a particularly challenging shoot in an old building with limited natural light that I had my breakthrough. Instead of fighting against the dramatic shadows cast by the narrow windows, I decided to embrace them. The resulting portraits captured something raw and honest about my subject—the interplay of light and shadow across their face revealed contours and expressions that might otherwise have been lost.
+      </p>
+      
+      <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
+        Since then, I've approached light and shadow as equal partners in the creative process. I look for ways to use shadow not just as the absence of light, but as a positive element that shapes and defines the image. Sometimes this means positioning a subject half in shadow to create a sense of mystery or duality. Other times it means using a single, strong directional light to create dramatic shadows that emphasize the structure of a face.
+      </p>
+      
+      <p class="mb-10 text-base sm:text-lg text-gray-600 leading-relaxed">
+        What I've found most fascinating is how the quality of light affects the emotional tone of a portrait. Soft, diffused light often creates a sense of gentleness and intimacy, while hard, direct light can convey intensity and drama. By consciously choosing the quality, direction, and intensity of light, I can help shape the story the portrait tells—before I even press the shutter.
       </p>
     `,
     },
     {
         id: '3',
-        title: 'The Art of Authentic Storytelling',
-        date: 'May 15, 2023',
+        title: 'The Power of Candid Moments',
+        date: 'July 12, 2023',
         image: 'https://res.cloudinary.com/dexibw60d/image/upload/v1749038207/output-3_gpz3oa.png',
         excerpt:
-            'Exploring how vulnerability creates connection in both visual and written narratives.',
+            'Finding authenticity in unposed photography and the beauty of capturing life as it happens.',
         content: `
       <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
-        In a world saturated with content, authentic storytelling stands as a beacon of genuine connection. When I first began my journey as a photographer and writer, I was often caught in the trap of perfection—meticulously staging shots and carefully crafting words that I thought would appeal to the widest audience.
+        There's a special magic in the unplanned moment—that split second when someone forgets they're being photographed and their true self shines through. As a photographer who started in the highly controlled environment of studio portraiture, discovering the power of candid photography was like finding a new language to express what I see in the world.
+      </p>
+      
+      <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
+        I remember the exact moment this shift happened for me. I was shooting a formal portrait session with a family, carefully arranging everyone in a composition I had planned in advance. The session was going well, but the images felt stiff and formal. Then, as we were taking a break, the youngest child spotted a butterfly and ran after it with pure delight. I instinctively raised my camera and captured a series of images that had more life and emotion than anything we'd shot in the previous hour.
+      </p>
+      
+      <h3 class="text-xl font-light mb-4 mt-8">The Art of Observation</h3>
+      
+      <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
+        Since that day, I've developed what I call "active observation"—a state of heightened awareness where I'm constantly watching for those fleeting expressions and interactions that tell a deeper story. It's about being present enough to notice the subtle glance between lovers, the unguarded laugh of a child, or the quiet moment of reflection when someone thinks no one is watching.
+      </p>
+      
+      <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
+        This approach requires a different technical skill set as well. I've learned to work quickly, to anticipate moments before they happen, and to be technically prepared so that when the perfect moment arrives, I'm ready to capture it without fumbling with settings. It means being comfortable with imperfection—sometimes the most emotionally powerful image isn't the most technically perfect one.
+      </p>
+      
+      <p class="mb-10 text-base sm:text-lg text-gray-600 leading-relaxed">
+        What I love most about candid photography is how it democratizes beauty. In posed portraits, we often try to present an idealized version of ourselves. But in candid moments, we see that genuine emotion—joy, contemplation, connection—is beautiful in everyone. These unguarded moments reveal our shared humanity in a way that carefully constructed images rarely can.
       </p>
     `,
     },
     {
         id: '4',
-        title: 'Behind the Lens: Creative Process',
-        date: 'June 22, 2023',
+        title: 'Finding Your Visual Voice',
+        date: 'August 18, 2023',
         image: 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
         excerpt:
-            'A glimpse into my creative workflow and the inspiration behind recent portrait series.',
+            'The journey to developing a distinctive photographic style and the importance of authentic self-expression.',
         content: `
       <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
-        Every photograph tells a story, but behind each image lies another narrative—the creative process that brought it into being. Today, I want to pull back the curtain and share a glimpse into my workflow, from initial concept to final execution.
+        One of the most common questions I receive from emerging photographers is "How do I develop my own style?" It's a question that used to frustrate me because I didn't have a simple answer. My own visual voice emerged gradually over years of practice, influence, and self-reflection. But looking back, I can now identify the key turning points and practices that helped me find my distinctive approach to photography.
       </p>
       
       <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
-        My recent portrait series began not with a camera, but with a conversation. Over coffee with a friend who works in fashion, we discussed the intersection of personal style and identity—how the clothes we choose both express and shape our sense of self. This dialogue sparked a vision: a collection of portraits that would explore this relationship, capturing subjects in environments that reflect their aesthetic choices.
+        When I first picked up a camera, I did what most beginners do—I imitated the work I admired. I studied the compositions of classic portrait photographers, tried to recreate lighting setups I saw in magazines, and followed tutorials meticulously. This imitation phase was crucial for building technical skills, but it didn't lead to work that felt uniquely mine.
       </p>
       
-      <h3 class="text-xl font-light mb-4 mt-8">Finding Inspiration in the Everyday</h3>
+      <h3 class="text-xl font-light mb-4 mt-8">The Turning Point</h3>
       
       <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
-        Inspiration often arrives in unexpected moments. For this series, I found myself paying closer attention to strangers on the street, noting how their style choices seemed to telegraph aspects of their personality. I began collecting visual references—not just from fashion magazines, but from architecture, nature, and even food. The color palette for the series emerged from a particularly striking sunset I witnessed while stuck in traffic.
+        The shift began when I started photographing subjects that had deep personal meaning to me. I embarked on a project documenting the changing neighborhood where I grew up—capturing the places, people, and details that resonated with my own history. Because I had an emotional connection to the subject matter, I made different choices about what to include in the frame, how to approach people, and even the time of day I chose to shoot.
       </p>
       
       <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
-        In the studio, preparation is everything. Before each shoot, I create a mood board that combines visual references with written notes about the feeling I'm trying to evoke. I share this with my subjects ahead of time, inviting them into the creative process. Some of my favorite images from the series came from suggestions made by the subjects themselves.
+        Another breakthrough came when I stopped trying to make "perfect" images and started making honest ones. I had been editing out elements I thought were flaws—grain in low light, slight motion blur, unconventional compositions. When I began embracing these qualities instead of fighting them, my work started to feel more authentic and distinctive.
+      </p>
+      
+      <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
+        I also found that constraints often led to greater creativity. For six months, I limited myself to a single prime lens and black and white film. This forced me to solve creative problems differently than I would have with a full range of equipment. Many of the approaches I developed during this period of constraint have become signature elements of my style, even though I now work primarily with digital color.
       </p>
       
       <p class="mb-10 text-base sm:text-lg text-gray-600 leading-relaxed">
-        The editing process is where the final narrative takes shape. I typically spend three times longer editing than shooting, carefully selecting images that work both individually and as part of the larger story. For this series, I found myself drawn to moments of transition—the split second where a posed expression gives way to something more authentic.
+        Perhaps most importantly, I learned to listen to my own instinctive responses to images. When reviewing my work, I started paying attention to which photos made me feel something, regardless of whether they followed the "rules" or matched what I thought my style should be. Over time, patterns emerged in these images that I responded to, and I began consciously developing these elements into a cohesive approach.
       </p>
     `,
     },
