@@ -381,8 +381,9 @@ export default function Page() {
                     {featuredWorks
                         .filter((work) => work.category.toLowerCase() === activeSection)
                         .map((work) => (
-                            <div
+                            <Link
                                 key={work.id}
+                                href={`/work/${work.category.toLowerCase()}/${work.subcategory ? work.subcategory.toLowerCase().replace(/\s+/g, '-') : work.title.toLowerCase().replace(/\s+/g, '-')}`}
                                 className={`group ${work.category === 'Design' ? 'relative' : 'cursor-pointer'}`}
                                 data-oid="lh0ursw"
                             >
@@ -405,7 +406,7 @@ export default function Page() {
                                         {work.description}
                                     </p>
                                 </div>
-                            </div>
+                            </Link>
                         ))}
                 </div>
 
