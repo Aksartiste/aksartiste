@@ -583,6 +583,166 @@ export default function Page() {
                 </div>
             </section>
 
+            {/* Featured In Section - Brand Logo Marquee */}
+            <section className="py-16 sm:py-20 border-t border-gray-100" data-oid="haw-otb">
+                <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12" data-oid="oupj9bg">
+                    <h2
+                        className="text-2xl sm:text-3xl font-light mb-12 text-center"
+                        data-oid="zgz3171"
+                    >
+                        Featured In
+                    </h2>
+
+                    <style jsx global data-oid="zk1yri8">{`
+                        @keyframes marquee {
+                            0% {
+                                transform: translateX(0);
+                            }
+                            100% {
+                                transform: translateX(-100%);
+                            }
+                        }
+                        .marquee-container {
+                            overflow: hidden;
+                            position: relative;
+                            width: 100%;
+                        }
+                        .marquee-content {
+                            display: flex;
+                            animation: marquee 40s linear infinite;
+                            width: max-content;
+                        }
+                        .marquee-reverse {
+                            animation-direction: reverse;
+                        }
+                    `}</style>
+
+                    {/* First row of logos */}
+                    <div className="marquee-container" data-oid="uwo5tvl">
+                        <div className="marquee-content" data-oid="ydj9:c2">
+                            {[
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-1.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-2.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-3.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-4.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-5.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-6.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-7.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-8.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-9.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-10.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-11.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-12.png',
+                            ].map((logoSrc, index) => (
+                                <div
+                                    key={index}
+                                    className="flex items-center justify-center mx-6 sm:mx-8"
+                                    data-oid="62unf8o"
+                                >
+                                    <img
+                                        src={logoSrc}
+                                        alt={`Brand logo ${index + 1}`}
+                                        className="h-10 sm:h-12 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity duration-300"
+                                        data-oid="wclmj:i"
+                                    />
+                                </div>
+                            ))}
+
+                            {/* Duplicate for seamless looping */}
+                            {[
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-1.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-2.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-3.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-4.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-5.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-6.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-7.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-8.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-9.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-10.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-11.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-12.png',
+                            ].map((logoSrc, index) => (
+                                <div
+                                    key={`dup-${index}`}
+                                    className="flex items-center justify-center mx-6 sm:mx-8"
+                                    data-oid="5ejbogq"
+                                >
+                                    <img
+                                        src={logoSrc}
+                                        alt={`Brand logo ${index + 1}`}
+                                        className="h-10 sm:h-12 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity duration-300"
+                                        data-oid=".dy7nuy"
+                                    />
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* Second row of logos (moving in opposite direction) */}
+                    <div className="marquee-container mt-8" data-oid="z7d8f1t">
+                        <div className="marquee-content marquee-reverse" data-oid="8wwrqkb">
+                            {[
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-13.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-14.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-15.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-16.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-17.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-18.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-19.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-20.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-21.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-22.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-23.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-24.png',
+                            ].map((logoSrc, index) => (
+                                <div
+                                    key={index}
+                                    className="flex items-center justify-center mx-6 sm:mx-8"
+                                    data-oid="5bpq_zo"
+                                >
+                                    <img
+                                        src={logoSrc}
+                                        alt={`Brand logo ${index + 13}`}
+                                        className="h-10 sm:h-12 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity duration-300"
+                                        data-oid="gunp1q0"
+                                    />
+                                </div>
+                            ))}
+
+                            {/* Duplicate for seamless looping */}
+                            {[
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-13.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-14.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-15.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-16.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-17.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-18.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-19.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-20.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-21.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-22.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-23.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-24.png',
+                            ].map((logoSrc, index) => (
+                                <div
+                                    key={`dup-${index}`}
+                                    className="flex items-center justify-center mx-6 sm:mx-8"
+                                    data-oid="nw5q0e:"
+                                >
+                                    <img
+                                        src={logoSrc}
+                                        alt={`Brand logo ${index + 13}`}
+                                        className="h-10 sm:h-12 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity duration-300"
+                                        data-oid="putdwk7"
+                                    />
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             {/* Contact Section */}
             <section
                 id="contact"
