@@ -204,7 +204,7 @@ const journalEntries = [
         id: '4',
         title: 'Ashes to Intention',
         date: 'June 22, 2023',
-        image: 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
+        image: 'https://res.cloudinary.com/dexibw60d/image/upload/v1749046669/4th-journal-image_drmdrn.png',
         excerpt:
             'From rejection to redemption: my journey through addiction and finding strength in art.',
         content: `
