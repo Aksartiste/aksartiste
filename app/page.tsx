@@ -77,27 +77,59 @@ export default function Page() {
     ];
 
     const featuredWorks = [
-        // Photography works
+        // Photography works - Fashion
         {
             id: 1,
-            title: 'Intimate Portraits',
+            title: 'Fashion',
             category: 'Photography',
-            description: 'A series exploring vulnerability and authenticity',
-            image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
-        },
-        {
-            id: 3,
-            title: 'Editorial',
-            category: 'Photography',
-            description: 'Fashion and editorial photography for magazines',
+            subcategory: 'Fashion',
+            description: 'Capturing the essence of style and expression',
             image: 'https://res.cloudinary.com/dexibw60d/image/upload/v1748792832/Fashion_France_59__ctvxex.png',
         },
+        // Photography works - Portraits
+        {
+            id: 2,
+            title: 'Portraits',
+            category: 'Photography',
+            subcategory: 'Portraits',
+            description: 'Intimate portraits exploring vulnerability and authenticity',
+            image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
+        },
+        // Photography works - Fine Arts
+        {
+            id: 3,
+            title: 'Fine Arts',
+            category: 'Photography',
+            subcategory: 'Fine Arts',
+            description: 'Artistic expressions through the photographic medium',
+            image: 'https://res.cloudinary.com/dexibw60d/image/upload/v1748792828/EB8B5455-5183-40D5-9E9B-E9C91EAACA0D_t6wvgg.jpg',
+        },
+        // Photography works - Editorial
         {
             id: 4,
-            title: 'Commercial',
+            title: 'Editorial',
             category: 'Photography',
-            description: 'Brand campaigns and commercial photography',
+            subcategory: 'Editorial',
+            description: 'Visual storytelling for magazines and publications',
+            image: 'https://res.cloudinary.com/dexibw60d/image/upload/v1748796319/88BC5FB3-2470-4644-BFE8-89071E4A65E3_kovmho.jpg',
+        },
+        // Photography works - Travel
+        {
+            id: 5,
+            title: 'Travel',
+            category: 'Photography',
+            subcategory: 'Travel',
+            description: 'Documenting journeys and capturing diverse cultures',
             image: 'https://res.cloudinary.com/dexibw60d/image/upload/v1749035067/DSC01716_u4oxcs.jpg',
+        },
+        // Photography works - Events
+        {
+            id: 6,
+            title: 'Events',
+            category: 'Photography',
+            subcategory: 'Events',
+            description: 'Preserving special moments and celebrations',
+            image: 'https://res.cloudinary.com/dexibw60d/image/upload/v1749035550/Meher_fgpetp.jpg',
         },
         // Design works
         {
@@ -343,7 +375,7 @@ export default function Page() {
                 </div>
 
                 <div
-                    className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8"
+                    className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 xl:grid-cols-6 gap-4 sm:gap-6 overflow-x-auto"
                     data-oid="mote:uo"
                 >
                     {featuredWorks
@@ -370,7 +402,7 @@ export default function Page() {
                                         className="text-xs uppercase tracking-wider text-gray-500 mb-1"
                                         data-oid="544ewx:"
                                     >
-                                        {work.category}
+                                        {work.subcategory || work.category}
                                     </p>
                                     <h3 className="text-xl font-light mb-2" data-oid="e33l884">
                                         {work.title}
