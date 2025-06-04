@@ -452,14 +452,18 @@ export default function Page() {
                             >
                                 <img
                                     src={
-                                        item === 4
-                                            ? 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80'
-                                            : `https://images.unsplash.com/photo-167${1000000 + item}?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80`
+                                        item === 1
+                                            ? 'https://res.cloudinary.com/dexibw60d/image/upload/v1749034991/output_clzh4q.png'
+                                            : item === 4
+                                              ? 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80'
+                                              : `https://images.unsplash.com/photo-167${1000000 + item}?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80`
                                     }
                                     alt={
-                                        item === 4
-                                            ? 'Behind the Lens journal entry'
-                                            : 'Journal entry'
+                                        item === 1
+                                            ? 'Granny Always Knew - Journal entry'
+                                            : item === 4
+                                              ? 'Behind the Lens journal entry'
+                                              : 'Journal entry'
                                     }
                                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                                     data-oid="vm6dgs."
@@ -473,14 +477,18 @@ export default function Page() {
                                     {item === 4 ? 'June 22, 2023' : 'May 15, 2023'}
                                 </p>
                                 <h3 className="text-xl font-light mb-2" data-oid="va72kdy">
-                                    {item === 4
-                                        ? 'Behind the Lens: Creative Process'
-                                        : 'The Art of Authentic Storytelling'}
+                                    {item === 1
+                                        ? 'Granny Always Knew'
+                                        : item === 4
+                                          ? 'Behind the Lens: Creative Process'
+                                          : 'The Art of Authentic Storytelling'}
                                 </h3>
                                 <p className="text-sm text-gray-600" data-oid="asxm0eh">
-                                    {item === 4
-                                        ? 'A glimpse into my creative workflow and the inspiration behind recent portrait series.'
-                                        : 'Exploring how vulnerability creates connection in both visual and written narratives.'}
+                                    {item === 1
+                                        ? 'Reflections on childhood wisdom and the perspective that comes with looking back.'
+                                        : item === 4
+                                          ? 'A glimpse into my creative workflow and the inspiration behind recent portrait series.'
+                                          : 'Exploring how vulnerability creates connection in both visual and written narratives.'}
                                 </p>
                             </div>
                         </Link>
