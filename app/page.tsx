@@ -1,8 +1,9 @@
 'use client';
 
-import { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { useState, useEffect, useRef } from 'react';
+import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion';
 import Link from 'next/link';
+=======
 
 export default function Page() {
     const [isLoaded, setIsLoaded] = useState(false);
@@ -69,6 +70,23 @@ export default function Page() {
 
     useEffect(() => {
         setIsLoaded(true);
+        
+        // Add CSS to hide scrollbars
+        const style = document.createElement('style');
+        style.textContent = `
+            .hide-scrollbar::-webkit-scrollbar {
+                display: none;
+            }
+            .hide-scrollbar {
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+            }
+        `;
+        document.head.appendChild(style);
+        
+        return () => {
+            document.head.removeChild(style);
+        };
     }, []);
 
     const sections = [
@@ -76,30 +94,98 @@ export default function Page() {
         { id: 'design', label: 'Design' },
     ];
 
-    const featuredWorks = [
-        // Photography works
-        {
-            id: 1,
-            title: 'Intimate Portraits',
-            category: 'Photography',
-            description: 'A series exploring vulnerability and authenticity',
-            image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
-        },
-        {
-            id: 3,
-            title: 'Editorial',
-            category: 'Photography',
-            description: 'Fashion and editorial photography for magazines',
-            image: 'https://res.cloudinary.com/dexibw60d/image/upload/v1748792832/Fashion_France_59__ctvxex.png',
-        },
-        {
-            id: 4,
-            title: 'Commercial',
-            category: 'Photography',
-            description: 'Brand campaigns and commercial photography',
-            image: 'https://res.cloudinary.com/dexibw60d/image/upload/v1749035067/DSC01716_u4oxcs.jpg',
-        },
-        // Design works
+    // Photography categories
+    const photoCategories = [
+        { id: 'fashion', label: 'Fashion' },
+        { id: 'portraits', label: 'Portraits' },
+        { id: 'finearts', label: 'Fine Arts' },
+        { id: 'editorial', label: 'Editorial' },
+        { id: 'travel', label: 'Travel' }
+    ];
+
+    // Sample image URLs for each category (in a real implementation, you'd have 20 per category)
+    const categoryImages = {
+        fashion: [
+            'https://res.cloudinary.com/dexibw60d/image/upload/v1748792832/Fashion_France_59__ctvxex.png',
+            'https://res.cloudinary.com/dexibw60d/image/upload/v1748792833/aks-vogue_vvp1yr.png',
+            'https://res.cloudinary.com/dexibw60d/image/upload/c_fit/v1748793219/aks-vogue2_emlhkt.jpg',
+            'https://res.cloudinary.com/dexibw60d/image/upload/v1748792828/EB8B5455-5183-40D5-9E9B-E9C91EAACA0D_t6wvgg.jpg',
+            // Repeat some images to simulate having 20
+            'https://res.cloudinary.com/dexibw60d/image/upload/v1748792832/Fashion_France_59__ctvxex.png',
+            'https://res.cloudinary.com/dexibw60d/image/upload/v1748792833/aks-vogue_vvp1yr.png',
+            'https://res.cloudinary.com/dexibw60d/image/upload/c_fit/v1748793219/aks-vogue2_emlhkt.jpg',
+            'https://res.cloudinary.com/dexibw60d/image/upload/v1748792828/EB8B5455-5183-40D5-9E9B-E9C91EAACA0D_t6wvgg.jpg',
+        ],
+        portraits: [
+            'https://res.cloudinary.com/dexibw60d/image/upload/v1749035550/Meher_fgpetp.jpg',
+            'https://res.cloudinary.com/dexibw60d/image/upload/v1749035550/Abmol_iwxrya.jpg',
+            'https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
+            'https://res.cloudinary.com/dexibw60d/image/upload/v1748796319/88BC5FB3-2470-4644-BFE8-89071E4A65E3_kovmho.jpg',
+            // Repeat some images to simulate having 20
+            'https://res.cloudinary.com/dexibw60d/image/upload/v1749035550/Meher_fgpetp.jpg',
+            'https://res.cloudinary.com/dexibw60d/image/upload/v1749035550/Abmol_iwxrya.jpg',
+            'https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
+            'https://res.cloudinary.com/dexibw60d/image/upload/v1748796319/88BC5FB3-2470-4644-BFE8-89071E4A65E3_kovmho.jpg',
+        ],
+        finearts: [
+            'https://res.cloudinary.com/dexibw60d/image/upload/v1748792834/73_zhllvh.jpg',
+            'https://res.cloudinary.com/dexibw60d/image/upload/v1749045727/2tt_vvcvga.jpg',
+            'https://res.cloudinary.com/dexibw60d/image/upload/v1749034991/output_clzh4q.png',
+            'https://res.cloudinary.com/dexibw60d/image/upload/v1749038207/output-3_gpz3oa.png',
+            // Repeat some images to simulate having 20
+            'https://res.cloudinary.com/dexibw60d/image/upload/v1748792834/73_zhllvh.jpg',
+            'https://res.cloudinary.com/dexibw60d/image/upload/v1749045727/2tt_vvcvga.jpg',
+            'https://res.cloudinary.com/dexibw60d/image/upload/v1749034991/output_clzh4q.png',
+            'https://res.cloudinary.com/dexibw60d/image/upload/v1749038207/output-3_gpz3oa.png',
+        ],
+        editorial: [
+            'https://res.cloudinary.com/dexibw60d/image/upload/v1749035067/DSC01716_u4oxcs.jpg',
+            'https://res.cloudinary.com/dexibw60d/image/upload/v1749046669/4th-journal-image_drmdrn.png',
+            'https://res.cloudinary.com/dexibw60d/image/upload/v1748792832/Fashion_France_59__ctvxex.png',
+            'https://res.cloudinary.com/dexibw60d/image/upload/v1748792833/aks-vogue_vvp1yr.png',
+            // Repeat some images to simulate having 20
+            'https://res.cloudinary.com/dexibw60d/image/upload/v1749035067/DSC01716_u4oxcs.jpg',
+            'https://res.cloudinary.com/dexibw60d/image/upload/v1749046669/4th-journal-image_drmdrn.png',
+            'https://res.cloudinary.com/dexibw60d/image/upload/v1748792832/Fashion_France_59__ctvxex.png',
+            'https://res.cloudinary.com/dexibw60d/image/upload/v1748792833/aks-vogue_vvp1yr.png',
+        ],
+        travel: [
+            'https://res.cloudinary.com/dexibw60d/image/upload/v1749043892/Screenshot_2025-06-04_at_7.00.25_PM_rw8lnr.png',
+            'https://res.cloudinary.com/dexibw60d/image/upload/v1748792828/EB8B5455-5183-40D5-9E9B-E9C91EAACA0D_t6wvgg.jpg',
+            'https://res.cloudinary.com/dexibw60d/image/upload/v1748792834/73_zhllvh.jpg',
+            'https://res.cloudinary.com/dexibw60d/image/upload/v1749035067/DSC01716_u4oxcs.jpg',
+            // Repeat some images to simulate having 20
+            'https://res.cloudinary.com/dexibw60d/image/upload/v1749043892/Screenshot_2025-06-04_at_7.00.25_PM_rw8lnr.png',
+            'https://res.cloudinary.com/dexibw60d/image/upload/v1748792828/EB8B5455-5183-40D5-9E9B-E9C91EAACA0D_t6wvgg.jpg',
+            'https://res.cloudinary.com/dexibw60d/image/upload/v1748792834/73_zhllvh.jpg',
+            'https://res.cloudinary.com/dexibw60d/image/upload/v1749035067/DSC01716_u4oxcs.jpg',
+        ]
+    };
+
+    // Create a flat array of all images with their categories for the mixed grid
+    const allPhotographyImages = [];
+    Object.entries(categoryImages).forEach(([category, images]) => {
+        images.forEach((image, index) => {
+            allPhotographyImages.push({
+                id: `${category}-${index}`,
+                src: image,
+                category: category,
+                alt: `${category} photograph ${index + 1}`
+            });
+        });
+    });
+
+    // Shuffle the images for the random grid
+    const shuffledImages = [...allPhotographyImages].sort(() => Math.random() - 0.5);
+
+    // State for active category in the parallax scroll
+    const [activePhotoCategory, setActivePhotoCategory] = useState('fashion');
+    
+    // Ref for the horizontal scroll container
+    const scrollContainerRef = useRef(null);
+
+    // Design works
+    const designWorks = [
         {
             id: 2,
             title: 'Visual Identity',
@@ -342,16 +428,166 @@ export default function Page() {
                     </div>
                 </div>
 
-                <div
-                    className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8"
-                    data-oid="mote:uo"
-                >
-                    {featuredWorks
-                        .filter((work) => work.category.toLowerCase() === activeSection)
-                        .map((work) => (
+                {activeSection === 'photography' ? (
+                    <div className="relative">
+                        {/* Category indicators at the top */}
+                        <div className="flex justify-between mb-8 sticky top-24 z-10 bg-white/90 py-2">
+                            {photoCategories.map((category, index) => (
+                                <button
+                                    key={category.id}
+                                    onClick={() => {
+                                        setActivePhotoCategory(category.id);
+                                        // Scroll to the appropriate position
+                                        const container = scrollContainerRef.current;
+                                        if (container) {
+                                            const scrollWidth = container.scrollWidth;
+                                            const sectionWidth = scrollWidth / photoCategories.length;
+                                            container.scrollTo({
+                                                left: index * sectionWidth,
+                                                behavior: 'smooth'
+                                            });
+                                        }
+                                    }}
+                                    className={`px-4 py-2 text-sm uppercase tracking-wider transition-all ${
+                                        activePhotoCategory === category.id
+                                            ? 'text-black font-medium scale-110'
+                                            : 'text-gray-500'
+                                    }`}
+                                >
+                                    {category.label}
+                                </button>
+                            ))}
+                        </div>
+
+                        {/* Instructions */}
+                        <div className="text-center mb-8 text-gray-600 italic">
+                            <p>Scroll horizontally to explore different photography categories</p>
+                        </div>
+
+                        {/* Horizontal parallax scroll container */}
+                        <div 
+                            ref={scrollContainerRef}
+                            className="overflow-x-auto hide-scrollbar"
+                            style={{ 
+                                scrollSnapType: 'x mandatory',
+                                WebkitOverflowScrolling: 'touch',
+                                scrollbarWidth: 'none',
+                                msOverflowStyle: 'none'
+                            }}
+                            onScroll={(e) => {
+                                // Calculate which section is currently in view
+                                const container = e.currentTarget;
+                                const scrollPosition = container.scrollLeft;
+                                const containerWidth = container.clientWidth;
+                                const scrollWidth = container.scrollWidth;
+                                
+                                // Calculate the percentage scrolled
+                                const scrollPercentage = scrollPosition / (scrollWidth - containerWidth);
+                                
+                                // Determine which category should be active based on scroll position
+                                const categoryIndex = Math.min(
+                                    Math.floor(scrollPercentage * photoCategories.length),
+                                    photoCategories.length - 1
+                                );
+                                
+                                setActivePhotoCategory(photoCategories[categoryIndex].id);
+                            }}
+                        >
+                            {/* Initial mixed grid view */}
+                            <div className="min-w-full h-[80vh] relative">
+                                <div className="absolute inset-0 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 p-4">
+                                    {shuffledImages.map((image, index) => (
+                                        <motion.div
+                                            key={image.id}
+                                            className="relative aspect-[3/4] overflow-hidden rounded-sm"
+                                            initial={{ opacity: 0, scale: 0.8 }}
+                                            animate={{ 
+                                                opacity: 1, 
+                                                scale: 1,
+                                                filter: activePhotoCategory === 'mixed' || image.category === activePhotoCategory 
+                                                    ? 'grayscale(0%)' 
+                                                    : 'grayscale(80%)'
+                                            }}
+                                            transition={{ 
+                                                duration: 0.5,
+                                                delay: index * 0.02
+                                            }}
+                                        >
+                                            <img
+                                                src={image.src}
+                                                alt={image.alt}
+                                                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                                            />
+                                            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3">
+                                                <p className="text-white text-xs uppercase tracking-wider">
+                                                    {image.category}
+                                                </p>
+                                            </div>
+                                        </motion.div>
+                                    ))}
+                                </div>
+                            </div>
+
+                            {/* Category-specific horizontal layouts */}
+                            {photoCategories.map((category) => (
+                                <div 
+                                    key={category.id}
+                                    className="min-w-full h-[80vh] snap-center flex items-center"
+                                >
+                                    <div className="w-full overflow-x-auto hide-scrollbar">
+                                        <div className="flex space-x-4 px-4 py-8">
+                                            {categoryImages[category.id].map((image, index) => (
+                                                <motion.div
+                                                    key={`${category.id}-${index}`}
+                                                    className="flex-shrink-0 w-64 sm:w-72 md:w-80 aspect-[3/4] overflow-hidden rounded-sm"
+                                                    initial={{ opacity: 0, x: 100 }}
+                                                    animate={{ 
+                                                        opacity: activePhotoCategory === category.id ? 1 : 0.3,
+                                                        x: 0,
+                                                        scale: activePhotoCategory === category.id ? 1 : 0.9
+                                                    }}
+                                                    transition={{ 
+                                                        duration: 0.5,
+                                                        delay: index * 0.05
+                                                    }}
+                                                    style={{
+                                                        translateX: activePhotoCategory === category.id ? 0 : `${(index % 3 - 1) * 20}px`,
+                                                        translateY: activePhotoCategory === category.id ? 0 : `${(index % 2) * 30}px`,
+                                                    }}
+                                                >
+                                                    <img
+                                                        src={image}
+                                                        alt={`${category.label} photograph ${index + 1}`}
+                                                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                                                    />
+                                                </motion.div>
+                                            ))}
+                                        </div>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+
+                        {/* Category description */}
+                        <div className="mt-8 text-center">
+                            <h3 className="text-2xl font-light mb-2">
+                                {photoCategories.find(c => c.id === activePhotoCategory)?.label}
+                            </h3>
+                            <p className="text-gray-600 max-w-2xl mx-auto">
+                                {activePhotoCategory === 'fashion' && 'Capturing style and expression through the lens.'}
+                                {activePhotoCategory === 'portraits' && 'Intimate portraits that reveal the soul.'}
+                                {activePhotoCategory === 'finearts' && 'Photography as artistic expression.'}
+                                {activePhotoCategory === 'editorial' && 'Visual storytelling for publications.'}
+                                {activePhotoCategory === 'travel' && 'Capturing the essence of places and cultures.'}
+                            </p>
+                        </div>
+                    </div>
+                ) : (
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                        {designWorks.map((work) => (
                             <div
                                 key={work.id}
-                                className={`group ${work.category === 'Design' ? 'relative' : 'cursor-pointer'}`}
+                                className="group cursor-pointer"
                                 data-oid="lh0ursw"
                             >
                                 <div
@@ -381,7 +617,8 @@ export default function Page() {
                                 </div>
                             </div>
                         ))}
-                </div>
+                    </div>
+                )}
 
                 <div className="mt-16 text-center" data-oid="p-.d-7h">
                     <button
