@@ -263,8 +263,7 @@ export default function Page() {
                             className="text-base sm:text-lg text-gray-600 mb-8 sm:mb-10 max-w-xl leading-relaxed"
                             data-oid="sp3ft4w"
                         >
-                            Where photography, writing, design, and strategy converge to tell
-                            stories that resonate and connect on a deeper level.
+                            Photographs. Words. Offerings. All of it, a way to say: I was here.
                         </p>
                         <button
                             className="w-full sm:w-auto px-8 py-3 border border-black text-sm uppercase tracking-wider hover:bg-black hover:text-white transition-colors duration-300" /* Made full width on mobile */
@@ -396,25 +395,34 @@ export default function Page() {
                             className="text-base sm:text-lg text-gray-600 mb-4 sm:mb-6 leading-relaxed"
                             data-oid="fp_554-"
                         >
-                            This space is an extension of my mind and heart — a living archive of my
-                            photographs, words, designs, and the stories I help shape for others.
+                            This website is an extension of my mind and heart, a living archive of
+                            my photography, writing, design work, and the stories I help shape for
+                            others.
                         </p>
                         <p
                             className="text-base sm:text-lg text-gray-600 mb-4 sm:mb-6 leading-relaxed"
                             data-oid="pkr-:n-"
                         >
-                            It's not just a portfolio; it's a quiet, thoughtful corner of the
-                            internet where emotion meets visual craft. A place where I can share the
-                            kind of work that moves me — from intimate portraits and editorial
-                            shoots to the behind-the-scenes chaos of content creation.
+                            It is more than just a portfolio. It is a curated, thoughtful space
+                            where emotion meets visual storytelling, a place to share the kind of
+                            work that inspires me. From intimate portraits and editorial campaigns
+                            to the behind the scenes rhythm of content creation, this is where it
+                            all lives.
+                        </p>
+                        <p
+                            className="text-base sm:text-lg text-gray-600 mb-4 sm:mb-6 leading-relaxed"
+                            data-oid="1rtmd0m"
+                        >
+                            My passion lies in helping people feel seen, confident, and celebrated,
+                            whether it is through the lens of my camera, the clarity of my writing,
+                            or the creative direction I offer to brands and individuals alike.
                         </p>
                         <p
                             className="text-base sm:text-lg text-gray-600 mb-8 sm:mb-10 leading-relaxed"
-                            data-oid="1rtmd0m"
+                            data-oid="new-para"
                         >
-                            My passion is helping people feel seen and confident — whether through
-                            the lens of my camera, the honesty of my writing, or the brands I
-                            creatively guide.
+                            Take a look around, explore the stories, and if something speaks to you.
+                            Let's connect. I'd love to create something meaningful together.
                         </p>
                         <Link href="/about" className="inline-block" data-oid="xcjmmmc">
                             <button
