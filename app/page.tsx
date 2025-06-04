@@ -77,6 +77,7 @@ export default function Page() {
     ];
 
     const featuredWorks = [
+        // Photography works
         {
             id: 1,
             title: 'Intimate Portraits',
@@ -85,11 +86,40 @@ export default function Page() {
             image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
         },
         {
+            id: 3,
+            title: 'Editorial',
+            category: 'Photography',
+            description: 'Fashion and editorial photography for magazines',
+            image: 'https://res.cloudinary.com/dexibw60d/image/upload/v1748792832/Fashion_France_59__ctvxex.png',
+        },
+        {
+            id: 4,
+            title: 'Commercial',
+            category: 'Photography',
+            description: 'Brand campaigns and commercial photography',
+            image: 'https://res.cloudinary.com/dexibw60d/image/upload/v1749035067/DSC01716_u4oxcs.jpg',
+        },
+        // Design works
+        {
             id: 2,
             title: 'Visual Identity',
             category: 'Design',
             description: 'Creating cohesive and impactful brand experiences',
             image: 'https://images.unsplash.com/photo-1517842645767-c639042777db?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
+        },
+        {
+            id: 5,
+            title: 'Web Design',
+            category: 'Design',
+            description: 'Responsive and intuitive web experiences',
+            image: 'https://res.cloudinary.com/dexibw60d/image/upload/v1749053305/7_ykmvwr.jpg',
+        },
+        {
+            id: 6,
+            title: 'Print Design',
+            category: 'Design',
+            description: 'Print materials that make an impact',
+            image: 'https://res.cloudinary.com/dexibw60d/image/upload/v1749053305/7_ykmvwr.jpg',
         },
     ];
 
@@ -316,70 +346,41 @@ export default function Page() {
                     className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8"
                     data-oid="mote:uo"
                 >
-                    {featuredWorks.map((work) => (
-                        <div
-                            key={work.id}
-                            className={`group ${work.category === 'Design' ? 'relative' : 'cursor-pointer'}`}
-                            data-oid="lh0ursw"
-                        >
+                    {featuredWorks
+                        .filter((work) => work.category.toLowerCase() === activeSection)
+                        .map((work) => (
                             <div
-                                className="aspect-[3/4] bg-gray-100 overflow-hidden mb-4"
-                                data-oid="pk3-92l"
+                                key={work.id}
+                                className={`group ${work.category === 'Design' ? 'relative' : 'cursor-pointer'}`}
+                                data-oid="lh0ursw"
                             >
-                                {work.category === 'Design' ? (
-                                    <div
-                                        className="relative w-full h-full overflow-hidden"
-                                        data-oid="i5i.ktk"
-                                    >
-                                        <img
-                                            src="https://res.cloudinary.com/dexibw60d/image/upload/v1749053305/7_ykmvwr.jpg"
-                                            alt="Design Portfolio Coming Soon"
-                                            className="w-full h-full object-cover"
-                                            data-oid="design-img"
-                                        />
-
-                                        <div
-                                            className="absolute inset-0 backdrop-blur-sm bg-white/30 flex flex-col items-center justify-center"
-                                            data-oid="glass-effect"
-                                        >
-                                            <div
-                                                className="px-6 py-4 bg-white/70 backdrop-blur-sm border border-white/20 rounded-sm"
-                                                data-oid="8ys_ldm"
-                                            >
-                                                <span
-                                                    className="block text-sm uppercase tracking-wider text-gray-700 mb-1 font-light"
-                                                    data-oid="r8g.l2t"
-                                                >
-                                                    Coming Soon
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                ) : (
+                                <div
+                                    className="aspect-[3/4] bg-gray-100 overflow-hidden mb-4"
+                                    data-oid="pk3-92l"
+                                >
                                     <img
                                         src={work.image}
                                         alt={work.title}
                                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                                         data-oid="8s9_uzh"
                                     />
-                                )}
+                                </div>
+                                <div className="py-2" data-oid="8.evx2b">
+                                    <p
+                                        className="text-xs uppercase tracking-wider text-gray-500 mb-1"
+                                        data-oid="544ewx:"
+                                    >
+                                        {work.category}
+                                    </p>
+                                    <h3 className="text-xl font-light mb-2" data-oid="e33l884">
+                                        {work.title}
+                                    </h3>
+                                    <p className="text-sm text-gray-600" data-oid=".z5d7ai">
+                                        {work.description}
+                                    </p>
+                                </div>
                             </div>
-                            <div className="py-2" data-oid="8.evx2b">
-                                <p
-                                    className="text-xs uppercase tracking-wider text-gray-500 mb-1"
-                                    data-oid="544ewx:"
-                                >
-                                    {work.category}
-                                </p>
-                                <h3 className="text-xl font-light mb-2" data-oid="e33l884">
-                                    {work.category === 'Photography' ? 'Stills' : 'visual identity'}
-                                </h3>
-                                <p className="text-sm text-gray-600" data-oid=".z5d7ai">
-                                    {work.description}
-                                </p>
-                            </div>
-                        </div>
-                    ))}
+                        ))}
                 </div>
 
                 <div className="mt-16 text-center" data-oid="p-.d-7h">
