@@ -379,7 +379,7 @@ export default function Page() {
                 >
                     <div className="aspect-[4/5] bg-gray-100 overflow-hidden" data-oid="ezcnegr">
                         <img
-                            src="https://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                            src="https://res.cloudinary.com/dexibw60d/image/upload/v1749043892/Screenshot_2025-06-04_at_7.00.25_PM_rw8lnr.png"
                             alt="Creator portrait"
                             className="w-full h-full object-cover"
                             data-oid=".8wc9qd"
