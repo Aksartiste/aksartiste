@@ -135,7 +135,7 @@ const journalEntries = [
     },
     {
         id: '3',
-        title: 'The Art of Authentic Storytelling',
+        title: 'Cigarettes',
         date: 'May 15, 2023',
         image: 'https://res.cloudinary.com/dexibw60d/image/upload/v1749045727/2tt_vvcvga.jpg',
         excerpt:
