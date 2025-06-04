@@ -317,7 +317,11 @@ export default function Page() {
                     data-oid="mote:uo"
                 >
                     {featuredWorks.map((work) => (
-                        <div key={work.id} className="group cursor-pointer" data-oid="lh0ursw">
+                        <div
+                            key={work.id}
+                            className={`group cursor-pointer ${work.category === 'Design' ? 'relative' : ''}`}
+                            data-oid="lh0ursw"
+                        >
                             <div
                                 className="aspect-[3/4] bg-gray-100 overflow-hidden mb-4"
                                 data-oid="pk3-92l"
@@ -325,9 +329,29 @@ export default function Page() {
                                 <img
                                     src={work.image}
                                     alt={work.title}
-                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                                    className={`w-full h-full object-cover transition-transform duration-700 ${work.category === 'Design' ? 'blur-sm' : 'group-hover:scale-105'}`}
                                     data-oid="8s9_uzh"
                                 />
+
+                                {work.category === 'Design' && (
+                                    <div
+                                        className="absolute inset-0 flex flex-col items-center justify-center bg-black/30 text-white"
+                                        data-oid="huuh:j9"
+                                    >
+                                        <span
+                                            className="text-lg font-light mb-2"
+                                            data-oid="10k_kvo"
+                                        >
+                                            Coming Soon
+                                        </span>
+                                        <span
+                                            className="text-xs uppercase tracking-wider"
+                                            data-oid="ufmpvwr"
+                                        >
+                                            Design Portfolio
+                                        </span>
+                                    </div>
+                                )}
                             </div>
                             <div className="py-2" data-oid="8.evx2b">
                                 <p
@@ -337,7 +361,9 @@ export default function Page() {
                                     {work.category}
                                 </p>
                                 <h3 className="text-xl font-light mb-2" data-oid="e33l884">
-                                    portraits
+                                    {work.category === 'Photography'
+                                        ? 'portraits'
+                                        : 'visual identity'}
                                 </h3>
                                 <p className="text-sm text-gray-600" data-oid=".z5d7ai">
                                     {work.description}
