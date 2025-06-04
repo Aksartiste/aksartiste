@@ -224,7 +224,7 @@ export default function JournalEntry({ params }: { params: { id: string } }) {
 
                 <div className="bg-gray-100 mb-10" data-oid="yr2xjhs">
                     <img
-                        src={entry.image}
+                        src="https://res.cloudinary.com/dexibw60d/image/upload/v1749038207/output-3_gpz3oa.png"
                         alt={entry.title}
                         className="w-full h-auto object-contain mx-auto"
                         loading="eager"
