@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
+import './styles.css'; // We'll create this file next
 
 export default function Page() {
     const [isLoaded, setIsLoaded] = useState(false);
@@ -76,30 +77,130 @@ export default function Page() {
         { id: 'design', label: 'Design' },
     ];
 
-    const featuredWorks = [
-        // Photography works
+    // Photography categories and images
+    const photographyCategories = [
         {
-            id: 1,
-            title: 'Intimate Portraits',
-            category: 'Photography',
-            description: 'A series exploring vulnerability and authenticity',
-            image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
+            id: 'fashion',
+            label: 'Fashion',
+            description: 'Capturing style and expression through the lens',
+            images: [
+                {
+                    src: 'https://res.cloudinary.com/dexibw60d/image/upload/v1748792832/Fashion_France_59__ctvxex.png',
+                    alt: 'Fashion photograph 1',
+                },
+                {
+                    src: 'https://res.cloudinary.com/dexibw60d/image/upload/v1748792833/aks-vogue_vvp1yr.png',
+                    alt: 'Fashion photograph 2',
+                },
+                {
+                    src: 'https://res.cloudinary.com/dexibw60d/image/upload/c_fit/v1748793219/aks-vogue2_emlhkt.jpg',
+                    alt: 'Fashion photograph 3',
+                },
+                {
+                    src: 'https://res.cloudinary.com/dexibw60d/image/upload/v1748792828/EB8B5455-5183-40D5-9E9B-E9C91EAACA0D_t6wvgg.jpg',
+                    alt: 'Fashion photograph 4',
+                },
+            ],
         },
         {
-            id: 3,
-            title: 'Editorial',
-            category: 'Photography',
-            description: 'Fashion and editorial photography for magazines',
-            image: 'https://res.cloudinary.com/dexibw60d/image/upload/v1748792832/Fashion_France_59__ctvxex.png',
+            id: 'portraits',
+            label: 'Portraits',
+            description: 'Intimate portraits that reveal the soul',
+            images: [
+                {
+                    src: 'https://res.cloudinary.com/dexibw60d/image/upload/v1749035550/Meher_fgpetp.jpg',
+                    alt: 'Portrait photograph 1',
+                },
+                {
+                    src: 'https://res.cloudinary.com/dexibw60d/image/upload/v1749035550/Abmol_iwxrya.jpg',
+                    alt: 'Portrait photograph 2',
+                },
+                {
+                    src: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
+                    alt: 'Portrait photograph 3',
+                },
+                {
+                    src: 'https://res.cloudinary.com/dexibw60d/image/upload/v1748796319/88BC5FB3-2470-4644-BFE8-89071E4A65E3_kovmho.jpg',
+                    alt: 'Portrait photograph 4',
+                },
+            ],
         },
         {
-            id: 4,
-            title: 'Commercial',
-            category: 'Photography',
-            description: 'Brand campaigns and commercial photography',
-            image: 'https://res.cloudinary.com/dexibw60d/image/upload/v1749035067/DSC01716_u4oxcs.jpg',
+            id: 'finearts',
+            label: 'Fine Arts',
+            description: 'Photography as artistic expression',
+            images: [
+                {
+                    src: 'https://res.cloudinary.com/dexibw60d/image/upload/v1748792834/73_zhllvh.jpg',
+                    alt: 'Fine art photograph 1',
+                },
+                {
+                    src: 'https://res.cloudinary.com/dexibw60d/image/upload/v1749045727/2tt_vvcvga.jpg',
+                    alt: 'Fine art photograph 2',
+                },
+                {
+                    src: 'https://res.cloudinary.com/dexibw60d/image/upload/v1749034991/output_clzh4q.png',
+                    alt: 'Fine art photograph 3',
+                },
+                {
+                    src: 'https://res.cloudinary.com/dexibw60d/image/upload/v1749038207/output-3_gpz3oa.png',
+                    alt: 'Fine art photograph 4',
+                },
+            ],
         },
-        // Design works
+        {
+            id: 'editorial',
+            label: 'Editorial',
+            description: 'Visual storytelling for publications',
+            images: [
+                {
+                    src: 'https://res.cloudinary.com/dexibw60d/image/upload/v1749035067/DSC01716_u4oxcs.jpg',
+                    alt: 'Editorial photograph 1',
+                },
+                {
+                    src: 'https://res.cloudinary.com/dexibw60d/image/upload/v1749046669/4th-journal-image_drmdrn.png',
+                    alt: 'Editorial photograph 2',
+                },
+                {
+                    src: 'https://res.cloudinary.com/dexibw60d/image/upload/v1748792832/Fashion_France_59__ctvxex.png',
+                    alt: 'Editorial photograph 3',
+                },
+                {
+                    src: 'https://res.cloudinary.com/dexibw60d/image/upload/v1748792833/aks-vogue_vvp1yr.png',
+                    alt: 'Editorial photograph 4',
+                },
+            ],
+        },
+        {
+            id: 'travel',
+            label: 'Travel',
+            description: 'Capturing the essence of places and cultures',
+            images: [
+                {
+                    src: 'https://res.cloudinary.com/dexibw60d/image/upload/v1749043892/Screenshot_2025-06-04_at_7.00.25_PM_rw8lnr.png',
+                    alt: 'Travel photograph 1',
+                },
+                {
+                    src: 'https://res.cloudinary.com/dexibw60d/image/upload/v1748792828/EB8B5455-5183-40D5-9E9B-E9C91EAACA0D_t6wvgg.jpg',
+                    alt: 'Travel photograph 2',
+                },
+                {
+                    src: 'https://res.cloudinary.com/dexibw60d/image/upload/v1748792834/73_zhllvh.jpg',
+                    alt: 'Travel photograph 3',
+                },
+                {
+                    src: 'https://res.cloudinary.com/dexibw60d/image/upload/v1749035067/DSC01716_u4oxcs.jpg',
+                    alt: 'Travel photograph 4',
+                },
+            ],
+        },
+    ];
+
+    // State for active photography category
+    const [activePhotoCategory, setActivePhotoCategory] = useState('fashion');
+
+    // Design works
+    const designWorks = [
         {
             id: 2,
             title: 'Visual Identity',
