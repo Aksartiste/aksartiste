@@ -1,6 +1,5 @@
 import type { Metadata, Viewport } from 'next';
 import './globals.css';
-import Script from "next/script";
 export const metadata: Metadata = {
   title: 'aksartiste | Photography & Creative Direction',
   description: 'A living archive of craft and emotion - Photography, Writing, Design, and Strategy'
@@ -18,9 +17,6 @@ export default function RootLayout({
 }>) {
   return <html lang="en" data-oid="d2pg5u4">
             <body className="min-h-screen w-full" data-oid="0cqkull">
-                {children}
-            
-                <Script src="/builtwith.js" strategy="afterInteractive" />
-            </body>
+                {children}</body>
         </html>;
 }
