@@ -73,9 +73,7 @@ export default function Page() {
 
     const sections = [
         { id: 'photography', label: 'Photography' },
-        { id: 'writing', label: 'Writing' },
         { id: 'design', label: 'Design' },
-        { id: 'strategy', label: 'Strategy' },
     ];
 
     const featuredWorks = [
@@ -88,17 +86,10 @@ export default function Page() {
         },
         {
             id: 2,
-            title: 'Editorial Narratives',
-            category: 'Writing',
-            description: 'Stories that connect and resonate with readers',
+            title: 'Visual Identity',
+            category: 'Design',
+            description: 'Creating cohesive and impactful brand experiences',
             image: 'https://images.unsplash.com/photo-1517842645767-c639042777db?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
-        },
-        {
-            id: 3,
-            title: 'Brand Evolution',
-            category: 'Strategy',
-            description: 'Guiding authentic brand transformations',
-            image: 'https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
         },
     ];
 
