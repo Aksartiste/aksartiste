@@ -593,10 +593,30 @@ export default function Page() {
                         Featured In
                     </h2>
 
-                    <div className="relative overflow-hidden" data-oid="6o2si4:">
+                    <style jsx data-oid="9469uug">{`
+                        @keyframes marquee {
+                            0% {
+                                transform: translateX(0);
+                            }
+                            100% {
+                                transform: translateX(-50%);
+                            }
+                        }
+                        .marquee-container {
+                            overflow: hidden;
+                            width: 100%;
+                        }
+                        .marquee-content {
+                            display: flex;
+                            animation: marquee 30s linear infinite;
+                            white-space: nowrap;
+                        }
+                    `}</style>
+
+                    <div className="marquee-container" data-oid="6o2si4:">
                         {/* Marquee container */}
-                        <div className="flex animate-marquee whitespace-nowrap" data-oid="gn8n8bn">
-                            {/* First set of logos */}
+                        <div className="marquee-content" data-oid="gn8n8bn">
+                            {/* All logos in one array for the first set */}
                             {[
                                 'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-1.png',
                                 'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-2.png',
@@ -610,6 +630,18 @@ export default function Page() {
                                 'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-10.png',
                                 'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-11.png',
                                 'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-12.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-13.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-14.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-15.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-16.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-17.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-18.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-19.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-20.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-21.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-22.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-23.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-24.png',
                             ].map((logoSrc, index) => (
                                 <div
                                     key={index}
@@ -625,8 +657,20 @@ export default function Page() {
                                 </div>
                             ))}
 
-                            {/* Second set of logos */}
+                            {/* Duplicate the same logos for continuous scrolling */}
                             {[
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-1.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-2.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-3.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-4.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-5.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-6.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-7.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-8.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-9.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-10.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-11.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-12.png',
                                 'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-13.png',
                                 'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-14.png',
                                 'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-15.png',
@@ -647,7 +691,7 @@ export default function Page() {
                                 >
                                     <img
                                         src={logoSrc}
-                                        alt={`Featured brand logo ${index + 13}`}
+                                        alt={`Featured brand logo ${index + 1}`}
                                         className="h-12 sm:h-16 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
                                         data-oid="9-o3.hv"
                                     />
