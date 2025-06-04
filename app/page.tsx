@@ -454,16 +454,20 @@ export default function Page() {
                                     src={
                                         item === 1
                                             ? 'https://res.cloudinary.com/dexibw60d/image/upload/v1749034991/output_clzh4q.png'
-                                            : item === 4
-                                              ? 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80'
-                                              : `https://images.unsplash.com/photo-167${1000000 + item}?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80`
+                                            : item === 2
+                                              ? 'https://res.cloudinary.com/dexibw60d/image/upload/v1749037809/artcover_ddojin.jpg'
+                                              : item === 4
+                                                ? 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80'
+                                                : `https://images.unsplash.com/photo-167${1000000 + item}?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80`
                                     }
                                     alt={
                                         item === 1
                                             ? 'Granny Always Knew - Journal entry'
-                                            : item === 4
-                                              ? 'Behind the Lens journal entry'
-                                              : 'Journal entry'
+                                            : item === 2
+                                              ? 'Art Cover - Journal entry'
+                                              : item === 4
+                                                ? 'Behind the Lens journal entry'
+                                                : 'Journal entry'
                                     }
                                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                                     data-oid="vm6dgs."
