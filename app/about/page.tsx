@@ -84,13 +84,13 @@ export default function AboutPage() {
                 </div>
 
                 <div
-                    className="aspect-[16/9] bg-gray-100 overflow-hidden mb-10 h-[449px] w-auto"
+                    className="bg-gray-50 overflow-hidden mb-12 rounded-lg shadow-md"
                     data-oid="krqhka3"
                 >
                     <img
                         src="https://res.cloudinary.com/dexibw60d/image/upload/v1749044526/IMG_3207_mmjnif.jpg"
                         alt="Akshay portrait"
-                        className="object-contain mx-auto w-[748px] h-[425px]"
+                        className="object-cover w-full h-auto max-h-[500px] mx-auto"
                         loading="eager"
                         data-oid="r.8n_l9"
                     />
