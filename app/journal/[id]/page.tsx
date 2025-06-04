@@ -142,7 +142,61 @@ const journalEntries = [
             'Exploring how vulnerability creates connection in both visual and written narratives.',
         content: `
       <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
-        In a world saturated with content, authentic storytelling stands as a beacon of genuine connection. When I first began my journey as a photographer and writer, I was often caught in the trap of perfection—meticulously staging shots and carefully crafting words that I thought would appeal to the widest audience.
+        I still wonder why I've felt so sad & did not want to get up to wash my face. To get out in public in meet those people. I need therapy? Well i think everybody in this world needs it. Did i go to therapy? Yes I did. Did i helped people in going to therapy? Yes I did. So everything was my brains fault? I don't know, you tell me!
+      </p>
+      
+      <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
+        Do you remember the movie "Lagaan"? There's a disabled character named "Kachra" an important character no doubt. I have got multiple deformities in my body & Kachra had one wrist twisted & pointed down. I have my both hands that way! If the character was not named as "Kachra" i would not be bullied in my childhood. The movie plot would still the same, everything would be same but i would not get bullied. They just had to NAME that character anything decent. Because bullies are always looking for new ways to bully. To make people laugh & think they're cool. You make 10 people sad & 20 people laugh & 5 people to encourage that being funny can make them popular. You show the data of 20 people out of 30. It's a success.
+      </p>
+      
+      <h3 class="text-xl font-light mb-4 mt-8">Well, I was bullied. How?</h3>
+      
+      <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
+        Aye Kachra copy de na.
+        & first time in my life i threw an iron chair at the guy & then grabbed his neck, asked him to try his joke once again.
+        He was bleeding. I ran away! Didn't go to school for 3 days. A phone call from school rang and i had the phone with me so I gave it to my cousin instead of my parents. They told her that the guy i hit has an appendix surgery two days before. And his parents are looking for me!
+      </p>
+      
+      <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
+        I had to go to school to face what i did.
+        I was standing facing the principal that's when a voice came "Arey Lucky (my nickname) tu?" And saw him, it was my paying guest. And the guy that i hit was his younger brother.
+        Well, everything was sorted. I was friends with the bullies. I was never bullied again. But i still saw them bullying others.
+      </p>
+      
+      <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
+        I changed nothing in this world. Absolutely nothing. But i was glad that i made way to save myself. I changed the school & with new people comes with other bullies.
+        I had bullies as friends now so yeah i could atleast try defending. But the truth was my future was going into darkness. I was not proud of my violence, it broke me. Never had a decent friends for a long time. Until i did & they are still the best people i have in my life.
+      </p>
+      
+      <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
+        There's no problem in a joke. You can throw me any type of dark joke, even i know people who send these, we laugh. But i know that they are not bullies, the jokes are not targetted.
+        Jokes are beautiful. You joke about mental health bipolar disorder you educate the world about it. You joke about someone's death it's a humorous way to remember them. But when they are used to make people hurt or make some people hurt to make other people laugh.
+      </p>
+      
+      <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
+        Now I'm not saying that jokes are the reason, the reason is only the bullies because they like doing it. Maybe because they like the attention or idk what moves them. It just bad.
+        & It gets difficult & there's nothing that we can do other than shut up & talk about forgiveness & forgetting & become a better person than them & have better standards. Well that's what we do.
+      </p>
+      
+      <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
+        But wheneven i feel alone & depressed i just wish that the perticular condition of my body didn't exist. So that atleast i could get up & wash my face & go out to have fun.
+        I still wonder what people who have more percentage of disability than me do & think & process. Wheelchair users who face violence and they can't even stand up to defend themselves. I am still on my way to learn alot to manage my thoughts. Education taught me nothing on this. It's just people everywhere Hey you're an insipiration, you work so hard, i pray for you everyday or people in the shoot be like at first I thought how would you this? But then I saw you doing this & was impressed. Well Okay? I am doing it because i know i can do this. That's no reason to be impressed but just know How i managed to be here. What mentalities & situations I had to go through to be here & how much I'll be facing in the future. I'm ready for it though. You can joke about it & my sarcasm will be there. But you know we're not at our emotional best all the times. And that's okay too.
+      </p>
+      
+      <h3 class="text-xl font-light mb-4 mt-8">People say they want to go back</h3>
+      
+      <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
+        People say they want to go back to those school days. They miss the way they lived, classes, teachers, friends. It was horrifying for me. And it continued till i passed my graduation. Then we all grew up & now i don't see many bullies just some people who thinks they're definitely better than me. And others who are beautiful and overwhelms my heart. I'm glad i grew up, I'm glad i cannot go back to past because i still don't know how i would change it. I'm glad i can write this. I'm glad that i may have some people who is going to read everything that i write no matter long it gets.
+      </p>
+      
+      <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
+        Thank you, without you, this would feel like I'm talking to myself & honestly when i cannot write, i try to wake up, i try to wash my face but in the reality i try not to wake up, i try to stay in bed as long as possible. I think something & then i counter myself with the opposites. And i get tired without doing anything.
+      </p>
+      
+      <p class="mb-10 text-base sm:text-lg text-gray-600 leading-relaxed">
+        I am fine though, i am absolutely fine. These are just somedays or weeks when i think, why me?
+        Then i look & read those people who are looking for the same answer as me. In the meanwhile we do art. And till death we'll do art.
+        You're not alone. #takecareofyourself
       </p>
     `,
     },
