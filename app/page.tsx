@@ -439,7 +439,7 @@ export default function Page() {
                     className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8"
                     data-oid=":pq3pk2"
                 >
-                    {[1, 2, 3, 4].map((item) => (
+                    {[1, 3, 2, 4].map((item) => (
                         <Link
                             href={`/journal/${item}`}
                             key={item}
