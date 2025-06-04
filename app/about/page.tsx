@@ -84,13 +84,13 @@ export default function AboutPage() {
                 </div>
 
                 <div
-                    className="bg-gray-50 overflow-hidden mb-12 rounded-lg shadow-md"
+                    className="bg-gray-50 overflow-hidden mb-12 rounded-lg shadow-md p-4"
                     data-oid="krqhka3"
                 >
                     <img
                         src="https://res.cloudinary.com/dexibw60d/image/upload/v1749044526/IMG_3207_mmjnif.jpg"
                         alt="Akshay portrait"
-                        className="object-cover w-full h-auto max-h-[500px] mx-auto"
+                        className="object-contain w-full h-auto mx-auto"
                         loading="eager"
                         data-oid="r.8n_l9"
                     />
