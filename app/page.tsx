@@ -98,7 +98,7 @@ export default function Page() {
             category: 'Photography',
             subcategory: 'Portraits',
             description: 'Intimate portraits exploring vulnerability and authenticity',
-            image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
+            image: 'https://res.cloudinary.com/dexibw60d/image/upload/v1749065358/portraits/port-12.jpg',
         },
         // Photography works - Fine Arts
         {
