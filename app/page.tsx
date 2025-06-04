@@ -319,38 +319,39 @@ export default function Page() {
                     {featuredWorks.map((work) => (
                         <div
                             key={work.id}
-                            className={`group cursor-pointer ${work.category === 'Design' ? 'relative' : ''}`}
+                            className={`group ${work.category === 'Design' ? 'relative' : 'cursor-pointer'}`}
                             data-oid="lh0ursw"
                         >
                             <div
                                 className="aspect-[3/4] bg-gray-100 overflow-hidden mb-4"
                                 data-oid="pk3-92l"
                             >
-                                <img
-                                    src={work.image}
-                                    alt={work.title}
-                                    className={`w-full h-full object-cover transition-transform duration-700 ${work.category === 'Design' ? 'blur-sm' : 'group-hover:scale-105'}`}
-                                    data-oid="8s9_uzh"
-                                />
-
-                                {work.category === 'Design' && (
+                                {work.category === 'Design' ? (
                                     <div
-                                        className="absolute inset-0 flex flex-col items-center justify-center bg-black/30 text-white"
-                                        data-oid="huuh:j9"
+                                        className="w-full h-full flex flex-col items-center justify-center border border-gray-200"
+                                        data-oid="i5i.ktk"
                                     >
                                         <span
-                                            className="text-lg font-light mb-2"
-                                            data-oid="10k_kvo"
+                                            className="text-sm uppercase tracking-wider text-gray-400 mb-2"
+                                            data-oid="r8g.l2t"
                                         >
                                             Coming Soon
                                         </span>
-                                        <span
-                                            className="text-xs uppercase tracking-wider"
-                                            data-oid="ufmpvwr"
-                                        >
+                                        <div
+                                            className="w-12 h-[1px] bg-gray-300 my-3"
+                                            data-oid="bbpc5cc"
+                                        ></div>
+                                        <span className="text-xs text-gray-500" data-oid="00-tkwh">
                                             Design Portfolio
                                         </span>
                                     </div>
+                                ) : (
+                                    <img
+                                        src={work.image}
+                                        alt={work.title}
+                                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                                        data-oid="8s9_uzh"
+                                    />
                                 )}
                             </div>
                             <div className="py-2" data-oid="8.evx2b">
