@@ -480,21 +480,29 @@ export default function Page() {
                                     className="text-xs uppercase tracking-wider text-gray-500 mb-1"
                                     data-oid="qm99mmb"
                                 >
-                                    {item === 4 ? 'June 22, 2023' : 'May 15, 2023'}
+                                    {item === 4
+                                        ? 'June 22, 2023'
+                                        : item === 2
+                                          ? 'June 10, 2023'
+                                          : 'May 15, 2023'}
                                 </p>
                                 <h3 className="text-xl font-light mb-2" data-oid="va72kdy">
                                     {item === 1
                                         ? 'Granny Always Knew'
-                                        : item === 4
-                                          ? 'Behind the Lens: Creative Process'
-                                          : 'The Art of Authentic Storytelling'}
+                                        : item === 2
+                                          ? 'We packed light, but…'
+                                          : item === 4
+                                            ? 'Behind the Lens: Creative Process'
+                                            : 'The Art of Authentic Storytelling'}
                                 </h3>
                                 <p className="text-sm text-gray-600" data-oid="asxm0eh">
                                     {item === 1
                                         ? 'Reflections on childhood wisdom and the perspective that comes with looking back.'
-                                        : item === 4
-                                          ? 'A glimpse into my creative workflow and the inspiration behind recent portrait series.'
-                                          : 'Exploring how vulnerability creates connection in both visual and written narratives.'}
+                                        : item === 2
+                                          ? 'A journey through mountains, friendship, and understanding the complexities of trauma and healing.'
+                                          : item === 4
+                                            ? 'A glimpse into my creative workflow and the inspiration behind recent portrait series.'
+                                            : 'Exploring how vulnerability creates connection in both visual and written narratives.'}
                                 </p>
                             </div>
                         </Link>
