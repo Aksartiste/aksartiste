@@ -85,9 +85,9 @@ export default function AboutPage() {
 
                 <div className="aspect-[16/9] bg-gray-100 overflow-hidden mb-10" data-oid="krqhka3">
                     <img
-                        src="https://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                        src="https://res.cloudinary.com/dexibw60d/image/upload/v1749043892/Screenshot_2025-06-04_at_7.00.25_PM_rw8lnr.png"
                         alt="Akshay portrait"
-                        className="w-full h-full object-cover"
+                        className="object-cover h-[451px] w-[799px]"
                         loading="eager"
                         data-oid="r.8n_l9"
                     />
