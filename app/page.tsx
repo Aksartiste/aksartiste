@@ -107,7 +107,7 @@ export default function Page() {
             category: 'Photography',
             subcategory: 'Fine Arts',
             description: 'Artistic expressions through the photographic medium',
-            image: 'https://res.cloudinary.com/dexibw60d/image/upload/v1748792828/EB8B5455-5183-40D5-9E9B-E9C91EAACA0D_t6wvgg.jpg',
+            image: 'https://res.cloudinary.com/dexibw60d/image/upload/v1749072544/fineart/Fine-4.jpg',
         },
         // Photography works - Editorial
         {
@@ -125,7 +125,7 @@ export default function Page() {
             category: 'Photography',
             subcategory: 'Travel',
             description: 'Documenting journeys and capturing diverse cultures',
-            image: 'https://res.cloudinary.com/dexibw60d/image/upload/v1749035067/DSC01716_u4oxcs.jpg',
+            image: 'https://res.cloudinary.com/dexibw60d/image/upload/v1749073187/Travel/Travel-9.jpg',
         },
         // Photography works - Events
         {
