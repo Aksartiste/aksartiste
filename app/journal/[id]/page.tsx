@@ -222,11 +222,11 @@ export default function JournalEntry({ params }: { params: { id: string } }) {
                     </h1>
                 </div>
 
-                <div className="aspect-[16/9] bg-gray-100 overflow-hidden mb-10" data-oid="yr2xjhs">
+                <div className="bg-gray-100 mb-10" data-oid="yr2xjhs">
                     <img
                         src={entry.image}
                         alt={entry.title}
-                        className="w-full h-full object-cover"
+                        className="w-full h-auto object-contain mx-auto"
                         loading="eager"
                         data-oid="ukls6bw"
                     />
