@@ -471,7 +471,7 @@ export default function Page() {
                                                 ? 'Behind the Lens journal entry'
                                                 : 'Journal entry'
                                     }
-                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                                    className="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-700"
                                     data-oid="vm6dgs."
                                 />
                             </div>
