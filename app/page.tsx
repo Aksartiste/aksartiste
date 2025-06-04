@@ -593,30 +593,35 @@ export default function Page() {
                         Featured In
                     </h2>
 
-                    <style jsx data-oid="9469uug">{`
-                        @keyframes marquee {
-                            0% {
-                                transform: translateX(0);
-                            }
-                            100% {
-                                transform: translateX(-50%);
-                            }
-                        }
-                        .marquee-container {
-                            overflow: hidden;
-                            width: 100%;
-                        }
-                        .marquee-content {
-                            display: flex;
-                            animation: marquee 30s linear infinite;
-                            white-space: nowrap;
-                        }
-                    `}</style>
-
-                    <div className="marquee-container" data-oid="6o2si4:">
-                        {/* Marquee container */}
-                        <div className="marquee-content" data-oid="gn8n8bn">
-                            {/* All logos in one array for the first set */}
+                    {/* Marquee implementation with inline styles for reliability */}
+                    <div
+                        style={{
+                            overflow: 'hidden',
+                            width: '100%',
+                            position: 'relative',
+                        }}
+                        data-oid="6o2si4:"
+                    >
+                        <div
+                            style={{
+                                display: 'flex',
+                                whiteSpace: 'nowrap',
+                                animation: 'marquee 30s linear infinite',
+                                width: 'fit-content',
+                            }}
+                            data-oid="gn8n8bn"
+                        >
+                            <style jsx global data-oid="8ez7pie">{`
+                                @keyframes marquee {
+                                    0% {
+                                        transform: translateX(0);
+                                    }
+                                    100% {
+                                        transform: translateX(-50%);
+                                    }
+                                }
+                            `}</style>
+                            {/* First set of logos */}
                             {[
                                 'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-1.png',
                                 'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-2.png',
@@ -630,6 +635,97 @@ export default function Page() {
                                 'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-10.png',
                                 'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-11.png',
                                 'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-12.png',
+                            ].map((logoSrc, index) => (
+                                <div
+                                    key={index}
+                                    style={{
+                                        margin: '0 1rem',
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                    }}
+                                    data-oid="dwyzkaa"
+                                >
+                                    <img
+                                        src={logoSrc}
+                                        alt={`Featured brand logo ${index + 1}`}
+                                        style={{
+                                            height: '3rem',
+                                            width: 'auto',
+                                            objectFit: 'contain',
+                                            opacity: 0.7,
+                                            transition: 'opacity 0.3s',
+                                        }}
+                                        onMouseOver={(e) => (e.currentTarget.style.opacity = '1')}
+                                        onMouseOut={(e) => (e.currentTarget.style.opacity = '0.7')}
+                                        data-oid="s:opfhx"
+                                    />
+                                </div>
+                            ))}
+
+                            {/* Duplicate set for seamless looping */}
+                            {[
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-1.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-2.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-3.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-4.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-5.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-6.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-7.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-8.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-9.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-10.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-11.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-12.png',
+                            ].map((logoSrc, index) => (
+                                <div
+                                    key={`dup-${index}`}
+                                    style={{
+                                        margin: '0 1rem',
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                    }}
+                                    data-oid="52ki_v5"
+                                >
+                                    <img
+                                        src={logoSrc}
+                                        alt={`Featured brand logo ${index + 1}`}
+                                        style={{
+                                            height: '3rem',
+                                            width: 'auto',
+                                            objectFit: 'contain',
+                                            opacity: 0.7,
+                                            transition: 'opacity 0.3s',
+                                        }}
+                                        onMouseOver={(e) => (e.currentTarget.style.opacity = '1')}
+                                        onMouseOut={(e) => (e.currentTarget.style.opacity = '0.7')}
+                                        data-oid="9-o3.hv"
+                                    />
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* Second row of logos */}
+                    <div
+                        style={{
+                            overflow: 'hidden',
+                            width: '100%',
+                            position: 'relative',
+                            marginTop: '2rem',
+                        }}
+                        data-oid="l:y6vse"
+                    >
+                        <div
+                            style={{
+                                display: 'flex',
+                                whiteSpace: 'nowrap',
+                                animation: 'marquee 30s linear infinite reverse',
+                                width: 'fit-content',
+                            }}
+                            data-oid="eb7qvxo"
+                        >
+                            {/* Third set of logos (going in reverse) */}
+                            {[
                                 'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-13.png',
                                 'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-14.png',
                                 'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-15.png',
@@ -645,32 +741,32 @@ export default function Page() {
                             ].map((logoSrc, index) => (
                                 <div
                                     key={index}
-                                    className="mx-4 sm:mx-8 flex items-center"
-                                    data-oid="dwyzkaa"
+                                    style={{
+                                        margin: '0 1rem',
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                    }}
+                                    data-oid="8xe7jlx"
                                 >
                                     <img
                                         src={logoSrc}
-                                        alt={`Featured brand logo ${index + 1}`}
-                                        className="h-12 sm:h-16 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
-                                        data-oid="s:opfhx"
+                                        alt={`Featured brand logo ${index + 13}`}
+                                        style={{
+                                            height: '3rem',
+                                            width: 'auto',
+                                            objectFit: 'contain',
+                                            opacity: 0.7,
+                                            transition: 'opacity 0.3s',
+                                        }}
+                                        onMouseOver={(e) => (e.currentTarget.style.opacity = '1')}
+                                        onMouseOut={(e) => (e.currentTarget.style.opacity = '0.7')}
+                                        data-oid="5k20k59"
                                     />
                                 </div>
                             ))}
 
-                            {/* Duplicate the same logos for continuous scrolling */}
+                            {/* Fourth set (duplicate of third) */}
                             {[
-                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-1.png',
-                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-2.png',
-                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-3.png',
-                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-4.png',
-                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-5.png',
-                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-6.png',
-                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-7.png',
-                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-8.png',
-                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-9.png',
-                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-10.png',
-                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-11.png',
-                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-12.png',
                                 'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-13.png',
                                 'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-14.png',
                                 'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-15.png',
@@ -686,14 +782,26 @@ export default function Page() {
                             ].map((logoSrc, index) => (
                                 <div
                                     key={`dup-${index}`}
-                                    className="mx-4 sm:mx-8 flex items-center"
-                                    data-oid="52ki_v5"
+                                    style={{
+                                        margin: '0 1rem',
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                    }}
+                                    data-oid="iszyjjh"
                                 >
                                     <img
                                         src={logoSrc}
-                                        alt={`Featured brand logo ${index + 1}`}
-                                        className="h-12 sm:h-16 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
-                                        data-oid="9-o3.hv"
+                                        alt={`Featured brand logo ${index + 13}`}
+                                        style={{
+                                            height: '3rem',
+                                            width: 'auto',
+                                            objectFit: 'contain',
+                                            opacity: 0.7,
+                                            transition: 'opacity 0.3s',
+                                        }}
+                                        onMouseOver={(e) => (e.currentTarget.style.opacity = '1')}
+                                        onMouseOut={(e) => (e.currentTarget.style.opacity = '0.7')}
+                                        data-oid="6lpie34"
                                     />
                                 </div>
                             ))}
