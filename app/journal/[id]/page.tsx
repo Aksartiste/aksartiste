@@ -47,18 +47,81 @@ const journalEntries = [
     },
     {
         id: '2',
-        title: 'The Hello',
+        title: 'We packed light, but…',
         date: 'May 15, 2023',
         image: 'https://res.cloudinary.com/dexibw60d/image/upload/v1749038207/output-3_gpz3oa.png',
         excerpt:
-            'Exploring how vulnerability creates connection in both visual and written narratives.',
+            'A journey through mountains, friendship, and understanding the complexities of trauma and healing.',
         content: `
       <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
-        In a world saturated with content, authentic storytelling stands as a beacon of genuine connection. When I first began my journey as a photographer and writer, I was often caught in the trap of perfection—meticulously staging shots and carefully crafting words that I thought would appeal to the widest audience.
+        She:- Can i ask you something?<br>
+        Me:- Yeah sure. (thinkin since when we started using this sentence)<br>
+        She:- Why have you been acting weird lately?<br>
+        Me:- umm, no. Why'd you ask? Since when you're feeling this way?<br>
+        She:- idk, 4-5 days?<br>
+        Me:- umm?<br>
+        She:- I don't feel good when you touch me, please don't do that.<br>
+        Me:- okay I don't know when did i do that? But if I made you feel that way l'm truly sorry, there are no wrong intentions here. (My brain was numb, it stayed that way for 4 days straight)
       </p>
       
       <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
-        It wasn't until I embraced vulnerability in my work that I began to see a profound shift in how people responded. There's something magnetic about raw, honest expression that cuts through the noise of our digital landscape. Whether through the unguarded gaze of a portrait subject or the candid admission in a personal essay, authenticity creates an immediate bridge between creator and audience.
+        We went inside the bus, she sitting on my right side on the window seat, we were on the way to mountains. Every time the bus would take a right I'd hold myself so that I don't even touch a little bit, meanwhile the guy on my left is all over me, asleep with no control over his movements.
+      </p>
+      
+      <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
+        Something was damn wrong, i was shattered. I'm not the guy who'd touch someone that way. She's a bro to me. My favourite human story if i would love to write. No way, I didn't touch her that way bat we stay normal we do handshake, hug, fight, push, assist each other just like everyone else. How does a touch feel different? There has to be a gesture. I don't do such gestures on anyone who's a friend.
+      </p>
+      
+      <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
+        This has nothing to do with gender. What the hell is wrong with us." This was all in my head giving me peak anxiety. Literally, her "can i ask you something" voice it stayed in mind.
+      </p>
+      
+      <h3 class="text-xl font-light mb-4 mt-8">The Journey</h3>
+      
+      <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
+        Roadways buses, that's right. They help us moving. We live those travellers explorers Who go out & have no idea of how many days we'll stay there & when we'll move to the next place. Well, just packing our bags & getting to station, took a bus the old fashioned way. That's how we reached Rishikesh.
+      </p>
+      
+      <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
+        She has a room in an hostel here, i was to be crashing & enjoying. And we were back to talking normal. In the morning, we met her friends, ate, had good conversations, everybody welcomed me, it was so good.
+      </p>
+      
+      <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
+        Went on Ganga dips everyday, there is a way from there, ganga was quite near & obviously we know a spot. Went to a roadside swimming pool later, had pakoras & chai. All good but we weren't communicating to each other. And i never so alone while being with so many people & enjoying activities. It was like i knew no one & maybe that was even true.
+      </p>
+      
+      <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
+        Days passed, we kept exploring. Something in me was dead. I wanted to walk alone now, i went out in the evening, going through market, different looking people all over the place, got myself rudraksh bracelet that i still wear. And i sat down on the ghat, experienced ganga arti & the sunset at the same time. Never in my life i had so much pain settling for good all at once. I took no photos on that trip, 4-5 maybe. I sat alone for long, remembered my late grandfather, I could cry but it was different. Good deep breath & i was sailing through mental health.
+      </p>
+      
+      <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
+        A call from Jaipur, my friend was meeting his ex, wanted me to be with him. She got me munchies, gave me a warm & healing hug, had me dropped at the bus station.
+      </p>
+      
+      <h3 class="text-xl font-light mb-4 mt-8">Understanding</h3>
+      
+      <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
+        Well, the thought of touching her disturbed me.
+      </p>
+      
+      <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
+        Well, we met again. And it was like fresh. We had our friends, she was in the city, everybody was excited. Only this time i was focusing on gestures.
+      </p>
+      
+      <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
+        And i guessed what must have went wrong.
+      </p>
+      
+      <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
+        I remember she telling me about her past, the way it was abused was tragic, the way she survived & thriving is an absolute success story. When I'd slide my hand on her hair something must be wrong with that. Because that's not something I normally do. It's just i make fun of some situations and did this gesture to express that. Maybe this takes her back to her memories. Maybe that's how her ptsd must have been triggered. All this while i was to blame myself. I went on google & read everything about her conditions. I grew up a little more. Finally, i knew that ptsd not only triggers when they're touched violently, it all depends on the individual living with it. We should be educated to take care of the people around us. We need to be aware. All of us can do better.
+      </p>
+      
+      <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
+        Mental health can affect any relationship if one's not aware.
+      </p>
+      
+      <p class="mb-10 text-base sm:text-lg text-gray-600 leading-relaxed">
+        When i was moving to Mumbai a person wrote to me "wish you many stories" and the very first day the city introduced me to a beautiful person with a huge travelling bag & I can't thank the universe & myself enough for that. I became a better friend & we have so much to cherish for life. Healthy long lasting relationships are not found but built together.
       </p>
     `,
     },
