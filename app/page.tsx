@@ -328,22 +328,32 @@ export default function Page() {
                             >
                                 {work.category === 'Design' ? (
                                     <div
-                                        className="w-full h-full flex flex-col items-center justify-center border border-gray-200"
+                                        className="relative w-full h-full overflow-hidden"
                                         data-oid="i5i.ktk"
                                     >
-                                        <span
-                                            className="text-sm uppercase tracking-wider text-gray-400 mb-2"
-                                            data-oid="r8g.l2t"
-                                        >
-                                            Coming Soon
-                                        </span>
+                                        <img
+                                            src="https://res.cloudinary.com/dexibw60d/image/upload/v1749053305/7_ykmvwr.jpg"
+                                            alt="Design Portfolio Coming Soon"
+                                            className="w-full h-full object-cover"
+                                            data-oid="design-img"
+                                        />
+
                                         <div
-                                            className="w-12 h-[1px] bg-gray-300 my-3"
-                                            data-oid="bbpc5cc"
-                                        ></div>
-                                        <span className="text-xs text-gray-500" data-oid="00-tkwh">
-                                            Design Portfolio
-                                        </span>
+                                            className="absolute inset-0 backdrop-blur-sm bg-white/30 flex flex-col items-center justify-center"
+                                            data-oid="glass-effect"
+                                        >
+                                            <div
+                                                className="px-6 py-4 bg-white/70 backdrop-blur-sm border border-white/20 rounded-sm"
+                                                data-oid="8ys_ldm"
+                                            >
+                                                <span
+                                                    className="block text-sm uppercase tracking-wider text-gray-700 mb-1 font-light"
+                                                    data-oid="r8g.l2t"
+                                                >
+                                                    Coming Soon
+                                                </span>
+                                            </div>
+                                        </div>
                                     </div>
                                 ) : (
                                     <img
