@@ -598,55 +598,59 @@ export default function Page() {
                         <div className="flex animate-marquee whitespace-nowrap" data-oid="gn8n8bn">
                             {/* First set of logos */}
                             {[
-                                'WERABLE',
-                                'GOOGLE INDIA',
-                                'VOGUE',
-                                'SOLANA',
-                                'PEOPLE OF INDIA',
-                                'LUKE COUTINHO',
-                                'MOB JOURNAL',
-                                'MALVIE',
-                                '6X FASHION',
-                                'APPROVED',
-                            ].map((brand, index) => (
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-1.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-2.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-3.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-4.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-5.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-6.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-7.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-8.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-9.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-10.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-11.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-12.png',
+                            ].map((logoSrc, index) => (
                                 <div
                                     key={index}
-                                    className="mx-8 sm:mx-12 flex items-center"
+                                    className="mx-4 sm:mx-8 flex items-center"
                                     data-oid="dwyzkaa"
                                 >
-                                    <span
-                                        className="text-xl sm:text-2xl font-light text-gray-500 tracking-wider whitespace-nowrap"
-                                        data-oid="t31lv4a"
-                                    >
-                                        {brand}
-                                    </span>
+                                    <img
+                                        src={logoSrc}
+                                        alt={`Featured brand logo ${index + 1}`}
+                                        className="h-12 sm:h-16 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+                                        data-oid="s:opfhx"
+                                    />
                                 </div>
                             ))}
 
-                            {/* Duplicate set for seamless looping */}
+                            {/* Second set of logos */}
                             {[
-                                'WERABLE',
-                                'GOOGLE INDIA',
-                                'VOGUE',
-                                'SOLANA',
-                                'PEOPLE OF INDIA',
-                                'LUKE COUTINHO',
-                                'MOB JOURNAL',
-                                'MALVIE',
-                                '6X FASHION',
-                                'APPROVED',
-                            ].map((brand, index) => (
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-13.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-14.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-15.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-16.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-17.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-18.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-19.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-20.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-21.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-22.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-23.png',
+                                'https://res.cloudinary.com/dexibw60d/image/upload/v1749069060/logos/logos-24.png',
+                            ].map((logoSrc, index) => (
                                 <div
                                     key={`dup-${index}`}
-                                    className="mx-8 sm:mx-12 flex items-center"
+                                    className="mx-4 sm:mx-8 flex items-center"
                                     data-oid="52ki_v5"
                                 >
-                                    <span
-                                        className="text-xl sm:text-2xl font-light text-gray-500 tracking-wider whitespace-nowrap"
-                                        data-oid="ldajvwk"
-                                    >
-                                        {brand}
-                                    </span>
+                                    <img
+                                        src={logoSrc}
+                                        alt={`Featured brand logo ${index + 13}`}
+                                        className="h-12 sm:h-16 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+                                        data-oid="9-o3.hv"
+                                    />
                                 </div>
                             ))}
                         </div>
