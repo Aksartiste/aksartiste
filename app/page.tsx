@@ -608,8 +608,7 @@ export default function Page() {
                             </a>
                         </div>
                         <div className="flex space-x-8 sm:space-x-6" data-oid="ztusjn6">
-                            {' '}
-                            /* Increased spacing for touch targets */
+                            {/* Increased spacing for touch targets */}
                             <a
                                 href="#"
                                 className="text-gray-500 hover:text-black transition-colors"
