@@ -335,7 +335,7 @@ export default function Page() {
                                 <img
                                     src={work.image}
                                     alt={work.title}
-                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                                    className="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-700"
                                     data-oid="8s9_uzh"
                                 />
                             </div>
