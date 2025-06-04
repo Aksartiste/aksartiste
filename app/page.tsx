@@ -398,14 +398,8 @@ export default function Page() {
                                     />
                                 </div>
                                 <div className="py-2" data-oid="8.evx2b">
-                                    <p
-                                        className="text-xs uppercase tracking-wider text-gray-500 mb-1"
-                                        data-oid="544ewx:"
-                                    >
-                                        {work.subcategory || work.category}
-                                    </p>
                                     <h3 className="text-xl font-light mb-2" data-oid="e33l884">
-                                        {work.title}
+                                        {work.subcategory || work.category}
                                     </h3>
                                     <p className="text-sm text-gray-600" data-oid=".z5d7ai">
                                         {work.description}
