@@ -489,7 +489,7 @@ export default function Page() {
                                           ? 'We packed light, but…'
                                           : item === 4
                                             ? 'Behind the Lens: Creative Process'
-                                            : 'The Art of Authentic Storytelling'}
+                                            : 'Cigarettes'}
                                 </h3>
                                 <p className="text-sm text-gray-600" data-oid="asxm0eh">
                                     {item === 1
