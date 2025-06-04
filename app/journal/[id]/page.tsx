@@ -137,7 +137,7 @@ const journalEntries = [
         id: '3',
         title: 'The Art of Authentic Storytelling',
         date: 'May 15, 2023',
-        image: 'https://res.cloudinary.com/dexibw60d/image/upload/v1749038207/output-3_gpz3oa.png',
+        image: 'https://res.cloudinary.com/dexibw60d/image/upload/v1749045727/2tt_vvcvga.jpg',
         excerpt:
             'Exploring how vulnerability creates connection in both visual and written narratives.',
         content: `
@@ -293,7 +293,10 @@ export default function JournalEntry({ params }: { params: { id: string } }) {
                     </h1>
                 </div>
 
-                <div className="aspect-[16/9] bg-gray-100 overflow-hidden mb-10" data-oid="yr2xjhs">
+                <div
+                    className="aspect-[16/9] bg-gray-100 overflow-hidden mb-10 rounded-lg shadow-sm"
+                    data-oid="yr2xjhs"
+                >
                     <img
                         src={entry.image}
                         alt={entry.title}
