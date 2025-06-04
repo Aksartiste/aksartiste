@@ -416,12 +416,14 @@ export default function Page() {
                             the lens of my camera, the honesty of my writing, or the brands I
                             creatively guide.
                         </p>
-                        <button
-                            className="w-full sm:w-auto px-8 py-3 border border-black text-sm uppercase tracking-wider hover:bg-black hover:text-white transition-colors duration-300" /* Made full width on mobile */
-                            data-oid="xcjmmmc"
-                        >
-                            Read More
-                        </button>
+                        <Link href="/about" className="inline-block" data-oid="xcjmmmc">
+                            <button
+                                className="w-full sm:w-auto px-8 py-3 border border-black text-sm uppercase tracking-wider hover:bg-black hover:text-white transition-colors duration-300"
+                                /* Made full width on mobile */ data-oid="l_ux0r7"
+                            >
+                                Read More
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </section>
