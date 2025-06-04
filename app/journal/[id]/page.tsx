@@ -7,36 +7,36 @@ import Link from 'next/link';
 const journalEntries = [
     {
         id: '1',
-        title: 'The Art of Authentic Storytelling',
+        title: 'Granny Always Knew',
         date: 'May 15, 2023',
-        image: 'https://images.unsplash.com/photo-1671000001?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
+        image: 'https://res.cloudinary.com/dexibw60d/image/upload/v1749034991/output_clzh4q.png',
         excerpt:
-            'Exploring how vulnerability creates connection in both visual and written narratives.',
+            'Reflections on childhood wisdom and the perspective that comes with looking back.',
         content: `
       <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
-        In a world saturated with content, authentic storytelling stands as a beacon of genuine connection. When I first began my journey as a photographer and writer, I was often caught in the trap of perfection—meticulously staging shots and carefully crafting words that I thought would appeal to the widest audience.
+        I captured this image during a family trip to the mountains last winter. My nephew, just five years old, pressed his face against the window of our cabin, mesmerized by his own reflection against the backdrop of the valley below. Something about his expression in that moment took me back to my own childhood and the simple wisdom that seemed to flow so naturally then.
       </p>
       
       <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
-        It wasn't until I embraced vulnerability in my work that I began to see a profound shift in how people responded. There's something magnetic about raw, honest expression that cuts through the noise of our digital landscape. Whether through the unguarded gaze of a portrait subject or the candid admission in a personal essay, authenticity creates an immediate bridge between creator and audience.
+        "Granny always knew," my mother used to say whenever we'd come to a realization that my grandmother had tried to impart years earlier. It was a family saying that acknowledged how the wisdom we often struggle to acquire as adults was somehow intuitive to her, a woman with little formal education but a profound understanding of human nature.
       </p>
       
       <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
-        This journal entry explores the delicate balance between artistic vision and emotional honesty, examining how the most impactful stories often emerge from our willingness to share the unpolished parts of our experience.
+        Looking at my nephew that day, I wondered what innate wisdom he already possessed that I've spent decades trying to rediscover. There's something about childhood that holds a purity of perspective, an ability to see things as they truly are before layers of complexity and overthinking obscure the view.
       </p>
       
-      <h3 class="text-xl font-light mb-4 mt-8">The Vulnerability Paradox</h3>
+      <h3 class="text-xl font-light mb-4 mt-8">The Reflection Paradox</h3>
       
       <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
-        Perhaps the most counterintuitive aspect of authentic storytelling is what I've come to call the "vulnerability paradox"—the more specific and personal a story becomes, the more universal its appeal. When we dare to share our unique perspectives and experiences without filter, we often discover that our most private thoughts are surprisingly common.
+        There's a beautiful paradox in reflection—both the literal kind, as seen in this photograph, and the metaphorical act of looking back on our lives. In both cases, what we see is simultaneously ourselves and not ourselves. The image in the glass is reversed, slightly distorted, influenced by the light and what lies beyond. Our memories and reflections on the past work the same way, shaped by who we've become and what we now know.
       </p>
       
       <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
-        In my portrait work, I've found that the most compelling images emerge not from technical perfection, but from moments of genuine connection with my subjects. When someone feels truly seen and accepted, there's a subtle shift in their expression that no amount of direction can manufacture.
+        My grandmother used to tell me that the best way to understand yourself is to look at your reflection in moving water, not a still mirror. "The ripples show you all the different people you are," she'd say. I didn't understand then, but watching my nephew that day—seeing himself both in the glass and against the vast landscape beyond—I finally grasped what she meant.
       </p>
       
       <p class="mb-10 text-base sm:text-lg text-gray-600 leading-relaxed">
-        As we move forward in an increasingly digital world, I believe that authentic storytelling will only become more valuable. In a sea of carefully curated content, the courage to be real stands out not as a weakness, but as the most powerful tool in a creator's arsenal.
+        Perhaps the wisdom we seek isn't found in accumulating new knowledge but in remembering what we once knew intuitively. In the quiet moments of reflection, looking both outward and inward simultaneously, we might just rediscover what granny always knew.
       </p>
     `,
     },
@@ -44,7 +44,7 @@ const journalEntries = [
         id: '2',
         title: 'The Art of Authentic Storytelling',
         date: 'May 15, 2023',
-        image: 'https://images.unsplash.com/photo-1672000002?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
+        image: 'https://images.unsplash.com/photo-1671000002?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
         excerpt:
             'Exploring how vulnerability creates connection in both visual and written narratives.',
         content: `
@@ -217,11 +217,12 @@ export default function JournalEntry({ params }: { params: { id: string } }) {
                     </h1>
                 </div>
 
-                <div className="aspect-video bg-gray-100 overflow-hidden mb-10" data-oid="yr2xjhs">
+                <div className="aspect-[16/9] bg-gray-100 overflow-hidden mb-10" data-oid="yr2xjhs">
                     <img
                         src={entry.image}
                         alt={entry.title}
                         className="w-full h-full object-cover"
+                        loading="eager"
                         data-oid="ukls6bw"
                     />
                 </div>
