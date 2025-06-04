@@ -379,15 +379,34 @@ export default function Page() {
                                 data-oid="lh0ursw"
                             >
                                 <div
-                                    className="aspect-[3/4] bg-gray-100 overflow-hidden mb-4"
+                                    className="aspect-[3/4] bg-gray-100 overflow-hidden mb-4 relative"
                                     data-oid="pk3-92l"
                                 >
                                     <img
                                         src={work.image}
                                         alt={work.title}
-                                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                                        className={`w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ${work.category === 'Design' ? 'blur-sm' : ''}`}
                                         data-oid="8s9_uzh"
                                     />
+
+                                    {work.category === 'Design' && (
+                                        <div
+                                            className="absolute inset-0 flex items-center justify-center bg-black/30 backdrop-blur-sm"
+                                            data-oid="fjb46jy"
+                                        >
+                                            <div
+                                                className="bg-white/80 backdrop-blur-sm px-6 py-4 rounded-md text-center"
+                                                data-oid="cwqje3j"
+                                            >
+                                                <p
+                                                    className="text-lg font-medium text-black"
+                                                    data-oid="nipch.r"
+                                                >
+                                                    Coming Soon
+                                                </p>
+                                            </div>
+                                        </div>
+                                    )}
                                 </div>
                                 <div className="py-2" data-oid="8.evx2b">
                                     <h3 className="text-xl font-light mb-2" data-oid="e33l884">
