@@ -353,7 +353,7 @@ export default function Page() {
                                     {work.description}
                                 </p>
                             </div>
-                        </Link>
+                        </div>
                     ))}
                 </div>
 
@@ -440,10 +440,10 @@ export default function Page() {
                     data-oid=":pq3pk2"
                 >
                     {[1, 2, 3, 4].map((item) => (
-                        <Link 
-                            href={`/journal/${item}`} 
-                            key={item} 
-                            className="group cursor-pointer" 
+                        <Link
+                            href={`/journal/${item}`}
+                            key={item}
+                            className="group cursor-pointer"
                             data-oid="ux7h8u:"
                         >
                             <div
@@ -483,11 +483,11 @@ export default function Page() {
                                         : 'Exploring how vulnerability creates connection in both visual and written narratives.'}
                                 </p>
                             </div>
-                        </div>
+                        </Link>
                     ))}
                 </div>
                 <div className="mt-16 text-center" data-oid="djd0tcd">
-                    <Link href="/journal/1">
+                    <Link href="/journal/1" data-oid="75lj1wh">
                         <button
                             className="w-full sm:w-auto px-8 py-3 border border-black text-sm uppercase tracking-wider hover:bg-black hover:text-white transition-colors duration-300" /* Made full width on mobile */
                             data-oid="0xyp752"
