@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import Link from 'next/link';
 
 export default function Page() {
     const [isLoaded, setIsLoaded] = useState(false);
@@ -352,7 +353,7 @@ export default function Page() {
                                     {work.description}
                                 </p>
                             </div>
-                        </div>
+                        </Link>
                     ))}
                 </div>
 
@@ -439,7 +440,12 @@ export default function Page() {
                     data-oid=":pq3pk2"
                 >
                     {[1, 2, 3, 4].map((item) => (
-                        <div key={item} className="group cursor-pointer" data-oid="ux7h8u:">
+                        <Link 
+                            href={`/journal/${item}`} 
+                            key={item} 
+                            className="group cursor-pointer" 
+                            data-oid="ux7h8u:"
+                        >
                             <div
                                 className="aspect-video bg-gray-100 overflow-hidden mb-4"
                                 data-oid="ko:z.4m"
@@ -481,12 +487,14 @@ export default function Page() {
                     ))}
                 </div>
                 <div className="mt-16 text-center" data-oid="djd0tcd">
-                    <button
-                        className="w-full sm:w-auto px-8 py-3 border border-black text-sm uppercase tracking-wider hover:bg-black hover:text-white transition-colors duration-300" /* Made full width on mobile */
-                        data-oid="0xyp752"
-                    >
-                        View All Posts
-                    </button>
+                    <Link href="/journal/1">
+                        <button
+                            className="w-full sm:w-auto px-8 py-3 border border-black text-sm uppercase tracking-wider hover:bg-black hover:text-white transition-colors duration-300" /* Made full width on mobile */
+                            data-oid="0xyp752"
+                        >
+                            View All Posts
+                        </button>
+                    </Link>
                 </div>
             </section>
 
