@@ -435,18 +435,26 @@ export default function Page() {
                     Journal
                 </h2>
                 <div
-                    className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8"
+                    className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8"
                     data-oid=":pq3pk2"
                 >
-                    {[1, 2, 3].map((item) => (
+                    {[1, 2, 3, 4].map((item) => (
                         <div key={item} className="group cursor-pointer" data-oid="ux7h8u:">
                             <div
                                 className="aspect-video bg-gray-100 overflow-hidden mb-4"
                                 data-oid="ko:z.4m"
                             >
                                 <img
-                                    src={`https://images.unsplash.com/photo-167${1000000 + item}?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80`}
-                                    alt="Journal entry"
+                                    src={
+                                        item === 4
+                                            ? 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80'
+                                            : `https://images.unsplash.com/photo-167${1000000 + item}?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80`
+                                    }
+                                    alt={
+                                        item === 4
+                                            ? 'Behind the Lens journal entry'
+                                            : 'Journal entry'
+                                    }
                                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                                     data-oid="vm6dgs."
                                 />
@@ -456,14 +464,17 @@ export default function Page() {
                                     className="text-xs uppercase tracking-wider text-gray-500 mb-1"
                                     data-oid="qm99mmb"
                                 >
-                                    May 15, 2023
+                                    {item === 4 ? 'June 22, 2023' : 'May 15, 2023'}
                                 </p>
                                 <h3 className="text-xl font-light mb-2" data-oid="va72kdy">
-                                    The Art of Authentic Storytelling
+                                    {item === 4
+                                        ? 'Behind the Lens: Creative Process'
+                                        : 'The Art of Authentic Storytelling'}
                                 </h3>
                                 <p className="text-sm text-gray-600" data-oid="asxm0eh">
-                                    Exploring how vulnerability creates connection in both visual
-                                    and written narratives.
+                                    {item === 4
+                                        ? 'A glimpse into my creative workflow and the inspiration behind recent portrait series.'
+                                        : 'Exploring how vulnerability creates connection in both visual and written narratives.'}
                                 </p>
                             </div>
                         </div>
