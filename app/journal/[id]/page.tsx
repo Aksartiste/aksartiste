@@ -54,6 +54,14 @@ const journalEntries = [
             'A journey through mountains, friendship, and understanding the complexities of trauma and healing.',
         content: `
       <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
+        It was a good time, we were travelling together & on the mid-way it happened. We were a little cold & wanted to have some coffee, we stepped out of the bus & got ourselves hot cups of what we were craving.
+      </p>
+      
+      <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
+        We are comfortable with silences, like those times we were working or watching/ reading/writing, sleeping in the same room many times next to each other & having absolutely no problems in that. We embrace friendships like it's god's way to communicate with us through different people. It was midnight on the highway, the wind was good & we could feel our hair waving & suddenly She said..
+      </p>
+      
+      <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
         She:- Can i ask you something?<br>
         Me:- Yeah sure. (thinkin since when we started using this sentence)<br>
         She:- Why have you been acting weird lately?<br>
