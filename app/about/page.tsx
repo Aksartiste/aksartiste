@@ -88,8 +88,8 @@ export default function AboutPage() {
                     data-oid="krqhka3"
                 >
                     <img
-                        src="https://res.cloudinary.com/dexibw60d/image/upload/v1749044526/IMG_3207_mmjnif.jpg"
-                        alt="Akshay portrait"
+                        src="https://res.cloudinary.com/dexibw60d/image/upload/v1749044747/aks-mountains.jpg"
+                        alt="Akshay in the mountains"
                         className="object-contain w-full h-auto mx-auto"
                         loading="eager"
                         data-oid="r.8n_l9"
