@@ -53,6 +53,11 @@ export default function Page() {
             src: 'https://res.cloudinary.com/dexibw60d/image/upload/v1749035550/Abmol_iwxrya.jpg',
             alt: 'Portrait photograph 9',
         },
+        // Added new photo
+        {
+            src: 'https://res.cloudinary.com/dexibw60d/image/upload/v1749059073/Interior_Pages_V56_1562_amqwwr.jpg',
+            alt: 'Portrait photograph 10',
+        },
     ];
 
     // Auto-rotate portraits
