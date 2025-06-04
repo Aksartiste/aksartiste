@@ -47,69 +47,18 @@ const journalEntries = [
     },
     {
         id: '2',
-        title: 'We packed light, but…',
-        date: 'June 10, 2023',
+        title: 'The Art of Authentic Storytelling',
+        date: 'May 15, 2023',
         image: 'https://res.cloudinary.com/dexibw60d/image/upload/v1749037809/artcover_ddojin.jpg',
         excerpt:
-            'A journey through mountains, friendship, and understanding the complexities of trauma and healing.',
+            'Exploring how vulnerability creates connection in both visual and written narratives.',
         content: `
       <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
-        She:- Can i ask you something?<br>
-        Me:- Yeah sure. (thinkin since when we started using this sentence)<br>
-        She:- Why have you been acting weird lately?<br>
-        Me:- umm, no. Why'd you ask? Since when you're feeling this way?<br>
-        She:- idk, 4-5 days?<br>
-        Me:- umm?<br>
-        She:- I don't feel good when you touch me, please don't do that.<br>
-        Me:- okay I don't know when did i do that? But if I made you feel that way l'm truly sorry, there are no wrong intentions here. (My brain was numb, it stayed that way for 4 days straight)
+        In a world saturated with content, authentic storytelling stands as a beacon of genuine connection. When I first began my journey as a photographer and writer, I was often caught in the trap of perfection—meticulously staging shots and carefully crafting words that I thought would appeal to the widest audience.
       </p>
       
       <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
-        We went inside the bus, she sitting on my right side on the window seat, we were on the way to mountains. Every time the bus would take a right I'd hold myself so that I don't even touch a little bit, meanwhile the guy on my left is all over me, asleep with no control over his movements.
-      </p>
-      
-      <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
-        Something was damn wrong, i was shattered. I'm not the guy who'd touch someone that way. She's a bro to me. My favourite human story if i would love to write. No way, I didn't touch her that way bat we stay normal we do handshake, hug, fight, push, assist each other just like everyone else. How does a touch feel different? There has to be a gesture. I don't do such gestures on anyone who's a friend.
-      </p>
-      
-      <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
-        This has nothing to do with gender. What the hell is wrong with us." This was all in my head giving me peak anxiety. Literally, her "can i ask you something" voice it stayed in mind.
-      </p>
-      
-      <h3 class="text-xl font-light mb-4 mt-8">The Journey</h3>
-      
-      <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
-        Roadways buses, that's right. They help us moving. We live those travellers explorers Who go out & have no idea of how many days we'll stay there & when we'll move to the next place. Well, just packing our bags & getting to station, took a bus the old fashioned way. That's how we reached Rishikesh.
-      </p>
-      
-      <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
-        She has a room in an hostel here, i was to be crashing & enjoying. And we were back to talking normal. In the morning, we met her friends, ate, had good conversations, everybody welcomed me, it was so good.
-      </p>
-      
-      <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
-        Went on Ganga dips everyday, there is a way from there, ganga was quite near & obviously we know a spot. Went to a roadside swimming pool later, had pakoras & chai. All good but we weren't communicating to each other. And i never so alone while being with so many people & enjoying activities. It was like i knew no one & maybe that was even true.
-      </p>
-      
-      <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
-        Days passed, we kept exploring. Something in me was dead. I wanted to walk alone now, i went out in the evening, going through market, different looking people all over the place, got myself rudraksh bracelet that i still wear. And i sat down on the ghat, experienced ganga arti & the sunset at the same time. Never in my life i had so much pain settling for good all at once. I took no photos on that trip, 4-5 maybe. I sat alone for long, remembered my late grandfather, I could cry but it was different. Good deep breath & i was sailing through mental health.
-      </p>
-      
-      <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
-        A call from Jaipur, my friend was meeting his ex, wanted me to be with him. She got me munchies, gave me a warm & healing hug, had me dropped at the bus station.
-      </p>
-      
-      <h3 class="text-xl font-light mb-4 mt-8">Understanding</h3>
-      
-      <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
-        Well, the thought of touching her disturbed me. Well, we met again. And it was like fresh. We had our friends, she was in the city, everybody was excited. Only this time i was focusing on gestures.
-      </p>
-      
-      <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
-        And i guessed what must have went wrong. I remember she telling me about her past, the way it was abused was tragic, the way she survived & thriving is an absolute success story. When I'd slide my hand on her hair something must be wrong with that. Because that's not something I normally do. It's just i make fun of some situations and did this gesture to express that. Maybe this takes her back to her memories. Maybe that's how her ptsd must have been triggered. All this while i was to blame myself. I went on google & read everything about her conditions. I grew up a little more. Finally, i knew that ptsd not only triggers when they're touched violently, it all depends on the individual living with it. We should be educated to take care of the people around us. We need to be aware. All of us can do better.
-      </p>
-      
-      <p class="mb-10 text-base sm:text-lg text-gray-600 leading-relaxed">
-        Mental health can affect any relationship if one's not aware. When i was moving to Mumbai a person wrote to me "wish you many stories" and the very first day the city introduced me to a beautiful person with a huge travelling bag & I can't thank the universe & myself enough for that. I became a better friend & we have so much to cherish for life. Healthy long lasting relationships are not found but built together.
+        It wasn't until I embraced vulnerability in my work that I began to see a profound shift in how people responded. There's something magnetic about raw, honest expression that cuts through the noise of our digital landscape. Whether through the unguarded gaze of a portrait subject or the candid admission in a personal essay, authenticity creates an immediate bridge between creator and audience.
       </p>
     `,
     },
@@ -173,54 +122,54 @@ export default function JournalEntry({ params }: { params: { id: string } }) {
     return (
         <div
             className={`min-h-screen bg-white text-gray-900 font-serif transition-opacity duration-1000 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}
-            data-oid="il60piu"
+            data-oid="sf.76dz"
         >
             {/* Navigation */}
             <nav
                 className="fixed top-0 left-0 right-0 z-50 bg-white/95 border-b border-gray-200"
-                data-oid="3j8ba_s"
+                data-oid="60i4fgu"
             >
-                <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12" data-oid="kp6-gs4">
+                <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12" data-oid="_tmf:0v">
                     <div
                         className="flex justify-between items-center h-16 sm:h-20"
-                        data-oid="st612zb"
+                        data-oid="0.c7:jk"
                     >
                         <Link
                             href="/"
                             className="text-xl sm:text-2xl tracking-tighter font-light"
-                            data-oid="_-5krb_"
+                            data-oid="8-.zo5f"
                         >
                             aksartiste
                         </Link>
                         <div
                             className="hidden md:flex space-x-8 text-sm uppercase tracking-widest"
-                            data-oid="z5etg89"
+                            data-oid="jcsq-kk"
                         >
                             <Link
                                 href="/#work"
                                 className="hover:text-black/70 transition-colors"
-                                data-oid="e-cs6:i"
+                                data-oid="m46ziva"
                             >
                                 Work
                             </Link>
                             <Link
                                 href="/#about"
                                 className="hover:text-black/70 transition-colors"
-                                data-oid="llukvfc"
+                                data-oid="ja-e8q3"
                             >
                                 About
                             </Link>
                             <Link
                                 href="/#journal"
                                 className="hover:text-black/70 transition-colors"
-                                data-oid="sm5140g"
+                                data-oid="m6e_7gt"
                             >
                                 Journal
                             </Link>
                             <Link
                                 href="/#contact"
                                 className="hover:text-black/70 transition-colors"
-                                data-oid="yuss6r6"
+                                data-oid="lrnoabu"
                             >
                                 Contact
                             </Link>
@@ -232,12 +181,12 @@ export default function JournalEntry({ params }: { params: { id: string } }) {
             {/* Journal Entry Content */}
             <article
                 className="pt-28 sm:pt-32 pb-16 sm:pb-20 px-4 sm:px-8 lg:px-12 max-w-4xl mx-auto"
-                data-oid="m37-khw"
+                data-oid="h0oi5l1"
             >
                 <Link
                     href="/#journal"
                     className="inline-flex items-center text-sm text-gray-600 mb-8 hover:text-black transition-colors"
-                    data-oid="u.oueg6"
+                    data-oid="225uy_8"
                 >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -245,55 +194,55 @@ export default function JournalEntry({ params }: { params: { id: string } }) {
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
-                        data-oid="3bw6fin"
+                        data-oid="vo87per"
                     >
                         <path
                             strokeLinecap="round"
                             strokeLinejoin="round"
                             strokeWidth={2}
                             d="M10 19l-7-7m0 0l7-7m-7 7h18"
-                            data-oid="4.0pbzq"
+                            data-oid="ev:w10g"
                         />
                     </svg>
                     Back to Journal
                 </Link>
 
-                <div className="mb-10" data-oid="9n4dv:j">
+                <div className="mb-10" data-oid="m60imc-">
                     <p
                         className="text-xs uppercase tracking-wider text-gray-500 mb-2"
-                        data-oid="qwa6iit"
+                        data-oid="4188d9_"
                     >
                         {entry.date}
                     </p>
                     <h1
                         className="text-3xl sm:text-4xl md:text-5xl font-light leading-tight mb-6"
-                        data-oid="p0n.3v0"
+                        data-oid="p0gpkc6"
                     >
                         {entry.title}
                     </h1>
                 </div>
 
-                <div className="bg-gray-100 mb-10" data-oid="yr2xjhs">
+                <div className="aspect-[16/9] bg-gray-100 overflow-hidden mb-10" data-oid="vo2rhxz">
                     <img
-                        src="https://res.cloudinary.com/dexibw60d/image/upload/v1749034991/output_clzh4q.png"
+                        src={entry.image}
                         alt={entry.title}
-                        className="w-full h-auto object-contain mx-auto"
+                        className="w-full h-full object-cover"
                         loading="eager"
-                        data-oid="ukls6bw"
+                        data-oid="rfe3umu"
                     />
                 </div>
 
                 <div
                     className="prose prose-lg max-w-none"
                     dangerouslySetInnerHTML={{ __html: entry.content }}
-                    data-oid="zb:98gy"
+                    data-oid=".wkjv30"
                 />
 
-                <div className="mt-16 border-t border-gray-200 pt-10" data-oid=".k9kzoq">
-                    <h3 className="text-xl font-light mb-6" data-oid="891t_o3">
+                <div className="mt-16 border-t border-gray-200 pt-10" data-oid="648x5:_">
+                    <h3 className="text-xl font-light mb-6" data-oid="2-sfh3m">
                         More Journal Entries
                     </h3>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6" data-oid="4xmjy24">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6" data-oid="r0gq6n4">
                         {journalEntries
                             .filter((e) => e.id !== id)
                             .slice(0, 2)
@@ -302,30 +251,30 @@ export default function JournalEntry({ params }: { params: { id: string } }) {
                                     href={`/journal/${relatedEntry.id}`}
                                     key={relatedEntry.id}
                                     className="group"
-                                    data-oid="1a7w7bd"
+                                    data-oid="6ovj8m1"
                                 >
                                     <div
                                         className="aspect-video bg-gray-100 overflow-hidden mb-4"
-                                        data-oid="05_biuk"
+                                        data-oid="5wq88h5"
                                     >
                                         <img
                                             src={relatedEntry.image}
                                             alt={relatedEntry.title}
                                             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                                            data-oid="lekx7yt"
+                                            data-oid="t2tpga6"
                                         />
                                     </div>
-                                    <div data-oid="945wd8q">
+                                    <div data-oid="nflciwj">
                                         <p
                                             className="text-xs uppercase tracking-wider text-gray-500 mb-1"
-                                            data-oid=":7m8voa"
+                                            data-oid="1ij57xf"
                                         >
                                             {relatedEntry.date}
                                         </p>
-                                        <h3 className="text-xl font-light mb-2" data-oid="gg4-w3b">
+                                        <h3 className="text-xl font-light mb-2" data-oid="scr3i0w">
                                             {relatedEntry.title}
                                         </h3>
-                                        <p className="text-sm text-gray-600" data-oid="d1sp9m6">
+                                        <p className="text-sm text-gray-600" data-oid="8u1vwv7">
                                             {relatedEntry.excerpt}
                                         </p>
                                     </div>
@@ -338,51 +287,51 @@ export default function JournalEntry({ params }: { params: { id: string } }) {
             {/* Footer */}
             <footer
                 className="py-10 sm:py-12 px-4 sm:px-8 lg:px-12 border-t border-gray-200"
-                data-oid="70.2-_e"
+                data-oid="l29lrte"
             >
-                <div className="max-w-7xl mx-auto" data-oid="vx9plz:">
+                <div className="max-w-7xl mx-auto" data-oid="x0sl.sh">
                     <div
                         className="flex flex-col md:flex-row justify-between items-center"
-                        data-oid="zofi0rt"
+                        data-oid="ezuwwoj"
                     >
-                        <div className="mb-6 md:mb-0" data-oid="fmheqbl">
+                        <div className="mb-6 md:mb-0" data-oid="w5p2l2q">
                             <Link
                                 href="/"
                                 className="text-xl tracking-tighter font-light"
-                                data-oid=".335k2u"
+                                data-oid="5vuite2"
                             >
                                 aksartiste
                             </Link>
                         </div>
                         <div
                             className="flex flex-wrap justify-center space-x-4 sm:space-x-8 text-sm uppercase tracking-widest mb-8 md:mb-0"
-                            data-oid="r7wobwh"
+                            data-oid="-_n421w"
                         >
                             <Link
                                 href="/#work"
                                 className="hover:text-black/70 transition-colors"
-                                data-oid="6ghsg4-"
+                                data-oid="hc7rc4w"
                             >
                                 Work
                             </Link>
                             <Link
                                 href="/#about"
                                 className="hover:text-black/70 transition-colors"
-                                data-oid="hx03web"
+                                data-oid="6ph91eq"
                             >
                                 About
                             </Link>
                             <Link
                                 href="/#journal"
                                 className="hover:text-black/70 transition-colors"
-                                data-oid=":-c5tyt"
+                                data-oid="j_58exk"
                             >
                                 Journal
                             </Link>
                             <Link
                                 href="/#contact"
                                 className="hover:text-black/70 transition-colors"
-                                data-oid="l8c:ec3"
+                                data-oid="k76scju"
                             >
                                 Contact
                             </Link>
@@ -390,9 +339,9 @@ export default function JournalEntry({ params }: { params: { id: string } }) {
                     </div>
                     <div
                         className="mt-10 pt-8 border-t border-gray-200 text-center text-sm text-gray-500"
-                        data-oid="wiws0:l"
+                        data-oid="5q_u79-"
                     >
-                        <p data-oid="5tonq6-">
+                        <p data-oid="gr2x2qz">
                             © {new Date().getFullYear()} aksartiste. All rights reserved.
                         </p>
                     </div>
