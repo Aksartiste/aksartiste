@@ -372,9 +372,7 @@ export default function Page() {
                                     {work.category}
                                 </p>
                                 <h3 className="text-xl font-light mb-2" data-oid="e33l884">
-                                    {work.category === 'Photography'
-                                        ? 'portraits'
-                                        : 'visual identity'}
+                                    {work.category === 'Photography' ? 'Stills' : 'visual identity'}
                                 </h3>
                                 <p className="text-sm text-gray-600" data-oid=".z5d7ai">
                                     {work.description}
