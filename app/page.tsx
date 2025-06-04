@@ -488,7 +488,7 @@ export default function Page() {
                                         : item === 2
                                           ? 'We packed light, but…'
                                           : item === 4
-                                            ? 'Behind the Lens: Creative Process'
+                                            ? 'Ashes to Intention'
                                             : 'Cigarettes'}
                                 </h3>
                                 <p className="text-sm text-gray-600" data-oid="asxm0eh">
@@ -497,7 +497,7 @@ export default function Page() {
                                         : item === 2
                                           ? 'A journey through mountains, friendship, and understanding the complexities of trauma and healing.'
                                           : item === 4
-                                            ? 'A glimpse into my creative workflow and the inspiration behind recent portrait series.'
+                                            ? 'From rejection to redemption: my journey through addiction and finding strength in art.'
                                             : 'Exploring how vulnerability creates connection in both visual and written narratives.'}
                                 </p>
                             </div>

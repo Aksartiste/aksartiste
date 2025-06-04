@@ -202,32 +202,64 @@ const journalEntries = [
     },
     {
         id: '4',
-        title: 'Behind the Lens: Creative Process',
+        title: 'Ashes to Intention',
         date: 'June 22, 2023',
         image: 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
         excerpt:
-            'A glimpse into my creative workflow and the inspiration behind recent portrait series.',
+            'From rejection to redemption: my journey through addiction and finding strength in art.',
         content: `
       <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
-        Every photograph tells a story, but behind each image lies another narrative—the creative process that brought it into being. Today, I want to pull back the curtain and share a glimpse into my workflow, from initial concept to final execution.
+        I have written about being bullied in my young days, and I'm so proud of that note that I'll re-share it someday. But today, it's about facing rejection. And I am talking about those same days when I felt it hard hitting. Being bullied in school, building up my tribe, and getting rejected by the same people Everybody was the same in a different way.
       </p>
       
       <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
-        My recent portrait series began not with a camera, but with a conversation. Over coffee with a friend who works in fashion, we discussed the intersection of personal style and identity—how the clothes we choose both express and shape our sense of self. This dialogue sparked a vision: a collection of portraits that would explore this relationship, capturing subjects in environments that reflect their aesthetic choices.
-      </p>
-      
-      <h3 class="text-xl font-light mb-4 mt-8">Finding Inspiration in the Everyday</h3>
-      
-      <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
-        Inspiration often arrives in unexpected moments. For this series, I found myself paying closer attention to strangers on the street, noting how their style choices seemed to telegraph aspects of their personality. I began collecting visual references—not just from fashion magazines, but from architecture, nature, and even food. The color palette for the series emerged from a particularly striking sunset I witnessed while stuck in traffic.
+        I had quite good confidence after physical fights with the people in my class, slapping some on the roads; aggression was there, violent behavior; it was working out that "I wasn't the one to need your sympathy." This message was being cleared out loud.
       </p>
       
       <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
-        In the studio, preparation is everything. Before each shoot, I create a mood board that combines visual references with written notes about the feeling I'm trying to evoke. I share this with my subjects ahead of time, inviting them into the creative process. Some of my favorite images from the series came from suggestions made by the subjects themselves.
+        One day outside of my classroom, three of my seniors were standing, one of whom happens to be my friend because we live in the same neighbourhood. I knew they were well connected and would save me if I was in trouble. Well, I went close to them; they looked at me in the eye, denied using his gesture, and said "go away." Why? They are ashamed of a disabled person being with them in front of everybody. And I came out so broken that I took two steps back, went to my classroom, which was 10th grade, sat on my desk, and started trying to cope with utter frustration, humiliation, and falling.
+      </p>
+      
+      <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
+        It was time for me to have my first cigarette.
+        I coped up sooner than I expected.
+        It was a new world that was exposed to me.
+      </p>
+      
+      <h3 class="text-xl font-light mb-4 mt-8">A New Identity</h3>
+      
+      <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
+        Cigarettes made me look strong, and the most important thing was networking, which used to happen on spots, inside small gullies, famous ones. I saw the shittiest people there. Everybody else knew I'm not the same anymore; bullying me or even a small inconvenience to my emotions will have rough consequences. I may kill or I might get killed.
+      </p>
+      
+      <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
+        But I'm not living in fear and silence.
+        By the time I reached grade 12, my name had been published in the newspaper for being involved in violence.
+        I changed my city but was still stuck in engineering; later, I changed my life.
+      </p>
+      
+      <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
+        I did 3D visual arts, met beautiful people, shot photos, started reading and writing, and was on a complete mission to be refined as well as I could.
+        be. I wrote stories in English with such bad grammar, yet i never stopped. I travelled to cities and countries and found mental strength in being on mountains. Everyday, I strive to become a better writer, a better photographer, a better listener, a better friend, and a better human. Shot so many people, strong ones, cancer survivors, people with disabilities, people with scars & disability after accidents, people with vitiligo, alopecia, tattooed people getting their moments needled to their skin, and at the same time, the feeling of something that'll stay with your body even after its death, like a book sent directly to heaven. Nothing feels more inspiring.
+      </p>
+      
+      <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
+        I owe my life with disability to Art.
+      </p>
+      
+      <h3 class="text-xl font-light mb-4 mt-8">Breaking Free</h3>
+      
+      <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
+        2022: We had to make more changes.
+        I'm glad to announce that, from that first cigarette to the last one I smoked, it was around 12 years.
+        I am glad to announce that I don't smoke cigarettes anymore. It's been 3.5 months, and I hope to never do it again. I collapsed, had fever, nicotine withdrawals, saved myself like a hero. I will continue strengthening, I will continue healing to the max, and I hope that relapse never happens. I promise that even if it does, I'll continue healing.
       </p>
       
       <p class="mb-10 text-base sm:text-lg text-gray-600 leading-relaxed">
-        The editing process is where the final narrative takes shape. I typically spend three times longer editing than shooting, carefully selecting images that work both individually and as part of the larger story. For this series, I found myself drawn to moments of transition—the split second where a posed expression gives way to something more authentic.
+        I hope to survive through the hardest phases of my sorrows, and I hope one when I'm at my weakest peak of emotional health, I reject the idea of taking any substances. I hope to let it pass through easy,
+        That's the goal.
+        Showing up every day, taking in the good morning sunshine, and living the life with passion & acceptance.
+        That's the plan.
       </p>
     `,
     },
