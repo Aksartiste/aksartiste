@@ -311,7 +311,12 @@ export default function Page() {
                         </p>
                         <button
                             className="w-full sm:w-auto px-8 py-3 border border-black text-sm uppercase tracking-wider hover:bg-black hover:text-white transition-colors duration-300"
-                            /* Made full width on mobile */ data-oid="knanbz2"
+                            onClick={() => {
+                                document
+                                    .getElementById('work')
+                                    ?.scrollIntoView({ behavior: 'smooth' });
+                            }}
+                            data-oid="knanbz2"
                         >
                             Explore Work
                         </button>
@@ -428,9 +433,10 @@ export default function Page() {
                 <div className="mt-16 text-center" data-oid="mtjv9tq">
                     <button
                         className="w-full sm:w-auto px-8 py-3 border border-black text-sm uppercase tracking-wider hover:bg-black hover:text-white transition-colors duration-300"
-                        /* Made full width on mobile */ data-oid="csa4_ml"
+                        onClick={() => window.open('https://forms.gle/DJhsJ47eAuFmzWbm7', '_blank')}
+                        data-oid="csa4_ml"
                     >
-                        View All Work
+                        Drop A Feeling
                     </button>
                 </div>
             </section>
@@ -772,41 +778,33 @@ export default function Page() {
                     </p>
                     <button
                         className="w-full sm:w-auto px-12 py-4 border border-black text-sm uppercase tracking-wider hover:bg-black hover:text-white transition-colors duration-300"
-                        /* Made full width on mobile */ data-oid="ltt7ez5"
+                        onClick={() => window.open('https://wa.me/9660773383', '_blank')}
+                        data-oid="ltt7ez5"
                     >
                         Get in Touch
                     </button>
                 </div>
             </section>
 
-            {/* Newsletter */}
+            {/* Contact Email */}
             <section className="py-16 sm:py-20 px-4 sm:px-8 lg:px-12 bg-gray-50" data-oid="rkqpbex">
                 <div className="max-w-xl mx-auto text-center" data-oid="6gq1_qf">
                     <h3 className="text-xl sm:text-2xl font-light mb-4 sm:mb-6" data-oid="ywfy8xi">
-                        Join the Journey
+                        Get in Touch
                     </h3>
                     <p
                         className="text-sm sm:text-base text-gray-600 mb-6 sm:mb-8"
                         data-oid="o4dk90o"
                     >
-                        Subscribe to receive updates on new work, journal entries, and occasional
-                        musings.
-                    </p>
-                    <div className="flex flex-col sm:flex-row gap-4" data-oid="2rxzyyh">
-                        <input
-                            type="email"
-                            placeholder="Your email address"
-                            className="flex-grow px-4 py-3 border border-gray-300 focus:outline-none focus:border-black"
-                            data-oid="eqzplhc"
-                        />
-
-                        <button
-                            className="w-full sm:w-auto px-6 py-3 bg-black text-white text-sm uppercase tracking-wider hover:bg-black/80 transition-colors"
-                            data-oid="ylnz20m"
+                        For any inquiries, please reach out to us at{' '}
+                        <a
+                            href="mailto:aksartiste@gmail.com"
+                            className="text-black hover:text-gray-600 transition-colors underline"
+                            data-oid="1u4gk68"
                         >
-                            Subscribe
-                        </button>
-                    </div>
+                            aksartiste@gmail.com
+                        </a>
+                    </p>
                 </div>
             </section>
 
