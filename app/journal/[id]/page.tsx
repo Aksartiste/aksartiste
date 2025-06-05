@@ -3,8 +3,17 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 
+interface JournalEntry {
+    id: string;
+    title: string;
+    date: string;
+    image: string;
+    excerpt: string;
+    content: string;
+}
+
 // Sample journal data - in a real app, this would come from a database or API
-const journalEntries = [
+const journalEntries: JournalEntry[] = [
     {
         id: '1',
         title: 'Granny Always Knew',

@@ -839,7 +839,7 @@ export default function SubcategoryPage() {
 
     const navigateGallery = (direction) => {
         if (!selectedImage) return;
-
+        // @ts-ignore
         const currentIndex = gallery.images.findIndex((img) => img.id === selectedImage.id);
         let newIndex;
 
@@ -1145,7 +1145,9 @@ export default function SubcategoryPage() {
                             data-oid="xsi-m1o"
                         >
                             <img
+                            // @ts-ignore
                                 src={selectedImage.src}
+                            // @ts-ignore
                                 alt={selectedImage.alt}
                                 className="max-h-[80vh] max-w-full object-contain"
                                 data-oid="og11i6d"
