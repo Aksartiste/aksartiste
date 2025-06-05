@@ -464,7 +464,7 @@ export default function Page() {
                             className="text-2xl sm:text-3xl font-light mb-6 sm:mb-8"
                             data-oid="68xrhm9"
                         >
-                            About
+                            Hi, I'm Akshay
                         </h2>
                         <p
                             className="text-base sm:text-lg text-gray-600 mb-4 sm:mb-6 leading-relaxed"
