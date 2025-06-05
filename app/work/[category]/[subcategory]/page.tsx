@@ -1145,9 +1145,9 @@ export default function SubcategoryPage() {
                             data-oid="xsi-m1o"
                         >
                             <img
-                            // @ts-ignore
+                                // @ts-ignore
                                 src={selectedImage.src}
-                            // @ts-ignore
+                                // @ts-ignore
                                 alt={selectedImage.alt}
                                 className="max-h-[80vh] max-w-full object-contain"
                                 data-oid="og11i6d"
