@@ -464,13 +464,13 @@ export default function Page() {
                             className="text-2xl sm:text-3xl font-light mb-6 sm:mb-8"
                             data-oid="68xrhm9"
                         >
-                            Hi, I'm Akshay
+                            Hi, I&apos;m Akshay
                         </h2>
                         <p
                             className="text-base sm:text-lg text-gray-600 mb-4 sm:mb-6 leading-relaxed"
                             data-oid="juvr-lb"
                         >
-                            I'm a multidisciplinary artist based in Mumbai. While portrait and
+                            I&apos;m a multidisciplinary artist based in Mumbai. While portrait and
                             fashion photography are at the core of my practice, my creative work
                             extends into writing, fine arts, creative direction, and emotion-led
                             visual storytelling rooted in social awareness.
@@ -754,14 +754,14 @@ export default function Page() {
             >
                 <div className="max-w-2xl mx-auto text-center" data-oid="c921_f6">
                     <h2 className="text-2xl sm:text-3xl font-light mb-4 sm:mb-6" data-oid="1h:fw:8">
-                        Let's Connect
+                        Let&apos;s Connect
                     </h2>
                     <p
                         className="text-base sm:text-lg text-gray-600 mb-8 sm:mb-10"
                         data-oid="l8kzstx"
                     >
-                        Interested in working together or just want to say hello? I'd love to hear
-                        from you.
+                        Interested in working together or just want to say hello? I&apos;d love to
+                        hear from you.
                     </p>
                     <button
                         className="w-full sm:w-auto px-12 py-4 border border-black text-sm uppercase tracking-wider hover:bg-black hover:text-white transition-colors duration-300"
