@@ -1150,15 +1150,6 @@ export default function SubcategoryPage() {
                                 className="max-h-[80vh] max-w-full object-contain"
                                 data-oid="og11i6d"
                             />
-
-                            <div
-                                className="absolute bottom-0 left-0 right-0 bg-black/50 text-white p-4 text-center"
-                                data-oid="d:n8rw3"
-                            >
-                                <p className="text-sm" data-oid="e63fr-6">
-                                    {selectedImage.alt}
-                                </p>
-                            </div>
                         </motion.div>
 
                         <button

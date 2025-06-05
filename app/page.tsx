@@ -778,7 +778,7 @@ export default function Page() {
                     </p>
                     <button
                         className="w-full sm:w-auto px-12 py-4 border border-black text-sm uppercase tracking-wider hover:bg-black hover:text-white transition-colors duration-300"
-                        onClick={() => window.open('https://wa.me/9660773383', '_blank')}
+                        onClick={() => window.open('https://wa.me/+919660773383', '_blank')}
                         data-oid="ltt7ez5"
                     >
                         Get in Touch
