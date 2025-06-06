@@ -543,10 +543,10 @@ export default function Page() {
                             data-oid="e5_r3:o"
                         >
                             <div
-                                className="aspect-video bg-gray-100 overflow-hidden mb-4"
+                                className="aspect-video bg-gray-100 overflow-hidden mb-4 relative"
                                 data-oid="8-y26h5"
                             >
-                                <img
+                                <Image
                                     src={
                                         item === 1
                                             ? 'https://res.cloudinary.com/dexibw60d/image/upload/v1749034991/output_clzh4q.png'
@@ -565,7 +565,9 @@ export default function Page() {
                                               ? 'Ashes to Intention journal entry'
                                               : 'Journal entry'
                                     }
-                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                                    className="object-cover group-hover:scale-105 transition-transform duration-700"
+                                    fill
+                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
                                     data-oid="d:dd90."
                                 />
                             </div>
@@ -666,10 +668,13 @@ export default function Page() {
                                     className="flex items-center justify-center mx-6 sm:mx-8"
                                     data-oid="ttedtsk"
                                 >
-                                    <img
+                                    <Image
                                         src={logoSrc}
                                         alt={`Brand logo ${index + 1}`}
-                                        className="h-10 sm:h-12 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity duration-300"
+                                        className="object-contain opacity-60 hover:opacity-100 transition-opacity duration-300"
+                                        width={96}
+                                        height={48}
+                                        sizes="(max-width: 768px) 96px, 128px"
                                         data-oid="q9k6i5q"
                                     />
                                 </div>
@@ -695,10 +700,13 @@ export default function Page() {
                                     className="flex items-center justify-center mx-6 sm:mx-8"
                                     data-oid="8vrj179"
                                 >
-                                    <img
+                                    <Image
                                         src={logoSrc}
                                         alt={`Brand logo ${index + 1}`}
-                                        className="h-10 sm:h-12 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity duration-300"
+                                        className="object-contain opacity-60 hover:opacity-100 transition-opacity duration-300"
+                                        width={96}
+                                        height={48}
+                                        sizes="(max-width: 768px) 96px, 128px"
                                         data-oid="hgev:r-"
                                     />
                                 </div>
@@ -728,10 +736,13 @@ export default function Page() {
                                     className="flex items-center justify-center mx-6 sm:mx-8"
                                     data-oid="5997c5v"
                                 >
-                                    <img
+                                    <Image
                                         src={logoSrc}
                                         alt={`Brand logo ${index + 13}`}
-                                        className="h-10 sm:h-12 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity duration-300"
+                                        className="object-contain opacity-60 hover:opacity-100 transition-opacity duration-300"
+                                        width={96}
+                                        height={48}
+                                        sizes="(max-width: 768px) 96px, 128px"
                                         data-oid="0m3a46x"
                                     />
                                 </div>
@@ -757,10 +768,13 @@ export default function Page() {
                                     className="flex items-center justify-center mx-6 sm:mx-8"
                                     data-oid="-2pi2-2"
                                 >
-                                    <img
+                                    <Image
                                         src={logoSrc}
                                         alt={`Brand logo ${index + 13}`}
-                                        className="h-10 sm:h-12 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity duration-300"
+                                        className="object-contain opacity-60 hover:opacity-100 transition-opacity duration-300"
+                                        width={96}
+                                        height={48}
+                                        sizes="(max-width: 768px) 96px, 128px"
                                         data-oid="-sqfart"
                                     />
                                 </div>
