@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Page() {
     const [isLoaded, setIsLoaded] = useState(false);
@@ -328,14 +329,16 @@ export default function Page() {
                             onMouseLeave={() => setIsPaused(false)}
                             data-oid="gvzun14"
                         >
-                            <img
+                            <Image
                                 key={currentPortrait}
                                 src={portraits[currentPortrait].src}
                                 alt={portraits[currentPortrait].alt}
                                 className="w-full h-full object-contain hover:cursor-zoom-in transition-opacity duration-500"
                                 loading="eager"
+                                fill
                                 sizes="(max-width: 1024px) 100vw, 50vw"
-                                /* Added sizes attribute for responsive images */ data-oid="dj6ha02"
+                                priority
+                                data-oid="xnnut2e"
                             />
 
                             {/* Navigation controls removed */}
@@ -392,11 +395,13 @@ export default function Page() {
                                     className="aspect-[3/4] bg-gray-100 overflow-hidden mb-4 relative"
                                     data-oid="pmc80bf"
                                 >
-                                    <img
+                                    <Image
                                         src={work.image}
                                         alt={work.title}
                                         className={`w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ${work.category === 'Design' ? 'blur-sm' : ''}`}
-                                        data-oid="pww3.rq"
+                                        fill
+                                        sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 16vw"
+                                        data-oid="z73y7l0"
                                     />
 
                                     {(work.category === 'Design' || work.id === 6) && (
@@ -464,7 +469,7 @@ export default function Page() {
                             className="text-2xl sm:text-3xl font-light mb-6 sm:mb-8"
                             data-oid="68xrhm9"
                         >
-                            Hi, I'm Akshay
+                            Hi, I&apos;m Akshay
                         </h2>
                         <p
                             className="text-base sm:text-lg text-gray-600 mb-4 sm:mb-6 leading-relaxed"
@@ -497,7 +502,8 @@ export default function Page() {
                             data-oid="6pvhs3d"
                         >
                             Take a look around, explore the stories, and if something speaks to you.
-                            Let's connect. I'd love to create something meaningful together.
+                            Let&apos;s connect. I&apos;d love to create something meaningful
+                            together.
                         </p>
                         <Link href="/about" className="inline-block" data-oid="0tx2du7">
                             <button
@@ -767,14 +773,14 @@ export default function Page() {
             >
                 <div className="max-w-2xl mx-auto text-center" data-oid="c921_f6">
                     <h2 className="text-2xl sm:text-3xl font-light mb-4 sm:mb-6" data-oid="1h:fw:8">
-                        Let's Connect
+                        Let&apos;s Connect
                     </h2>
                     <p
                         className="text-base sm:text-lg text-gray-600 mb-8 sm:mb-10"
                         data-oid="l8kzstx"
                     >
-                        Interested in working together or just want to say hello? I'd love to hear
-                        from you.
+                        Interested in working together or just want to say hello? I&apos;d love to
+                        hear from you.
                     </p>
                     <button
                         className="w-full sm:w-auto px-12 py-4 border border-black text-sm uppercase tracking-wider hover:bg-black hover:text-white transition-colors duration-300"
