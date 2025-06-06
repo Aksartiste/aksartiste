@@ -24,34 +24,34 @@ const journalEntries: JournalEntry[] = [
             'A childhood memory of injury, disappointment, and the simple act of love that meant everything.',
         content: `
       <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
-        When I was maybe 7 years old, I broke my right hand in school after falling down on ground with a heavy school bag. I came back home crying & kept my hand in same position to avoid extra pain from movement. Granny at home looked at me & said to someone that I don't know but an hour ago i felt something wrong happened & now this is what we're seeing!
+        When I was maybe 7 years old, I broke my right hand in school after falling down on ground with a heavy school bag. I came back home crying &amp; kept my hand in same position to avoid extra pain from movement. Granny at home looked at me &amp; said to someone that I don&apos;t know but an hour ago i felt something wrong happened &amp; now this is what we&apos;re seeing!
       </p>
       
       <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
-        Nothing much. My hand wasn't broken hard enough, As my I'm disabled my hands have conditions under that they didn't put plaster but used crepe bandage.
+        Nothing much. My hand wasn&apos;t broken hard enough, As my I&apos;m disabled my hands have conditions under that they didn&apos;t put plaster but used crepe bandage.
       </p>
       
       <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
-        The only thing that I was excited about that whole week was of the birthday of my best friend who happens to live in front of my home! He had other best friends though. I talked to my granny if that I have to be okay before going to his birthday party. They laughed & said you need to take care.
+        The only thing that I was excited about that whole week was of the birthday of my best friend who happens to live in front of my home! He had other best friends though. I talked to my granny if that I have to be okay before going to his birthday party. They laughed &amp; said you need to take care.
       </p>
       
       <h3 class="text-xl font-light mb-4 mt-8">The Birthday Party</h3>
       
       <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
-        Well, I went to the party with the bandage on, it was still paining while moving my hand. Other guests were lost in themselves, none of them used to like me because I wasn't as cool as them. They atleast didn't bully me so I was kind of okay with being around them.
+        Well, I went to the party with the bandage on, it was still paining while moving my hand. Other guests were lost in themselves, none of them used to like me because I wasn&apos;t as cool as them. They atleast didn&apos;t bully me so I was kind of okay with being around them.
       </p>
       
       <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
-        Remember that time when we used to fill a big balloon with chocolates in it & hang it above/around the cake & the birthday boy! School shoes were apparently only shoes that we wore in parties & functions. I was there, they blew that big balloon & shower of chocolates & glitter happened. Everybody started the loot. I stood there because of my broken hand, smiled because everybody was having fun. A chocolate fell right in front of my eyes & as I tried bending down to pick it up, someone came & took it. I didn't get any chocolate in that party, but had food & came back home!
+        Remember that time when we used to fill a big balloon with chocolates in it &amp; hang it above/around the cake &amp; the birthday boy! School shoes were apparently only shoes that we wore in parties &amp; functions. I was there, they blew that big balloon &amp; shower of chocolates &amp; glitter happened. Everybody started the loot. I stood there because of my broken hand, smiled because everybody was having fun. A chocolate fell right in front of my eyes &amp; as I tried bending down to pick it up, someone came &amp; took it. I didn&apos;t get any chocolate in that party, but had food &amp; came back home!
       </p>
       
       <p class="mb-6 text-base sm:text-lg text-gray-600 leading-relaxed">
-        I told granny that this happened & we were walking around a park, we went to the shop & bought myself an eclairs (🍬) Honestly I didn't think I'd get it, or I deserved it or even if we have enough money for this thing to happen.
+        I told granny that this happened &amp; we were walking around a park, we went to the shop &amp; bought myself an eclairs (🍬) Honestly I didn&apos;t think I&apos;d get it, or I deserved it or even if we have enough money for this thing to happen.
       </p>
       
       <p class="mb-10 text-base sm:text-lg text-gray-600 leading-relaxed">
-        But it happened. And it was maybe the first time I felt love, kindness & acceptance.
-        I still remember everything in photographic image, I have tears just by remembering. I don't know why I wrote it, I don't know if I'll post it, all I know is I'm crying right now & it feels so good like it happened yesterday.
+        But it happened. And it was maybe the first time I felt love, kindness &amp; acceptance.
+        I still remember everything in photographic image, I have tears just by remembering. I don&apos;t know why I wrote it, I don&apos;t know if I&apos;ll post it, all I know is I&apos;m crying right now &amp; it feels so good like it happened yesterday.
       </p>
     `,
     },

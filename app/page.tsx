@@ -480,7 +480,7 @@ export default function Page() {
                             className="text-base sm:text-lg text-gray-600 mb-4 sm:mb-6 leading-relaxed"
                             data-oid="l:7yl3o"
                         >
-                            I'm a multidisciplinary artist based in Mumbai. While portrait and
+                            I&apos;m a multidisciplinary artist based in Mumbai. While portrait and
                             fashion photography are at the core of my practice, my creative work
                             extends into writing, fine arts, creative direction, and emotion-led
                             visual storytelling rooted in social awareness.
