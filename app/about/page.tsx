@@ -103,17 +103,17 @@ export default function AboutPage() {
 
                 <div className="prose prose-lg max-w-none" data-oid="-0sv.e5">
                     <h2 className="text-2xl sm:text-3xl font-light mb-6" data-oid="053ph8:">
-                        Hi, I'm Akshay
+                        Hi, I&#39;m Akshay
                     </h2>
 
                     <p
                         className="text-base sm:text-lg text-gray-600 mb-6 leading-relaxed"
                         data-oid="9hb-1og"
                     >
-                        I'm a multidisciplinary artist based in Mumbai. While portrait and fashion
-                        photography are at the core of my practice, my creative work extends into
-                        writing, fine arts, creative direction, and emotion-led visual storytelling
-                        rooted in social awareness.
+                        I&#39;m a multidisciplinary artist based in Mumbai. While portrait and
+                        fashion photography are at the core of my practice, my creative work extends
+                        into writing, fine arts, creative direction, and emotion-led visual
+                        storytelling rooted in social awareness.
                     </p>
 
                     <p
@@ -135,11 +135,11 @@ export default function AboutPage() {
                         className="text-base sm:text-lg text-gray-600 mb-6 leading-relaxed"
                         data-oid="c9l.gip"
                     >
-                        Over the years, I've had the privilege of working with 100+ clients across
-                        20+ cities in India, creating everything from soulful portraits to
-                        high-impact product and food photography. I've also worked on brand
+                        Over the years, I&#39;ve had the privilege of working with 100+ clients
+                        across 20+ cities in India, creating everything from soulful portraits to
+                        high-impact product and food photography. I&#39;ve also worked on brand
                         campaigns and marketing strategy for influential names like Luke Coutinho,
-                        HealthSense, and Galli Wear & more.
+                        HealthSense, and Galli Wear &amp; more.
                     </p>
 
                     <p
@@ -147,9 +147,9 @@ export default function AboutPage() {
                         data-oid="h8j3o_5"
                     >
                         My work has been featured on platforms like PhotoVogue, Google India, Mob
-                        Journal, Malvie Magazine, and many others. I've also been interviewed by
-                        platforms such as The Logical Indian and People of India, where I've shared
-                        insights into my creative journey and purpose.
+                        Journal, Malvie Magazine, and many others. I&#39;ve also been interviewed by
+                        platforms such as The Logical Indian and People of India, where I&#39;ve
+                        shared insights into my creative journey and purpose.
                     </p>
 
                     <h2 className="text-2xl sm:text-3xl font-light mb-6 mt-10" data-oid="itiqnho">
@@ -170,10 +170,10 @@ export default function AboutPage() {
                         className="text-base sm:text-lg text-gray-600 mb-6 leading-relaxed"
                         data-oid="5r3:0gn"
                     >
-                        As an artist, I'm driven by the need to create meaning through aesthetics,
-                        whether it's shaping a visual identity or telling stories that challenge
-                        perception. I aim to build spaces where art meets empathy/beauty meets
-                        truth.
+                        As an artist, I&#39;m driven by the need to create meaning through
+                        aesthetics, whether it&#39;s shaping a visual identity or telling stories
+                        that challenge perception. I aim to build spaces where art meets
+                        empathy/beauty meets truth.
                     </p>
 
                     <p
@@ -181,7 +181,7 @@ export default function AboutPage() {
                         data-oid="9c-q-3s"
                     >
                         If you resonate with art that reflects real people and real stories, chances
-                        are we'll get along just fine. Well, my pronouns are hire/me.
+                        are we&#39;ll get along just fine. Well, my pronouns are hire/me.
                     </p>
 
                     <div className="mt-10 text-center" data-oid="ngjyvug">
