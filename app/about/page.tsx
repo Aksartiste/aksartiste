@@ -90,7 +90,7 @@ export default function AboutPage() {
                     <img
                         src="https://res.cloudinary.com/dexibw60d/image/upload/v1749044747/aks-mountains.jpg"
                         alt="Akshay in the mountains"
-                        className="object-contain w-full h-auto mx-auto"
+                        className="object-contain mx-auto h-[486px] w-[745px]"
                         loading="eager"
                         data-oid="n44_sy4"
                     />
