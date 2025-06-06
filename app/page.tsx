@@ -844,7 +844,7 @@ export default function Page() {
                                             data-oid="ri4099f"
                                         />
                                     </svg>
-                                    Connect on WhatsApp
+                                    WhatsApp
                                 </a>
                                 <a
                                     href="mailto:aksartiste@gmail.com"
@@ -862,7 +862,7 @@ export default function Page() {
                                             data-oid="asf6f7j"
                                         />
                                     </svg>
-                                    Send an Email
+                                    Email
                                 </a>
                             </div>
                         </div>
