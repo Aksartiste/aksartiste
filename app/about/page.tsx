@@ -92,7 +92,7 @@ export default function AboutPage() {
                         <Image
                             src="https://res.cloudinary.com/dexibw60d/image/upload/v1749044747/aks-mountains.jpg"
                             alt="Akshay in the mountains"
-                            className="object-contain"
+                            className="object-cover"
                             fill
                             priority
                             sizes="(max-width: 768px) 100vw, 745px"
