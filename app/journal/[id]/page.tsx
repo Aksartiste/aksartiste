@@ -288,54 +288,54 @@ export default function JournalEntry({ params }: { params: { id: string } }) {
     return (
         <div
             className={`min-h-screen bg-white text-gray-900 font-serif transition-opacity duration-1000 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}
-            data-oid="tuqj_dh"
+            data-oid="v:mss4:"
         >
             {/* Navigation */}
             <nav
                 className="fixed top-0 left-0 right-0 z-50 bg-white/95 border-b border-gray-200"
-                data-oid="l2w8gez"
+                data-oid="ni36pv:"
             >
-                <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12" data-oid=":mxakwt">
+                <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12" data-oid="5w4r8r2">
                     <div
                         className="flex justify-between items-center h-16 sm:h-20"
-                        data-oid="8_p8q8w"
+                        data-oid="qs:9brd"
                     >
                         <Link
                             href="/"
                             className="text-xl sm:text-2xl tracking-tighter font-light"
-                            data-oid="3j:_qxs"
+                            data-oid="ashdfg-"
                         >
                             aksartiste
                         </Link>
                         <div
                             className="hidden md:flex space-x-8 text-sm uppercase tracking-widest"
-                            data-oid="w1m3xkv"
+                            data-oid="jcs33vy"
                         >
                             <Link
                                 href="/#work"
                                 className="hover:text-black/70 transition-colors"
-                                data-oid="vn-gzm4"
+                                data-oid="g8a0cgq"
                             >
                                 Work
                             </Link>
                             <Link
                                 href="/#about"
                                 className="hover:text-black/70 transition-colors"
-                                data-oid="cuwwowl"
+                                data-oid="0ymufz4"
                             >
                                 About
                             </Link>
                             <Link
                                 href="/#journal"
                                 className="hover:text-black/70 transition-colors"
-                                data-oid="60l1t7o"
+                                data-oid="qzfteuj"
                             >
                                 Journal
                             </Link>
                             <Link
                                 href="/#contact"
                                 className="hover:text-black/70 transition-colors"
-                                data-oid="8tdz:_t"
+                                data-oid=".ayc4c3"
                             >
                                 Contact
                             </Link>
@@ -347,12 +347,12 @@ export default function JournalEntry({ params }: { params: { id: string } }) {
             {/* Journal Entry Content */}
             <article
                 className="pt-28 sm:pt-32 pb-16 sm:pb-20 px-4 sm:px-8 lg:px-12 max-w-4xl mx-auto"
-                data-oid="m7o.8ov"
+                data-oid="3rsr53:"
             >
                 <Link
                     href="/#journal"
                     className="inline-flex items-center text-sm text-gray-600 mb-8 hover:text-black transition-colors"
-                    data-oid="zvq5ndi"
+                    data-oid="8b_fav3"
                 >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -360,29 +360,29 @@ export default function JournalEntry({ params }: { params: { id: string } }) {
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
-                        data-oid="po40kne"
+                        data-oid="kqawlvu"
                     >
                         <path
                             strokeLinecap="round"
                             strokeLinejoin="round"
                             strokeWidth={2}
                             d="M10 19l-7-7m0 0l7-7m-7 7h18"
-                            data-oid="83mild7"
+                            data-oid="gcwbrqa"
                         />
                     </svg>
                     Back to Journal
                 </Link>
 
-                <div className="mb-10" data-oid="4r:.ujy">
+                <div className="mb-10" data-oid="ww9r0eh">
                     <p
                         className="text-xs uppercase tracking-wider text-gray-500 mb-2"
-                        data-oid="9d-rqh0"
+                        data-oid="bxo7vw."
                     >
                         {entry.date}
                     </p>
                     <h1
                         className="text-3xl sm:text-4xl md:text-5xl font-light leading-tight mb-6"
-                        data-oid="57s0v.p"
+                        data-oid="0ctqalm"
                     >
                         {entry.title}
                     </h1>
@@ -390,28 +390,28 @@ export default function JournalEntry({ params }: { params: { id: string } }) {
 
                 <div
                     className="aspect-[16/9] bg-gray-100 overflow-hidden mb-10 rounded-lg shadow-sm"
-                    data-oid="purqpp8"
+                    data-oid="egc_g5y"
                 >
                     <img
                         src={entry.image}
                         alt={entry.title}
                         className="w-full h-full object-cover"
                         loading="eager"
-                        data-oid="a3yt0.b"
+                        data-oid="4803mot"
                     />
                 </div>
 
                 <div
                     className="prose prose-lg max-w-none"
                     dangerouslySetInnerHTML={{ __html: entry.content }}
-                    data-oid=":bya2.f"
+                    data-oid="p5v3.jn"
                 />
 
-                <div className="mt-16 border-t border-gray-200 pt-10" data-oid="pm_38js">
-                    <h3 className="text-xl font-light mb-6" data-oid="z8k6qb.">
+                <div className="mt-16 border-t border-gray-200 pt-10" data-oid="n89lnma">
+                    <h3 className="text-xl font-light mb-6" data-oid=":tw:f2t">
                         More Journal Entries
                     </h3>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6" data-oid="ytjd967">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6" data-oid="kekc:6b">
                         {journalEntries
                             .filter((e) => e.id !== id)
                             .slice(0, 2)
@@ -420,30 +420,30 @@ export default function JournalEntry({ params }: { params: { id: string } }) {
                                     href={`/journal/${relatedEntry.id}`}
                                     key={relatedEntry.id}
                                     className="group"
-                                    data-oid="hbltcdf"
+                                    data-oid="upxbzsq"
                                 >
                                     <div
                                         className="aspect-video bg-gray-100 overflow-hidden mb-4"
-                                        data-oid="ms2_fcw"
+                                        data-oid="nfw2.ao"
                                     >
                                         <img
                                             src={relatedEntry.image}
                                             alt={relatedEntry.title}
                                             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                                            data-oid="g7tocoe"
+                                            data-oid="v32wcpy"
                                         />
                                     </div>
-                                    <div data-oid="3d00z08">
+                                    <div data-oid="ey7rcmu">
                                         <p
                                             className="text-xs uppercase tracking-wider text-gray-500 mb-1"
-                                            data-oid="r-2248."
+                                            data-oid="d.4t2w2"
                                         >
                                             {relatedEntry.date}
                                         </p>
-                                        <h3 className="text-xl font-light mb-2" data-oid="_236icu">
+                                        <h3 className="text-xl font-light mb-2" data-oid="c9pp0l2">
                                             {relatedEntry.title}
                                         </h3>
-                                        <p className="text-sm text-gray-600" data-oid="wuyw4x9">
+                                        <p className="text-sm text-gray-600" data-oid="rihxu8n">
                                             {relatedEntry.excerpt}
                                         </p>
                                     </div>
@@ -456,51 +456,51 @@ export default function JournalEntry({ params }: { params: { id: string } }) {
             {/* Footer */}
             <footer
                 className="py-10 sm:py-12 px-4 sm:px-8 lg:px-12 border-t border-gray-200"
-                data-oid="3plko0u"
+                data-oid="le:y:fa"
             >
-                <div className="max-w-7xl mx-auto" data-oid="qkort32">
+                <div className="max-w-7xl mx-auto" data-oid=":1emtr4">
                     <div
                         className="flex flex-col md:flex-row justify-between items-center"
-                        data-oid="0rmgh8f"
+                        data-oid="4ftkh3n"
                     >
-                        <div className="mb-6 md:mb-0" data-oid="b.cux.r">
+                        <div className="mb-6 md:mb-0" data-oid="dsq0::g">
                             <Link
                                 href="/"
                                 className="text-xl tracking-tighter font-light"
-                                data-oid="7x9zha5"
+                                data-oid="_iw954b"
                             >
                                 aksartiste
                             </Link>
                         </div>
                         <div
                             className="flex flex-wrap justify-center space-x-4 sm:space-x-8 text-sm uppercase tracking-widest mb-8 md:mb-0"
-                            data-oid="mycttsb"
+                            data-oid="5d:kg22"
                         >
                             <Link
                                 href="/#work"
                                 className="hover:text-black/70 transition-colors"
-                                data-oid="78ozhkj"
+                                data-oid="ekw3.3d"
                             >
                                 Work
                             </Link>
                             <Link
                                 href="/#about"
                                 className="hover:text-black/70 transition-colors"
-                                data-oid="z546a40"
+                                data-oid="isyicra"
                             >
                                 About
                             </Link>
                             <Link
                                 href="/#journal"
                                 className="hover:text-black/70 transition-colors"
-                                data-oid="wyo0o0c"
+                                data-oid="mnmyc3m"
                             >
                                 Journal
                             </Link>
                             <Link
                                 href="/#contact"
                                 className="hover:text-black/70 transition-colors"
-                                data-oid="1-bziu:"
+                                data-oid="4b-::8d"
                             >
                                 Contact
                             </Link>
@@ -508,9 +508,9 @@ export default function JournalEntry({ params }: { params: { id: string } }) {
                     </div>
                     <div
                         className="mt-10 pt-8 border-t border-gray-200 text-center text-sm text-gray-500"
-                        data-oid="nqj0iui"
+                        data-oid="xgalle-"
                     >
-                        <p data-oid="8bn1tty">
+                        <p data-oid="shv7w2c">
                             © {new Date().getFullYear()} aksartiste. All rights reserved.
                         </p>
                     </div>

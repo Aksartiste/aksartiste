@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useParams } from 'next/navigation';
 
@@ -855,54 +856,54 @@ export default function SubcategoryPage() {
     return (
         <div
             className={`min-h-screen bg-white text-gray-900 font-serif transition-opacity duration-1000 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}
-            data-oid="q6ovt:w"
+            data-oid="s.28eze"
         >
             {/* Navigation */}
             <nav
                 className="fixed top-0 left-0 right-0 z-50 bg-white/95 border-b border-gray-200"
-                data-oid="3:ubvm."
+                data-oid="_p2s7zr"
             >
-                <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12" data-oid="p1ouq6t">
+                <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12" data-oid="t3ish:d">
                     <div
                         className="flex justify-between items-center h-16 sm:h-20"
-                        data-oid="peu:v.0"
+                        data-oid="4xvee_o"
                     >
                         <a
                             href="/"
                             className="text-xl sm:text-2xl tracking-tighter font-light"
-                            data-oid="szgdt:k"
+                            data-oid="snakwol"
                         >
                             aksartiste
                         </a>
                         <div
                             className="hidden md:flex space-x-8 text-sm uppercase tracking-widest"
-                            data-oid="3qch.xs"
+                            data-oid="x8_mf8v"
                         >
                             <a
                                 href="/#work"
                                 className="hover:text-black/70 transition-colors"
-                                data-oid="-bkgn1a"
+                                data-oid="s5hks-m"
                             >
                                 Work
                             </a>
                             <a
                                 href="/#about"
                                 className="hover:text-black/70 transition-colors"
-                                data-oid="qoecwsz"
+                                data-oid="1ad.hxq"
                             >
                                 About
                             </a>
                             <a
                                 href="/#journal"
                                 className="hover:text-black/70 transition-colors"
-                                data-oid="q9cxwxd"
+                                data-oid="v0x3v4b"
                             >
                                 Journal
                             </a>
                             <a
                                 href="/#contact"
                                 className="hover:text-black/70 transition-colors"
-                                data-oid="xpg.cjb"
+                                data-oid="vgwaj1a"
                             >
                                 Contact
                             </a>
@@ -911,7 +912,7 @@ export default function SubcategoryPage() {
                             className="md:hidden p-2 -mr-2"
                             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                             aria-label="Toggle menu"
-                            data-oid="9gup0hi"
+                            data-oid="q7tidyv"
                         >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -920,13 +921,13 @@ export default function SubcategoryPage() {
                                 strokeWidth={1.5}
                                 stroke="currentColor"
                                 className="w-6 h-6"
-                                data-oid="4ltoye8"
+                                data-oid=".w4b_37"
                             >
                                 <path
                                     strokeLinecap="round"
                                     strokeLinejoin="round"
                                     d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                                    data-oid="x6_j1zf"
+                                    data-oid="_lhqxr2"
                                 />
                             </svg>
                         </button>
@@ -934,7 +935,7 @@ export default function SubcategoryPage() {
                 </div>
 
                 {/* Mobile Menu */}
-                <AnimatePresence data-oid="xthv6:e">
+                <AnimatePresence data-oid="zxg6s:5">
                     {mobileMenuOpen && (
                         <motion.div
                             className="md:hidden absolute top-16 sm:top-20 left-0 right-0 bg-white border-b border-gray-200 shadow-lg"
@@ -942,17 +943,17 @@ export default function SubcategoryPage() {
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: -10 }}
                             transition={{ duration: 0.2 }}
-                            data-oid="yttykyv"
+                            data-oid="-erojlm"
                         >
                             <div
                                 className="flex flex-col py-4 px-6 sm:px-8 lg:px-12 space-y-6 text-sm uppercase tracking-widest"
-                                data-oid="2cu96h6"
+                                data-oid="2mycly:"
                             >
                                 <a
                                     href="/#work"
                                     className="py-3 block hover:text-black/70 transition-colors"
                                     onClick={() => setMobileMenuOpen(false)}
-                                    data-oid="i:5mcu1"
+                                    data-oid="noeukqo"
                                 >
                                     Work
                                 </a>
@@ -960,7 +961,7 @@ export default function SubcategoryPage() {
                                     href="/#about"
                                     className="py-3 block hover:text-black/70 transition-colors"
                                     onClick={() => setMobileMenuOpen(false)}
-                                    data-oid=":dw79lj"
+                                    data-oid="7wcaw2."
                                 >
                                     About
                                 </a>
@@ -968,7 +969,7 @@ export default function SubcategoryPage() {
                                     href="/#journal"
                                     className="py-3 block hover:text-black/70 transition-colors"
                                     onClick={() => setMobileMenuOpen(false)}
-                                    data-oid="30pgcqu"
+                                    data-oid="l:xw66b"
                                 >
                                     Journal
                                 </a>
@@ -976,7 +977,7 @@ export default function SubcategoryPage() {
                                     href="/#contact"
                                     className="py-3 block hover:text-black/70 transition-colors"
                                     onClick={() => setMobileMenuOpen(false)}
-                                    data-oid="98zsqsb"
+                                    data-oid="p5f3sgx"
                                 >
                                     Contact
                                 </a>
@@ -989,46 +990,46 @@ export default function SubcategoryPage() {
             {/* Main Content */}
             <main
                 className="pt-28 sm:pt-32 pb-16 sm:pb-20 px-4 sm:px-8 lg:px-12 max-w-7xl mx-auto"
-                data-oid="af7psen"
+                data-oid="yqu-q01"
             >
                 {/* Breadcrumb */}
-                <div className="mb-8" data-oid="q65:d6v">
-                    <div className="flex items-center text-sm text-gray-500" data-oid="38hazj3">
+                <div className="mb-8" data-oid="xbjigp0">
+                    <div className="flex items-center text-sm text-gray-500" data-oid="-nsp.l8">
                         <Link
                             href="/"
                             className="hover:text-black transition-colors"
-                            data-oid=":0u1zq5"
+                            data-oid="gwzru.6"
                         >
                             Home
                         </Link>
-                        <span className="mx-2" data-oid="t9u.yne">
+                        <span className="mx-2" data-oid="y-0j-1n">
                             /
                         </span>
                         <Link
                             href="/#work"
                             className="hover:text-black transition-colors"
-                            data-oid="jb1evzb"
+                            data-oid="ujiwwq4"
                         >
                             Work
                         </Link>
-                        <span className="mx-2" data-oid="ox24pu_">
+                        <span className="mx-2" data-oid="ia6ukkx">
                             /
                         </span>
-                        <span className="text-black capitalize" data-oid="s0_us:-">
+                        <span className="text-black capitalize" data-oid="07jb8gv">
                             {gallery.title}
                         </span>
                     </div>
                 </div>
 
                 {/* Gallery Header */}
-                <div className="mb-12" data-oid="25vdd_b">
+                <div className="mb-12" data-oid="bew1.dy">
                     <h1
                         className="text-3xl sm:text-4xl md:text-5xl font-light mb-4"
-                        data-oid="fmb10i1"
+                        data-oid="kzyzik5"
                     >
                         {gallery.title}
                     </h1>
-                    <p className="text-base sm:text-lg text-gray-600 max-w-2xl" data-oid="k:8u3em">
+                    <p className="text-base sm:text-lg text-gray-600 max-w-2xl" data-oid="cnrec.4">
                         {gallery.description}
                     </p>
                 </div>
@@ -1036,36 +1037,43 @@ export default function SubcategoryPage() {
                 {/* Gallery Grid - Behance-like masonry grid */}
                 <div
                     className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6"
-                    data-oid="v:ehkg-"
+                    data-oid="to7kc31"
                 >
                     {gallery.images.map((image) => (
                         <div
                             key={image.id}
                             className={`${subcategory !== 'events' ? 'cursor-pointer' : ''} group`}
                             onClick={() => subcategory !== 'events' && openGallery(image)}
-                            data-oid="37:b3od"
+                            data-oid="qt9:q2p"
                         >
                             <div
                                 className="aspect-auto bg-gray-100 overflow-hidden"
-                                data-oid="3g0gy8u"
+                                data-oid="v7m.u.p"
                             >
-                                <img
-                                    src={image.src}
-                                    alt={image.alt}
-                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                                    data-oid="baesvw0"
-                                />
+                                <div
+                                    className="relative w-full h-full aspect-auto"
+                                    data-oid="vdb1uuj"
+                                >
+                                    <Image
+                                        src={image.src}
+                                        alt={image.alt}
+                                        className="object-cover group-hover:scale-105 transition-transform duration-700"
+                                        fill
+                                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                                        data-oid="hk4g_.5"
+                                    />
+                                </div>
                             </div>
                         </div>
                     ))}
                 </div>
 
                 {/* Back button */}
-                <div className="mt-16" data-oid=":9.g4i4">
+                <div className="mt-16" data-oid="0.qwn00">
                     <Link
                         href="/#work"
                         className="inline-block px-8 py-3 border border-black text-sm uppercase tracking-wider hover:bg-black hover:text-white transition-colors duration-300"
-                        data-oid="wk09-ji"
+                        data-oid="w5982d3"
                     >
                         Back to Work
                     </Link>
@@ -1073,7 +1081,7 @@ export default function SubcategoryPage() {
             </main>
 
             {/* Lightbox Gallery */}
-            <AnimatePresence data-oid="1fp4u14">
+            <AnimatePresence data-oid="7l0fwve">
                 {selectedImage && (
                     <motion.div
                         initial={{ opacity: 0 }}
@@ -1082,13 +1090,13 @@ export default function SubcategoryPage() {
                         transition={{ duration: 0.3 }}
                         className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4 sm:p-8"
                         onClick={closeGallery}
-                        data-oid="2cm8qci"
+                        data-oid="4bfjx6q"
                     >
                         <button
                             className="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors"
                             onClick={closeGallery}
                             aria-label="Close gallery"
-                            data-oid="_9gtq6."
+                            data-oid="idj:9tf"
                         >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -1096,14 +1104,14 @@ export default function SubcategoryPage() {
                                 fill="none"
                                 viewBox="0 0 24 24"
                                 stroke="currentColor"
-                                data-oid="07q5jep"
+                                data-oid="6xlpcd5"
                             >
                                 <path
                                     strokeLinecap="round"
                                     strokeLinejoin="round"
                                     strokeWidth={2}
                                     d="M6 18L18 6M6 6l12 12"
-                                    data-oid="q4fd6tx"
+                                    data-oid="-2pl5tg"
                                 />
                             </svg>
                         </button>
@@ -1115,7 +1123,7 @@ export default function SubcategoryPage() {
                                 navigateGallery('prev');
                             }}
                             aria-label="Previous image"
-                            data-oid="xx7pagw"
+                            data-oid="tjd6w51"
                         >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -1123,14 +1131,14 @@ export default function SubcategoryPage() {
                                 fill="none"
                                 viewBox="0 0 24 24"
                                 stroke="currentColor"
-                                data-oid="lon7480"
+                                data-oid="ukme3ij"
                             >
                                 <path
                                     strokeLinecap="round"
                                     strokeLinejoin="round"
                                     strokeWidth={2}
                                     d="M15 19l-7-7 7-7"
-                                    data-oid="nit2q2e"
+                                    data-oid="1i7ba--"
                                 />
                             </svg>
                         </button>
@@ -1142,16 +1150,21 @@ export default function SubcategoryPage() {
                             exit={{ scale: 0.9, opacity: 0 }}
                             transition={{ duration: 0.3 }}
                             onClick={(e) => e.stopPropagation()}
-                            data-oid="xsi-m1o"
+                            data-oid="_:hg1-0"
                         >
-                            <img
-                                // @ts-ignore
-                                src={selectedImage.src}
-                                // @ts-ignore
-                                alt={selectedImage.alt}
-                                className="max-h-[80vh] max-w-full object-contain"
-                                data-oid="og11i6d"
-                            />
+                            <div className="relative max-h-[80vh] max-w-full" data-oid="l6nc4kw">
+                                {selectedImage && (
+                                    <Image
+                                        src={selectedImage.src}
+                                        alt={selectedImage.alt}
+                                        className="object-contain"
+                                        width={selectedImage.width || 1200}
+                                        height={selectedImage.height || 1600}
+                                        priority
+                                        data-oid="8m85fhh"
+                                    />
+                                )}
+                            </div>
                         </motion.div>
 
                         <button
@@ -1161,7 +1174,7 @@ export default function SubcategoryPage() {
                                 navigateGallery('next');
                             }}
                             aria-label="Next image"
-                            data-oid="59601fn"
+                            data-oid="wzf3z8."
                         >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -1169,14 +1182,14 @@ export default function SubcategoryPage() {
                                 fill="none"
                                 viewBox="0 0 24 24"
                                 stroke="currentColor"
-                                data-oid="-mersc0"
+                                data-oid="g20tewu"
                             >
                                 <path
                                     strokeLinecap="round"
                                     strokeLinejoin="round"
                                     strokeWidth={2}
                                     d="M9 5l7 7-7 7"
-                                    data-oid="lvm93jg"
+                                    data-oid="i8p5.ts"
                                 />
                             </svg>
                         </button>
@@ -1187,62 +1200,62 @@ export default function SubcategoryPage() {
             {/* Footer */}
             <footer
                 className="py-10 sm:py-12 px-4 sm:px-8 lg:px-12 border-t border-gray-200"
-                data-oid="gjbur86"
+                data-oid="x04eiw7"
             >
-                <div className="max-w-7xl mx-auto" data-oid="si81m5i">
+                <div className="max-w-7xl mx-auto" data-oid="hse937r">
                     <div
                         className="flex flex-col md:flex-row justify-between items-center"
-                        data-oid="-bke2z1"
+                        data-oid="0kxydq4"
                     >
-                        <div className="mb-6 md:mb-0" data-oid="ipexibq">
+                        <div className="mb-6 md:mb-0" data-oid="sny0t1b">
                             <a
                                 href="/"
                                 className="text-xl tracking-tighter font-light"
-                                data-oid="zl619fa"
+                                data-oid="4ad3c8n"
                             >
                                 aksartiste
                             </a>
                         </div>
                         <div
                             className="flex flex-wrap justify-center space-x-4 sm:space-x-8 text-sm uppercase tracking-widest mb-8 md:mb-0"
-                            data-oid="f5b1g:p"
+                            data-oid="69qxl-z"
                         >
                             <a
                                 href="/#work"
                                 className="hover:text-black/70 transition-colors"
-                                data-oid=":47ht1j"
+                                data-oid="so8-dai"
                             >
                                 Work
                             </a>
                             <a
                                 href="/#about"
                                 className="hover:text-black/70 transition-colors"
-                                data-oid="yufoksr"
+                                data-oid="eqeul1r"
                             >
                                 About
                             </a>
                             <a
                                 href="/#journal"
                                 className="hover:text-black/70 transition-colors"
-                                data-oid="_1ixwlg"
+                                data-oid="q-wce:5"
                             >
                                 Journal
                             </a>
                             <a
                                 href="/#contact"
                                 className="hover:text-black/70 transition-colors"
-                                data-oid=".808xc1"
+                                data-oid="s21loze"
                             >
                                 Contact
                             </a>
                         </div>
-                        <div className="flex space-x-8 sm:space-x-6" data-oid="vf:uy5j">
+                        <div className="flex space-x-8 sm:space-x-6" data-oid="6pb_k8z">
                             <a
                                 href="#"
                                 className="text-gray-500 hover:text-black transition-colors"
-                                data-oid="-qpsn1v"
+                                data-oid="pdrrvdl"
                             >
-                                <span className="sr-only" data-oid="tzwg0_0">
+                                <span className="sr-only" data-oid="f9.h-du">
                                     Instagram
                                 </span>
                                 <svg
@@ -1250,22 +1263,22 @@ export default function SubcategoryPage() {
                                     fill="currentColor"
                                     viewBox="0 0 24 24"
                                     aria-hidden="true"
-                                    data-oid="ic5bgh:"
+                                    data-oid="94:vfyy"
                                 >
                                     <path
                                         fillRule="evenodd"
                                         d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
                                         clipRule="evenodd"
-                                        data-oid="s1dzm:l"
+                                        data-oid="3bk4dpf"
                                     />
                                 </svg>
                             </a>
                             <a
                                 href="#"
                                 className="text-gray-500 hover:text-black transition-colors"
-                                data-oid="gk1w8tc"
+                                data-oid="3lubj6m"
                             >
-                                <span className="sr-only" data-oid="is-3vi:">
+                                <span className="sr-only" data-oid="37ajlrl">
                                     Twitter
                                 </span>
                                 <svg
@@ -1273,20 +1286,20 @@ export default function SubcategoryPage() {
                                     fill="currentColor"
                                     viewBox="0 0 24 24"
                                     aria-hidden="true"
-                                    data-oid="ogk210-"
+                                    data-oid="e6g2-gv"
                                 >
                                     <path
                                         d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
-                                        data-oid=":oawsun"
+                                        data-oid="rf0c0ns"
                                     />
                                 </svg>
                             </a>
                             <a
                                 href="#"
                                 className="text-gray-500 hover:text-black transition-colors"
-                                data-oid="jujyaaw"
+                                data-oid="9it69ai"
                             >
-                                <span className="sr-only" data-oid="l.bnid2">
+                                <span className="sr-only" data-oid="3jqv1ji">
                                     Pinterest
                                 </span>
                                 <svg
@@ -1294,13 +1307,13 @@ export default function SubcategoryPage() {
                                     fill="currentColor"
                                     viewBox="0 0 24 24"
                                     aria-hidden="true"
-                                    data-oid="r4fdzch"
+                                    data-oid="f-_dcw_"
                                 >
                                     <path
                                         d="M12 0c-6.627 0-12 5.372-12 12 0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146 1.124.347 2.317.535 3.554.535 6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"
                                         fillRule="evenodd"
                                         clipRule="evenodd"
-                                        data-oid=".x8ohr6"
+                                        data-oid="3tvyq05"
                                     />
                                 </svg>
                             </a>
@@ -1308,9 +1321,9 @@ export default function SubcategoryPage() {
                     </div>
                     <div
                         className="mt-10 pt-8 border-t border-gray-200 text-center text-sm text-gray-500"
-                        data-oid="i4rj4_4"
+                        data-oid=".3co4pb"
                     >
-                        <p data-oid="-bt35::">
+                        <p data-oid="qrrmwpy">
                             © {new Date().getFullYear()} aksartiste. All rights reserved.
                         </p>
                     </div>
