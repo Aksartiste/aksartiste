@@ -162,45 +162,45 @@ export default function Page() {
                         className="flex justify-between items-center h-16 sm:h-20"
                         data-oid="rjh1x_u"
                     >
-                        <a
-                            href="#"
+                        <Link
+                            href="/"
                             className="text-xl sm:text-2xl tracking-tighter font-light"
                             data-oid="ck6h-xp"
                         >
                             aksartiste
-                        </a>
+                        </Link>
                         <div
                             className="hidden md:flex space-x-8 text-sm uppercase tracking-widest"
                             data-oid="k80mejt"
                         >
-                            <a
+                            <Link
                                 href="#work"
                                 className="hover:text-black/70 transition-colors"
                                 data-oid="3v04.le"
                             >
                                 Work
-                            </a>
-                            <a
+                            </Link>
+                            <Link
                                 href="#about"
                                 className="hover:text-black/70 transition-colors"
                                 data-oid="kpqdq20"
                             >
                                 About
-                            </a>
-                            <a
+                            </Link>
+                            <Link
                                 href="#journal"
                                 className="hover:text-black/70 transition-colors"
                                 data-oid="-tw42d0"
                             >
                                 Journal
-                            </a>
-                            <a
+                            </Link>
+                            <Link
                                 href="#contact"
                                 className="hover:text-black/70 transition-colors"
                                 data-oid="qlig8h7"
                             >
                                 Contact
-                            </a>
+                            </Link>
                         </div>
                         <button
                             className="md:hidden p-2 -mr-2" /* Added padding for better touch target */
@@ -243,38 +243,38 @@ export default function Page() {
                                 className="flex flex-col py-4 px-6 sm:px-8 lg:px-12 space-y-6 text-sm uppercase tracking-widest"
                                 /* Increased spacing between items */ data-oid="0r9hbw:"
                             >
-                                <a
+                                <Link
                                     href="#work"
                                     className="py-3 block hover:text-black/70 transition-colors" /* Increased padding and made block for larger touch target */
                                     onClick={() => setMobileMenuOpen(false)}
                                     data-oid="0efzis0"
                                 >
                                     Work
-                                </a>
-                                <a
+                                </Link>
+                                <Link
                                     href="#about"
                                     className="py-3 block hover:text-black/70 transition-colors" /* Increased padding and made block for larger touch target */
                                     onClick={() => setMobileMenuOpen(false)}
                                     data-oid="vcxtp:d"
                                 >
                                     About
-                                </a>
-                                <a
+                                </Link>
+                                <Link
                                     href="#journal"
                                     className="py-3 block hover:text-black/70 transition-colors" /* Increased padding and made block for larger touch target */
                                     onClick={() => setMobileMenuOpen(false)}
                                     data-oid="-:jertd"
                                 >
                                     Journal
-                                </a>
-                                <a
+                                </Link>
+                                <Link
                                     href="#contact"
                                     className="py-3 block hover:text-black/70 transition-colors" /* Increased padding and made block for larger touch target */
                                     onClick={() => setMobileMenuOpen(false)}
                                     data-oid="3kbss-c"
                                 >
                                     Contact
-                                </a>
+                                </Link>
                             </div>
                         </motion.div>
                     )}
@@ -844,46 +844,46 @@ export default function Page() {
                         data-oid="uh0gjc6"
                     >
                         <div className="mb-6 md:mb-0" data-oid="3nrigix">
-                            <a
-                                href="#"
+                            <Link
+                                href="/"
                                 className="text-xl tracking-tighter font-light"
                                 data-oid="vuu1e-6"
                             >
                                 aksartiste
-                            </a>
+                            </Link>
                         </div>
                         <div
                             className="flex flex-wrap justify-center space-x-4 sm:space-x-8 text-sm uppercase tracking-widest mb-8 md:mb-0"
                             data-oid="lss1h47"
                         >
-                            <a
+                            <Link
                                 href="#work"
                                 className="hover:text-black/70 transition-colors"
                                 data-oid="of2rbnk"
                             >
                                 Work
-                            </a>
-                            <a
+                            </Link>
+                            <Link
                                 href="#about"
                                 className="hover:text-black/70 transition-colors"
                                 data-oid="7bwts6a"
                             >
                                 About
-                            </a>
-                            <a
+                            </Link>
+                            <Link
                                 href="#journal"
                                 className="hover:text-black/70 transition-colors"
                                 data-oid="vsibqp6"
                             >
                                 Journal
-                            </a>
-                            <a
+                            </Link>
+                            <Link
                                 href="#contact"
                                 className="hover:text-black/70 transition-colors"
                                 data-oid="s-1g3wj"
                             >
                                 Contact
-                            </a>
+                            </Link>
                         </div>
                         <div className="flex space-x-8 sm:space-x-6" data-oid="5xizdwk">
                             {/* Increased spacing for touch targets */}
