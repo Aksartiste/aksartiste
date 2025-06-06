@@ -852,13 +852,17 @@ export default function Page() {
                                     data-oid="6vv_388"
                                 >
                                     <svg
-                                        className="w-5 h-5 mr-3 text-blue-600"
-                                        fill="currentColor"
+                                        className="w-5 h-5 mr-3 text-gray-700"
+                                        fill="none"
+                                        stroke="currentColor"
                                         viewBox="0 0 24 24"
+                                        strokeWidth="1.5"
                                         data-oid="su202wf"
                                     >
                                         <path
-                                            d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                            d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
                                             data-oid="asf6f7j"
                                         />
                                     </svg>
