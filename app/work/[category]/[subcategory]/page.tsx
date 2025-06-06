@@ -867,45 +867,45 @@ export default function SubcategoryPage() {
                         className="flex justify-between items-center h-16 sm:h-20"
                         data-oid="peu:v.0"
                     >
-                        <Link
+                        <a
                             href="/"
                             className="text-xl sm:text-2xl tracking-tighter font-light"
                             data-oid="szgdt:k"
                         >
                             aksartiste
-                        </Link>
+                        </a>
                         <div
                             className="hidden md:flex space-x-8 text-sm uppercase tracking-widest"
                             data-oid="3qch.xs"
                         >
-                            <Link
+                            <a
                                 href="/#work"
                                 className="hover:text-black/70 transition-colors"
                                 data-oid="-bkgn1a"
                             >
                                 Work
-                            </Link>
-                            <Link
+                            </a>
+                            <a
                                 href="/#about"
                                 className="hover:text-black/70 transition-colors"
                                 data-oid="qoecwsz"
                             >
                                 About
-                            </Link>
-                            <Link
+                            </a>
+                            <a
                                 href="/#journal"
                                 className="hover:text-black/70 transition-colors"
                                 data-oid="q9cxwxd"
                             >
                                 Journal
-                            </Link>
-                            <Link
+                            </a>
+                            <a
                                 href="/#contact"
                                 className="hover:text-black/70 transition-colors"
                                 data-oid="xpg.cjb"
                             >
                                 Contact
-                            </Link>
+                            </a>
                         </div>
                         <button
                             className="md:hidden p-2 -mr-2"
@@ -948,38 +948,38 @@ export default function SubcategoryPage() {
                                 className="flex flex-col py-4 px-6 sm:px-8 lg:px-12 space-y-6 text-sm uppercase tracking-widest"
                                 data-oid="2cu96h6"
                             >
-                                <Link
+                                <a
                                     href="/#work"
                                     className="py-3 block hover:text-black/70 transition-colors"
                                     onClick={() => setMobileMenuOpen(false)}
                                     data-oid="i:5mcu1"
                                 >
                                     Work
-                                </Link>
-                                <Link
+                                </a>
+                                <a
                                     href="/#about"
                                     className="py-3 block hover:text-black/70 transition-colors"
                                     onClick={() => setMobileMenuOpen(false)}
                                     data-oid=":dw79lj"
                                 >
                                     About
-                                </Link>
-                                <Link
+                                </a>
+                                <a
                                     href="/#journal"
                                     className="py-3 block hover:text-black/70 transition-colors"
                                     onClick={() => setMobileMenuOpen(false)}
                                     data-oid="30pgcqu"
                                 >
                                     Journal
-                                </Link>
-                                <Link
+                                </a>
+                                <a
                                     href="/#contact"
                                     className="py-3 block hover:text-black/70 transition-colors"
                                     onClick={() => setMobileMenuOpen(false)}
                                     data-oid="98zsqsb"
                                 >
                                     Contact
-                                </Link>
+                                </a>
                             </div>
                         </motion.div>
                     )}
@@ -1195,46 +1195,46 @@ export default function SubcategoryPage() {
                         data-oid="-bke2z1"
                     >
                         <div className="mb-6 md:mb-0" data-oid="ipexibq">
-                            <Link
+                            <a
                                 href="/"
                                 className="text-xl tracking-tighter font-light"
                                 data-oid="zl619fa"
                             >
                                 aksartiste
-                            </Link>
+                            </a>
                         </div>
                         <div
                             className="flex flex-wrap justify-center space-x-4 sm:space-x-8 text-sm uppercase tracking-widest mb-8 md:mb-0"
                             data-oid="f5b1g:p"
                         >
-                            <Link
+                            <a
                                 href="/#work"
                                 className="hover:text-black/70 transition-colors"
                                 data-oid=":47ht1j"
                             >
                                 Work
-                            </Link>
-                            <Link
+                            </a>
+                            <a
                                 href="/#about"
                                 className="hover:text-black/70 transition-colors"
                                 data-oid="yufoksr"
                             >
                                 About
-                            </Link>
-                            <Link
+                            </a>
+                            <a
                                 href="/#journal"
                                 className="hover:text-black/70 transition-colors"
                                 data-oid="_1ixwlg"
                             >
                                 Journal
-                            </Link>
-                            <Link
+                            </a>
+                            <a
                                 href="/#contact"
                                 className="hover:text-black/70 transition-colors"
                                 data-oid=".808xc1"
                             >
                                 Contact
-                            </Link>
+                            </a>
                         </div>
                         <div className="flex space-x-8 sm:space-x-6" data-oid="vf:uy5j">
                             <a

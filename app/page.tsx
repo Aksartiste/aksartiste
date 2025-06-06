@@ -161,45 +161,45 @@ export default function Page() {
                         className="flex justify-between items-center h-16 sm:h-20"
                         data-oid="c_rmcf:"
                     >
-                        <Link
-                            href="/"
+                        <a
+                            href="#"
                             className="text-xl sm:text-2xl tracking-tighter font-light"
                             data-oid="wureke."
                         >
                             aksartiste
-                        </Link>
+                        </a>
                         <div
                             className="hidden md:flex space-x-8 text-sm uppercase tracking-widest"
                             data-oid="g9huu2z"
                         >
-                            <Link
+                            <a
                                 href="#work"
                                 className="hover:text-black/70 transition-colors"
                                 data-oid="5dhlskt"
                             >
                                 Work
-                            </Link>
-                            <Link
+                            </a>
+                            <a
                                 href="#about"
                                 className="hover:text-black/70 transition-colors"
                                 data-oid="kxu51rh"
                             >
                                 About
-                            </Link>
-                            <Link
+                            </a>
+                            <a
                                 href="#journal"
                                 className="hover:text-black/70 transition-colors"
                                 data-oid="7cu-qzn"
                             >
                                 Journal
-                            </Link>
-                            <Link
+                            </a>
+                            <a
                                 href="#contact"
                                 className="hover:text-black/70 transition-colors"
                                 data-oid="g.b76ie"
                             >
                                 Contact
-                            </Link>
+                            </a>
                         </div>
                         <button
                             className="md:hidden p-2 -mr-2" /* Added padding for better touch target */
@@ -242,38 +242,38 @@ export default function Page() {
                                 className="flex flex-col py-4 px-6 sm:px-8 lg:px-12 space-y-6 text-sm uppercase tracking-widest"
                                 /* Increased spacing between items */ data-oid="c:2yu4c"
                             >
-                                <Link
+                                <a
                                     href="#work"
                                     className="py-3 block hover:text-black/70 transition-colors" /* Increased padding and made block for larger touch target */
                                     onClick={() => setMobileMenuOpen(false)}
                                     data-oid="o8u:9g8"
                                 >
                                     Work
-                                </Link>
-                                <Link
+                                </a>
+                                <a
                                     href="#about"
                                     className="py-3 block hover:text-black/70 transition-colors" /* Increased padding and made block for larger touch target */
                                     onClick={() => setMobileMenuOpen(false)}
                                     data-oid="o86u4_i"
                                 >
                                     About
-                                </Link>
-                                <Link
+                                </a>
+                                <a
                                     href="#journal"
                                     className="py-3 block hover:text-black/70 transition-colors" /* Increased padding and made block for larger touch target */
                                     onClick={() => setMobileMenuOpen(false)}
                                     data-oid="iej152d"
                                 >
                                     Journal
-                                </Link>
-                                <Link
+                                </a>
+                                <a
                                     href="#contact"
                                     className="py-3 block hover:text-black/70 transition-colors" /* Increased padding and made block for larger touch target */
                                     onClick={() => setMobileMenuOpen(false)}
                                     data-oid="j_yo1i2"
                                 >
                                     Contact
-                                </Link>
+                                </a>
                             </div>
                         </motion.div>
                     )}
@@ -464,27 +464,40 @@ export default function Page() {
                             className="text-2xl sm:text-3xl font-light mb-6 sm:mb-8"
                             data-oid="68xrhm9"
                         >
-                            Hi, I&apos;m Akshay
+                            Hi, I'm Akshay
                         </h2>
                         <p
                             className="text-base sm:text-lg text-gray-600 mb-4 sm:mb-6 leading-relaxed"
                             data-oid="juvr-lb"
                         >
-                            I&apos;m a multidisciplinary artist based in Mumbai. While portrait and
-                            fashion photography are at the core of my practice, my creative work
-                            extends into writing, fine arts, creative direction, and emotion-led
-                            visual storytelling rooted in social awareness.
+                            This website is an extension of my mind and heart, a living archive of
+                            my photography, writing, design work, and the stories I help shape for
+                            others.
+                        </p>
+                        <p
+                            className="text-base sm:text-lg text-gray-600 mb-4 sm:mb-6 leading-relaxed"
+                            data-oid="zikzabi"
+                        >
+                            It is more than just a portfolio. It is a curated, thoughtful space
+                            where emotion meets visual storytelling, a place to share the kind of
+                            work that inspires me. From intimate portraits and editorial campaigns
+                            to the behind the scenes rhythm of content creation, this is where it
+                            all lives.
+                        </p>
+                        <p
+                            className="text-base sm:text-lg text-gray-600 mb-4 sm:mb-6 leading-relaxed"
+                            data-oid="h3k9eeq"
+                        >
+                            My passion lies in helping people feel seen, confident, and celebrated,
+                            whether it is through the lens of my camera, the clarity of my writing,
+                            or the creative direction I offer to brands and individuals alike.
                         </p>
                         <p
                             className="text-base sm:text-lg text-gray-600 mb-8 sm:mb-10 leading-relaxed"
-                            data-oid="zikzabi"
+                            data-oid="6pvhs3d"
                         >
-                            I believe in capturing people in their most authentic, unfiltered
-                            moments, and I use my background in writing to explore the deeper
-                            narratives behind each frame. My projects often revolve around themes
-                            such as mental health, body positivity, disability representation, and
-                            LGBTQ+ visibility, giving voice to stories that are too often
-                            overlooked.
+                            Take a look around, explore the stories, and if something speaks to you.
+                            Let's connect. I'd love to create something meaningful together.
                         </p>
                         <Link href="/about" className="inline-block" data-oid="0tx2du7">
                             <button
@@ -754,14 +767,14 @@ export default function Page() {
             >
                 <div className="max-w-2xl mx-auto text-center" data-oid="c921_f6">
                     <h2 className="text-2xl sm:text-3xl font-light mb-4 sm:mb-6" data-oid="1h:fw:8">
-                        Let&apos;s Connect
+                        Let's Connect
                     </h2>
                     <p
                         className="text-base sm:text-lg text-gray-600 mb-8 sm:mb-10"
                         data-oid="l8kzstx"
                     >
-                        Interested in working together or just want to say hello? I&apos;d love to
-                        hear from you.
+                        Interested in working together or just want to say hello? I'd love to hear
+                        from you.
                     </p>
                     <button
                         className="w-full sm:w-auto px-12 py-4 border border-black text-sm uppercase tracking-wider hover:bg-black hover:text-white transition-colors duration-300"
@@ -806,46 +819,46 @@ export default function Page() {
                         data-oid="fianve9"
                     >
                         <div className="mb-6 md:mb-0" data-oid="4w6rkd4">
-                            <Link
-                                href="/"
+                            <a
+                                href="#"
                                 className="text-xl tracking-tighter font-light"
                                 data-oid="v-o6234"
                             >
                                 aksartiste
-                            </Link>
+                            </a>
                         </div>
                         <div
                             className="flex flex-wrap justify-center space-x-4 sm:space-x-8 text-sm uppercase tracking-widest mb-8 md:mb-0"
                             data-oid="dbf6tvf"
                         >
-                            <Link
+                            <a
                                 href="#work"
                                 className="hover:text-black/70 transition-colors"
                                 data-oid="9eca-yo"
                             >
                                 Work
-                            </Link>
-                            <Link
+                            </a>
+                            <a
                                 href="#about"
                                 className="hover:text-black/70 transition-colors"
                                 data-oid="o7ra-as"
                             >
                                 About
-                            </Link>
-                            <Link
+                            </a>
+                            <a
                                 href="#journal"
                                 className="hover:text-black/70 transition-colors"
                                 data-oid="bci5q39"
                             >
                                 Journal
-                            </Link>
-                            <Link
+                            </a>
+                            <a
                                 href="#contact"
                                 className="hover:text-black/70 transition-colors"
                                 data-oid="pb:haj:"
                             >
                                 Contact
-                            </Link>
+                            </a>
                         </div>
                         <div className="flex space-x-8 sm:space-x-6" data-oid="sb-nj7r">
                             {/* Increased spacing for touch targets */}
