@@ -456,11 +456,16 @@ export default function Page() {
                     className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-16 items-center"
                     data-oid="-po-opa"
                 >
-                    <div className="aspect-[4/5] bg-gray-100 overflow-hidden" data-oid="pptdpdq">
-                        <img
+                    <div
+                        className="aspect-[4/5] bg-gray-100 overflow-hidden relative"
+                        data-oid="pptdpdq"
+                    >
+                        <Image
                             src="https://res.cloudinary.com/dexibw60d/image/upload/v1749043892/Screenshot_2025-06-04_at_7.00.25_PM_rw8lnr.png"
                             alt="Creator portrait"
-                            className="w-full h-full object-cover"
+                            className="object-cover"
+                            fill
+                            sizes="(max-width: 1024px) 100vw, 50vw"
                             data-oid="_dxg-s4"
                         />
                     </div>
