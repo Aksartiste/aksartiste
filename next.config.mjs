@@ -10,7 +10,7 @@ const nextConfig = {
     }]
   },
   output: "standalone",
-  distDir: process.env.NODE_ENV === "production" ? ".next-prod" : ".next",
+  distDir: ".next",
   typescript: {
     ignoreBuildErrors: true
   }
