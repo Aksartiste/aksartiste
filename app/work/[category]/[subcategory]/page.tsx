@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useParams } from 'next/navigation';
 
@@ -1049,9 +1050,11 @@ export default function SubcategoryPage() {
                                 className="aspect-auto bg-gray-100 overflow-hidden"
                                 data-oid="3g0gy8u"
                             >
-                                <img
+                                <Image
                                     src={image.src}
                                     alt={image.alt}
+                                    width={image.width}
+                                    height={image.height}
                                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                                     data-oid="baesvw0"
                                 />
@@ -1144,12 +1147,13 @@ export default function SubcategoryPage() {
                             onClick={(e) => e.stopPropagation()}
                             data-oid="xsi-m1o"
                         >
-                            <img
-                                // @ts-ignore
+                            <Image
                                 src={selectedImage.src}
-                                // @ts-ignore
                                 alt={selectedImage.alt}
+                                width={selectedImage.width}
+                                height={selectedImage.height}
                                 className="max-h-[80vh] max-w-full object-contain"
+                                priority
                                 data-oid="og11i6d"
                             />
                         </motion.div>
