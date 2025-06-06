@@ -797,28 +797,6 @@ export default function Page() {
                 </div>
             </section>
 
-            {/* Contact Email */}
-            <section className="py-16 sm:py-20 px-4 sm:px-8 lg:px-12 bg-gray-50" data-oid="txy48p2">
-                <div className="max-w-xl mx-auto text-center" data-oid="vnr7:ok">
-                    <h3 className="text-xl sm:text-2xl font-light mb-4 sm:mb-6" data-oid="5zmrn0r">
-                        Get in Touch
-                    </h3>
-                    <p
-                        className="text-sm sm:text-base text-gray-600 mb-6 sm:mb-8"
-                        data-oid="r.l4guw"
-                    >
-                        For any inquiries, please reach out to us at{' '}
-                        <a
-                            href="mailto:aksartiste@gmail.com"
-                            className="text-black hover:text-gray-600 transition-colors underline"
-                            data-oid="qcuu4t."
-                        >
-                            aksartiste@gmail.com
-                        </a>
-                    </p>
-                </div>
-            </section>
-
             {/* Footer */}
             <footer
                 className="py-10 sm:py-12 px-4 sm:px-8 lg:px-12 border-t border-gray-200"
