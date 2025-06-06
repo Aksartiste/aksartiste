@@ -826,7 +826,7 @@ export default function Page() {
                             data-oid="2fyrqu4"
                         >
                             <div className="py-1" data-oid="y-_xt3s">
-                                <a
+                                <Link
                                     href="https://wa.me/919660773383"
                                     target="_blank"
                                     rel="noopener noreferrer"
@@ -845,8 +845,8 @@ export default function Page() {
                                         />
                                     </svg>
                                     WhatsApp
-                                </a>
-                                <a
+                                </Link>
+                                <Link
                                     href="mailto:aksartiste@gmail.com"
                                     className="flex items-center px-4 py-3 text-sm text-gray-800 hover:bg-gray-50 transition-colors"
                                     data-oid="6vv_388"
@@ -867,7 +867,7 @@ export default function Page() {
                                         />
                                     </svg>
                                     Email
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
