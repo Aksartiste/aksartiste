@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 
 interface JournalEntry {
     id: string;
@@ -390,16 +389,14 @@ export default function JournalEntry({ params }: { params: { id: string } }) {
                 </div>
 
                 <div
-                    className="aspect-[16/9] bg-gray-100 overflow-hidden mb-10 rounded-lg shadow-sm relative"
+                    className="aspect-[16/9] bg-gray-100 overflow-hidden mb-10 rounded-lg shadow-sm"
                     data-oid="purqpp8"
                 >
-                    <Image
+                    <img
                         src={entry.image}
                         alt={entry.title}
-                        className="object-cover"
-                        fill
-                        priority
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 800px"
+                        className="w-full h-full object-cover"
+                        loading="eager"
                         data-oid="a3yt0.b"
                     />
                 </div>
@@ -426,15 +423,13 @@ export default function JournalEntry({ params }: { params: { id: string } }) {
                                     data-oid="hbltcdf"
                                 >
                                     <div
-                                        className="aspect-video bg-gray-100 overflow-hidden mb-4 relative"
+                                        className="aspect-video bg-gray-100 overflow-hidden mb-4"
                                         data-oid="ms2_fcw"
                                     >
-                                        <Image
+                                        <img
                                             src={relatedEntry.image}
                                             alt={relatedEntry.title}
-                                            className="object-cover group-hover:scale-105 transition-transform duration-700"
-                                            fill
-                                            sizes="(max-width: 768px) 100vw, 50vw"
+                                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                                             data-oid="g7tocoe"
                                         />
                                     </div>

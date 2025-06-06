@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function AboutPage() {
     const [isLoaded, setIsLoaded] = useState(false);
@@ -87,13 +88,17 @@ export default function AboutPage() {
                     className="bg-gray-50 overflow-hidden mb-12 rounded-lg shadow-md p-4"
                     data-oid="uxg.qic"
                 >
-                    <img
-                        src="https://res.cloudinary.com/dexibw60d/image/upload/v1749044747/aks-mountains.jpg"
-                        alt="Akshay in the mountains"
-                        className="object-contain mx-auto h-[486px] w-[745px]"
-                        loading="eager"
-                        data-oid="n44_sy4"
-                    />
+                    <div className="relative mx-auto h-[486px] w-[745px]" data-oid="yz2iztq">
+                        <Image
+                            src="https://res.cloudinary.com/dexibw60d/image/upload/v1749044747/aks-mountains.jpg"
+                            alt="Akshay in the mountains"
+                            className="object-contain"
+                            fill
+                            priority
+                            sizes="(max-width: 768px) 100vw, 745px"
+                            data-oid="n44_sy4"
+                        />
+                    </div>
                 </div>
 
                 <div className="prose prose-lg max-w-none" data-oid="2ynkt2s">

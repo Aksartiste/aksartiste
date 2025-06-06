@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useParams } from 'next/navigation';
 
@@ -1047,16 +1046,13 @@ export default function SubcategoryPage() {
                             data-oid="37:b3od"
                         >
                             <div
-                                className="aspect-auto bg-gray-100 overflow-hidden relative"
-                                style={{ aspectRatio: '3/4' }}
+                                className="aspect-auto bg-gray-100 overflow-hidden"
                                 data-oid="3g0gy8u"
                             >
-                                <Image
+                                <img
                                     src={image.src}
                                     alt={image.alt}
-                                    className="object-cover group-hover:scale-105 transition-transform duration-700"
-                                    fill
-                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                                     data-oid="baesvw0"
                                 />
                             </div>
@@ -1148,22 +1144,14 @@ export default function SubcategoryPage() {
                             onClick={(e) => e.stopPropagation()}
                             data-oid="xsi-m1o"
                         >
-                            <div
-                                className="relative"
-                                style={{ height: '80vh', width: '80vw', maxWidth: '1200px' }}
-                                data-oid="k_l1ssi"
-                            >
-                                <Image
-                                    // @ts-ignore
-                                    src={selectedImage.src}
-                                    // @ts-ignore
-                                    alt={selectedImage.alt}
-                                    className="object-contain"
-                                    fill
-                                    sizes="80vw"
-                                    data-oid="og11i6d"
-                                />
-                            </div>
+                            <img
+                                // @ts-ignore
+                                src={selectedImage.src}
+                                // @ts-ignore
+                                alt={selectedImage.alt}
+                                className="max-h-[80vh] max-w-full object-contain"
+                                data-oid="og11i6d"
+                            />
                         </motion.div>
 
                         <button
