@@ -480,35 +480,21 @@ export default function Page() {
                             className="text-base sm:text-lg text-gray-600 mb-4 sm:mb-6 leading-relaxed"
                             data-oid="l:7yl3o"
                         >
-                            This website is an extension of my mind and heart, a living archive of
-                            my photography, writing, design work, and the stories I help shape for
-                            others.
-                        </p>
-                        <p
-                            className="text-base sm:text-lg text-gray-600 mb-4 sm:mb-6 leading-relaxed"
-                            data-oid="ku:08q."
-                        >
-                            It is more than just a portfolio. It is a curated, thoughtful space
-                            where emotion meets visual storytelling, a place to share the kind of
-                            work that inspires me. From intimate portraits and editorial campaigns
-                            to the behind the scenes rhythm of content creation, this is where it
-                            all lives.
-                        </p>
-                        <p
-                            className="text-base sm:text-lg text-gray-600 mb-4 sm:mb-6 leading-relaxed"
-                            data-oid="jwybuj_"
-                        >
-                            My passion lies in helping people feel seen, confident, and celebrated,
-                            whether it is through the lens of my camera, the clarity of my writing,
-                            or the creative direction I offer to brands and individuals alike.
+                            I'm a multidisciplinary artist based in Mumbai. While portrait and
+                            fashion photography are at the core of my practice, my creative work
+                            extends into writing, fine arts, creative direction, and emotion-led
+                            visual storytelling rooted in social awareness.
                         </p>
                         <p
                             className="text-base sm:text-lg text-gray-600 mb-8 sm:mb-10 leading-relaxed"
-                            data-oid="b_:gr5_"
+                            data-oid="ku:08q."
                         >
-                            Take a look around, explore the stories, and if something speaks to you.
-                            Let&apos;s connect. I&apos;d love to create something meaningful
-                            together.
+                            I believe in capturing people in their most authentic, unfiltered
+                            moments, and I use my background in writing to explore the deeper
+                            narratives behind each frame. My projects often revolve around themes
+                            such as mental health, body positivity, disability representation, and
+                            LGBTQ+ visibility, giving voice to stories that are too often
+                            overlooked.
                         </p>
                         <Link href="/about" className="inline-block" data-oid="_avpqbg">
                             <button
