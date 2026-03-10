@@ -2,5 +2,10 @@
   "rewrites": [ {
     "source": "/portfolio",
     "destination": "https://www.canva.com/design/DAG_gkG3aQs/vZbCcIbqVBNy4ITXb4fXiA/view"
- }]
-}
+ }
+}{ 
+  "rewrites": {
+    "source": "/book",
+    "destination": "https://docs.google.com/forms/d/1uI_8FQ28GjJwGjQcIFgeibvUfMfLe1mfwHy-tExdXGQ/edit"
+  }
+}]
