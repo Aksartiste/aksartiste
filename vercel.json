@@ -7,6 +7,10 @@
     {
       "source": "/book",
       "destination": "https://docs.google.com/forms/d/1uI_8FQ28GjJwGjQcIFgeibvUfMfLe1mfwHy-tExdXGQ/edit"
+    },
+    {
+      "source": "/learn",
+      "destination": "https://forms.gle/VzFs7Jy473dNcbh18"
     }
   ]
 }
